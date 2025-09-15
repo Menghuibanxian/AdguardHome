@@ -41,8 +41,8 @@ def download_file(url, timeout=30):
         print(f"下载失败 {url}: {e}")
         return None
 
-def extract_domains(content):
-    """从内容中提取域名"""
+def extract_blacklist_domains(content):
+    """从黑名单内容中提取域名"""
     domains = set()
     
     # 匹配域名的正则表达式
@@ -66,7 +66,7 @@ def extract_domains(content):
             continue
             
         # 处理adblock格式
-        if '||' in line and '^' in line:
+        if '||' in line and '^' in line and not line.startswith('@@'):
             # 提取域名部分
             domain = line.split('||')[-1].split('^')[0]
             if domain_pattern.match(domain):
@@ -79,7 +79,45 @@ def extract_domains(content):
             
     return domains
 
-def update_impurities_file(filename, sources, file_type):
+def extract_whitelist_domains(content):
+    """从白名单内容中提取域名"""
+    domains = set()
+    
+    # 匹配域名的正则表达式
+    domain_pattern = re.compile(r'^[0-9a-zA-Z]([0-9a-zA-Z\-]{0,61}[0-9a-zA-Z])?(\.[0-9a-zA-Z]([0-9a-zA-Z\-]{0,61}[0-9a-zA-Z])?)*$')
+    
+    # 按行处理内容
+    for line in content.splitlines():
+        line = line.strip()
+        
+        # 跳过注释和空行
+        if not line or line.startswith('#') or line.startswith('!') or line.startswith('//'):
+            continue
+            
+        # 处理白名单adblock格式 (@@||example.org^)
+        if line.startswith('@@||') and '^' in line:
+            # 提取域名部分
+            domain = line.split('@@||')[-1].split('^')[0]
+            if domain_pattern.match(domain):
+                domains.add(domain)
+            continue
+            
+        # 处理hosts文件格式 (127.0.0.1 example.org)
+        if line.startswith('127.0.0.1') or line.startswith('0.0.0.0'):
+            parts = line.split()
+            if len(parts) >= 2:
+                domain = parts[1]
+                if domain_pattern.match(domain):
+                    domains.add(domain)
+            continue
+            
+        # 处理纯域名格式
+        if domain_pattern.match(line):
+            domains.add(line)
+            
+    return domains
+
+def update_impurities_file(filename, sources, file_type, is_whitelist=False):
     """更新包含杂质的文件"""
     print(f"开始更新 {filename}...")
     
@@ -96,7 +134,10 @@ def update_impurities_file(filename, sources, file_type):
             all_content += content + "\n\n"
             
             # 提取域名用于去重
-            domains = extract_domains(content)
+            if is_whitelist:
+                domains = extract_whitelist_domains(content)
+            else:
+                domains = extract_blacklist_domains(content)
             all_domains.update(domains)
             print(f"  - 提取到 {len(domains)} 个域名")
         else:
@@ -110,19 +151,27 @@ def update_impurities_file(filename, sources, file_type):
     print(f"{filename} 更新完成，共 {len(all_domains)} 个唯一域名")
     return all_domains
 
-def update_main_file(filename, domains):
+def update_main_file(filename, domains, is_whitelist=False):
     """更新主文件（去重后的文件）"""
     print(f"正在更新主文件 {filename}...")
     
     # 按字母顺序排序域名
     sorted_domains = sorted(domains)
     
-    content = "# 黑白名单规则\n"
-    content += f"# 更新时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n"
-    content += f"# 域名数量: {len(sorted_domains)}\n\n"
+    # 添加文件头注释
+    content = "# 更新时间: " + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + "\n"
+    content += "# 作者名称: Menghuibanxian\n"
+    content += "# 作者主页: https://github.com/Menghuibanxian/AdguardHome\n\n"
     
-    for domain in sorted_domains:
-        content += domain + "\n"
+    # 根据是黑名单还是白名单使用不同的格式
+    if is_whitelist:
+        # 白名单使用 @@||example.org^ 格式
+        for domain in sorted_domains:
+            content += f"@@||{domain}^\n"
+    else:
+        # 黑名单使用 ||example.org^ 格式
+        for domain in sorted_domains:
+            content += f"||{domain}^\n"
     
     with open(filename, "w", encoding="utf-8") as f:
         f.write(content)
@@ -139,14 +188,14 @@ def main():
         os.makedirs("Ipurities")
     
     # 更新黑名单
-    black_domains = update_impurities_file("Black with impurities.txt", BLACKLIST_SOURCES, "黑名单")
+    black_domains = update_impurities_file("Black with impurities.txt", BLACKLIST_SOURCES, "黑名单", is_whitelist=False)
     
     # 更新白名单
-    white_domains = update_impurities_file("White with impurities.txt", WHITELIST_SOURCES, "白名单")
+    white_domains = update_impurities_file("White with impurities.txt", WHITELIST_SOURCES, "白名单", is_whitelist=True)
     
     # 更新主文件
-    update_main_file("Black.txt", black_domains)
-    update_main_file("White.txt", white_domains)
+    update_main_file("Black.txt", black_domains, is_whitelist=False)
+    update_main_file("White.txt", white_domains, is_whitelist=True)
     
     print("=" * 50)
     print("所有规则更新完成!")
