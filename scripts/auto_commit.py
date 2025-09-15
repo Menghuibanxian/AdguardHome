@@ -1,4 +1,29 @@
-import os
+def update_main_file(filename, domains, is_whitelist=False):
+    """更新主文件（去重后的文件）"""
+    print(f"正在更新主文件 {filename}...")
+    
+    # 按字母顺序排序域名
+    sorted_domains = sorted(domains)
+    
+    # 添加文件头注释
+    content = "# 更新时间: " + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + "\n"
+    content += "# 作者名称: Menghuibanxian\n"
+    content += "# 作者主页: https://github.com/Menghuibanxian/AdguardHome\n\n"
+    
+    # 根据是黑名单还是白名单使用不同的格式
+    if is_whitelist:
+        # 白名单使用 @@||example.org^ 格式
+        for domain in sorted_domains:
+            content += f"@@||{domain}^\n"
+    else:
+        # 黑名单使用 ||example.org^ 格式
+        for domain in sorted_domains:
+            content += f"||{domain}^\n"
+    
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(content)
+    
+    print(f"{filename} 更新完成")import os
 import subprocess
 import time
 from datetime import datetime
