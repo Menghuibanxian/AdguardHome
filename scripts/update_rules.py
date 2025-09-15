@@ -121,17 +121,26 @@ def update_impurities_file(filename, sources, file_type, is_whitelist=False):
     """更新包含杂质的文件"""
     print(f"开始更新 {filename}...")
     
-    all_content = f"# {file_type}规则\n"
-    all_content += f"# 更新时间: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
-    
+    all_content = ""
     all_domains = set()
     
     for name, url in sources.items():
         print(f"正在下载 {name} ({url})...")
         content = download_file(url)
         if content:
-            all_content += f"# 来源: {name}\n"
-            all_content += content + "\n\n"
+            # 过滤掉以!和#开头的注释行
+            filtered_lines = []
+            for line in content.splitlines():
+                stripped_line = line.strip()
+                if not (stripped_line.startswith('#') or stripped_line.startswith('!')):
+                    # 只添加非空行
+                    if stripped_line:
+                        filtered_lines.append(line)
+            
+            # 如果all_content不为空，则添加换行符分隔不同来源的内容
+            if all_content:
+                all_content += '\n'
+            all_content += '\n'.join(filtered_lines)
             
             # 提取域名用于去重
             if is_whitelist:
@@ -141,7 +150,10 @@ def update_impurities_file(filename, sources, file_type, is_whitelist=False):
             all_domains.update(domains)
             print(f"  - 提取到 {len(domains)} 个域名")
         else:
-            all_content += f"# 来源: {name} (下载失败)\n\n"
+            # 如果all_content不为空，则添加换行符
+            if all_content:
+                all_content += '\n'
+            all_content += f"# 来源: {name} (下载失败)"
     
     # 保存包含杂质的文件
     impurities_path = os.path.join("Ipurities", filename)
@@ -160,6 +172,8 @@ def update_main_file(filename, domains, is_whitelist=False):
     
     # 添加文件头注释
     content = "# 更新时间: " + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + "\n"
+    rule_type = "白名单" if is_whitelist else "黑名单"
+    content += f"# {rule_type}规则数：{len(domains)}\n"
     content += "# 作者名称: Menghuibanxian\n"
     content += "# 作者主页: https://github.com/Menghuibanxian/AdguardHome\n\n"
     
