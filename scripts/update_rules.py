@@ -44,33 +44,34 @@ def download_file(url, timeout=30):
 def extract_blacklist_domains(content):
     """从黑名单内容中提取域名"""
     domains = set()
-    
     # 匹配域名的正则表达式
     domain_pattern = re.compile(r'^[0-9a-zA-Z]([0-9a-zA-Z\-]{0,61}[0-9a-zA-Z])?(\.[0-9a-zA-Z]([0-9a-zA-Z\-]{0,61}[0-9a-zA-Z])?)*$')
+    # 匹配特殊广告规则的正则表达式 (如 *-ad.example.com*)
+    special_rule_pattern = re.compile(r'^\*.*\*$')
+    # 匹配hosts文件格式的正则表达式
+    hosts_pattern = re.compile(r'^\d+\.\d+\.\d+\.\d+\s+.*$')
     
     # 按行处理内容
     for line in content.splitlines():
         line = line.strip()
         
-        # 跳过注释和空行
-        if not line or line.startswith('#') or line.startswith('!') or line.startswith('//'):
+        # 跳过注释和空行 (只跳过每行第一个字符是 # 或 ! 的行)
+        if not line or (line.startswith('#') or line.startswith('!')):
             continue
             
-        # 处理hosts文件格式
-        if line.startswith('127.0.0.1') or line.startswith('0.0.0.0'):
-            parts = line.split()
-            if len(parts) >= 2:
-                domain = parts[1]
-                if domain_pattern.match(domain):
-                    domains.add(domain)
+        # 处理hosts文件格式 (保留原始格式)
+        if hosts_pattern.match(line):
+            domains.add(line)
             continue
             
         # 处理adblock格式
         if '||' in line and '^' in line and not line.startswith('@@'):
-            # 提取域名部分
-            domain = line.split('||')[-1].split('^')[0]
-            if domain_pattern.match(domain):
-                domains.add(domain)
+            domains.add(line)
+            continue
+            
+        # 处理特殊广告规则 (如 *-ad.example.com*)
+        if special_rule_pattern.match(line):
+            domains.add(line)
             continue
             
         # 处理纯域名格式
@@ -90,16 +91,13 @@ def extract_whitelist_domains(content):
     for line in content.splitlines():
         line = line.strip()
         
-        # 跳过注释和空行
-        if not line or line.startswith('#') or line.startswith('!') or line.startswith('//'):
+        # 跳过注释和空行 (只跳过每行第一个字符是 # 或 ! 的行)
+        if not line or (line.startswith('#') or line.startswith('!')):
             continue
             
         # 处理白名单adblock格式 (@@||example.org^)
         if line.startswith('@@||') and '^' in line:
-            # 提取域名部分
-            domain = line.split('@@||')[-1].split('^')[0]
-            if domain_pattern.match(domain):
-                domains.add(domain)
+            domains.add(line)
             continue
             
         # 处理hosts文件格式 (127.0.0.1 example.org)
@@ -128,10 +126,11 @@ def update_impurities_file(filename, sources, file_type, is_whitelist=False):
         print(f"正在下载 {name} ({url})...")
         content = download_file(url)
         if content:
-            # 过滤掉以!和#开头的注释行
+            # 过滤掉以!和#开头的注释行 (只过滤每行第一个字符是 # 或 ! 的行)
             filtered_lines = []
             for line in content.splitlines():
-                stripped_line = line.strip()
+                stripped_line = line.lstrip()  # 使用 lstrip() 只去除行首的空白字符
+                # 检查去除空白字符后，第一个字符是否是 # 或 !
                 if not (stripped_line.startswith('#') or stripped_line.startswith('!')):
                     # 只添加非空行
                     if stripped_line:
@@ -178,13 +177,18 @@ def update_main_file(filename, domains, is_whitelist=False):
     content += "# 作者主页: https://github.com/Menghuibanxian/AdguardHome\n\n"
     
     # 根据是黑名单还是白名单使用不同的格式
-    if is_whitelist:
-        # 白名单使用 @@||example.org^ 格式
-        for domain in sorted_domains:
+    for domain in sorted_domains:
+        # 如果是白名单且规则以 @@ 开头，保持原始格式
+        if is_whitelist and domain.startswith('@@'):
+            content += f"{domain}\n"
+        # 如果是黑名单且规则已经包含 || 或以 * 开头或包含IP地址，保持原始格式
+        elif not is_whitelist and (domain.startswith('||') or domain.startswith('*') or re.match(r'^\d+\.\d+\.\d+\.\d+\s+.*$', domain)):
+            content += f"{domain}\n"
+        # 如果是白名单且规则不以 @@ 开头，添加 @@|| 前缀
+        elif is_whitelist:
             content += f"@@||{domain}^\n"
-    else:
-        # 黑名单使用 ||example.org^ 格式
-        for domain in sorted_domains:
+        # 如果是黑名单且规则不包含 || 或 * 或 IP 地址，添加 || 前缀
+        else:
             content += f"||{domain}^\n"
     
     with open(filename, "w", encoding="utf-8") as f:
