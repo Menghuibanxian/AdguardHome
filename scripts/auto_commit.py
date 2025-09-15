@@ -43,14 +43,9 @@ def auto_git_commit(force_commit=False):
         print("4. 重新运行此脚本")
         return False
     
-    # 进入项目目录
-    try:
-        project_path = r"c:\Users\du\Desktop\github自动任务"
-        os.chdir(project_path)
-        print(f"已切换到项目目录: {project_path}")
-    except Exception as e:
-        print(f"错误: 无法切换到项目目录 - {e}")
-        return False
+    # 获取当前工作目录（在GitHub Actions中这将是仓库根目录）
+    project_path = os.getcwd()
+    print(f"当前项目目录: {project_path}")
     
     # 检查是否为Git仓库
     if not is_git_repo():
