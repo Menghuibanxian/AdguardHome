@@ -1,0 +1,62 @@
+name: Auto Update AdBlock Rules
+
+on:
+  schedule:
+    # 每5分钟运行一次
+    - cron: '*/5 * * * *'
+  workflow_dispatch: # 允许手动触发
+  push:
+    branches:
+      - main
+
+# 添加权限配置
+permissions:
+  contents: write
+
+jobs:
+  update-rules:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出代码
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true # 保持凭证信息
+          fetch-depth: 0
+
+      # 设置Python环境
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      # 安装依赖
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      # 设置Git配置
+      - name: Setup Git config
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      # 更新广告拦截规则
+      - name: Update AdBlock rules
+        run: |
+          python scripts/update_rules.py
+
+      # 无论是否有变更都提交（强制提交模式）
+      - name: Commit changes
+        run: |
+          git add .
+          # 检查是否有变更，如果没有变更则创建空提交
+          git diff --staged --quiet && git commit --allow-empty -m "Auto update rules at $(date '+%Y-%m-%d %H:%M:%S') (no changes)" || git commit -m "Auto update rules at $(date '+%Y-%m-%d %H:%M:%S')"
+          
+      # 推送更改
+      - name: Push changes
+        run: |
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
