@@ -2,6 +2,7 @@ import requests
 import os
 from datetime import datetime, timezone, timedelta
 import re
+import sys
 
 # 黑名单源
 BLACKLIST_SOURCES = {
@@ -128,6 +129,9 @@ def update_impurities_file(filename, sources, file_type, is_whitelist=False):
     all_content = f"# 更新时间: {formatted_time}\n\n"
     all_domains = set()
     
+    failed_sources = 0
+    total_sources = len(sources)
+    
     for name, url in sources.items():
         print(f"正在下载 {name} ({url})...")
         content = download_file(url)
@@ -159,6 +163,7 @@ def update_impurities_file(filename, sources, file_type, is_whitelist=False):
             if all_content:
                 all_content += '\n'
             all_content += f"# 来源: {name} (下载失败)"
+            failed_sources += 1
     
     # 保存包含杂质的文件
     impurities_path = os.path.join("Ipurities", filename)
@@ -166,7 +171,16 @@ def update_impurities_file(filename, sources, file_type, is_whitelist=False):
         f.write(all_content)
     
     print(f"{filename} 更新完成，共 {len(all_domains)} 个唯一域名")
-    return all_domains
+    print(f"总计 {total_sources} 个源，{failed_sources} 个源下载失败")
+    
+    # 如果所有源都下载失败，返回错误状态
+    if failed_sources == total_sources and total_sources > 0:
+        print(f"警告: 所有 {filename} 的源都下载失败!")
+        return all_domains, False
+    elif failed_sources > 0:
+        print(f"注意: {filename} 有 {failed_sources} 个源下载失败")
+        
+    return all_domains, True
 
 def get_beijing_time():
     """获取北京时间"""
@@ -269,10 +283,10 @@ def main():
         os.makedirs("Ipurities")
     
     # 更新黑名单
-    black_domains = update_impurities_file("Black with impurities.txt", BLACKLIST_SOURCES, "黑名单", is_whitelist=False)
+    black_domains, black_success = update_impurities_file("Black with impurities.txt", BLACKLIST_SOURCES, "黑名单", is_whitelist=False)
     
     # 更新白名单
-    white_domains = update_impurities_file("White with impurities.txt", WHITELIST_SOURCES, "白名单", is_whitelist=True)
+    white_domains, white_success = update_impurities_file("White with impurities.txt", WHITELIST_SOURCES, "白名单", is_whitelist=True)
     
     # 更新主文件
     update_main_file("Black.txt", black_domains, is_whitelist=False)
@@ -282,6 +296,13 @@ def main():
     print("所有规则更新完成!")
     print(f"黑名单域名数: {len(black_domains)}")
     print(f"白名单域名数: {len(white_domains)}")
+    
+    # 如果任何源下载失败，返回非零退出码
+    if not black_success or not white_success:
+        print("警告: 部分源下载失败，请检查网络连接或源URL是否有效")
+        sys.exit(1)
+    
+    return 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
