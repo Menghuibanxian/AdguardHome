@@ -8,7 +8,7 @@ import sys
 BLACKLIST_SOURCES = {
     "AdGuard DNS filter": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
     "秋风的规则": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt",
-    "GitHub加速": "https://raw.hellogithub.com/hosts",
+    "GitHub加速": "https://raw.githubusercontent.com/521xueweihan/GitHub520/refs/heads/main/hosts",
     "酷安广告规则": "https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/OtherRules/CoolapkRules.txt",
     "广告规则": "https://raw.githubusercontent.com/huantian233/HT-AD/main/AD.txt",
     "不是DD啊": "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt",
@@ -26,7 +26,7 @@ BLACKLIST_SOURCES = {
 WHITELIST_SOURCES = {
     "茯苓允许列表": "https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingAllowList.txt",
     "666": "https://raw.githubusercontent.com/qq5460168/666/master/allow.txt",
-    "个人自用白名单": "https://hub.gitmirror.com/https://raw.githubusercontent.com/qq5460168/dangchu/main/white.txt",
+    "个人自用白名单": "https://raw.githubusercontent.com/qq5460168/dangchu/main/white.txt",
     "冷漠白名单": "https://file-git.trli.club/file-hosts/allow/Domains"
 }
 
@@ -185,45 +185,65 @@ def update_impurities_file(filename, sources, file_type, is_whitelist=False):
 def get_beijing_time():
     """获取北京时间"""
     # 首先尝试从多个时间API获取时间
+    # 测试结果显示：苏宁HTTPS API稳定可用，添加更多可从响应头获取时间的大型网站
     time_apis = [
-        "http://worldtimeapi.org/api/timezone/Asia/Shanghai",
-        "http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp",
-        "http://quan.suning.com/getSysTime.do"
+        "https://quan.suning.com/getSysTime.do",  # 优先使用HTTPS版本的苏宁API
+        "https://www.baidu.com",                 # 从响应头获取时间
+        "https://a.jd.com/js/union_ajax.js",     # 从响应头获取时间
+        "https://pages.github.com",              # 从响应头获取时间
+        "https://consumer.huawei.com",           # 从响应头获取时间
+        "https://www.mi.com",                    # 从响应头获取时间
+        "http://quan.suning.com/getSysTime.do"   # 备用：HTTP版本的苏宁API
     ]
     
     for api_url in time_apis:
         try:
-            if "worldtimeapi.org" in api_url:
-                response = requests.get(api_url, timeout=10)
-                if response.status_code == 200:
-                    data = response.json()
-                    # 解析时间字符串
-                    dt = datetime.fromisoformat(data['datetime'].replace('Z', '+00:00'))
-                    # 转换为北京时间（UTC+8）
-                    beijing_time = dt.astimezone(timezone(timedelta(hours=8)))
-                    print(f"使用网络时间API获取时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
-                    return beijing_time
-            elif "taobao.com" in api_url:
-                response = requests.get(api_url, timeout=10)
-                if response.status_code == 200:
-                    data = response.json()
-                    timestamp = int(data['data']['t']) / 1000  # 转换为秒
-                    beijing_time = datetime.fromtimestamp(timestamp, tz=timezone(timedelta(hours=8)))
-                    print(f"使用淘宝时间API获取时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
-                    return beijing_time
-            elif "suning.com" in api_url:
-                response = requests.get(api_url, timeout=10)
-                if response.status_code == 200:
-                    data = response.json()
-                    time_str = data['sysTime1']
-                    # 解析时间字符串（苏宁的时间格式是YYYYMMDDHHMMSS）
-                    if len(time_str) == 14:
-                        beijing_time = datetime.strptime(time_str, '%Y%m%d%H%M%S')
-                    else:
-                        beijing_time = datetime.strptime(time_str, '%Y-%m-%d %H:%M:%S')
-                    beijing_time = beijing_time.replace(tzinfo=timezone(timedelta(hours=8)))
-                    print(f"使用苏宁时间API获取时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
-                    return beijing_time
+            response = requests.get(api_url, timeout=10)
+            if response.status_code == 200:
+                # 处理苏宁API的特殊情况
+                if "suning.com" in api_url:
+                    try:
+                        data = response.json()
+                        time_str = data['sysTime1']
+                        # 解析时间字符串（苏宁的时间格式是YYYYMMDDHHMMSS）
+                        if len(time_str) == 14:
+                            beijing_time = datetime.strptime(time_str, '%Y%m%d%H%M%S')
+                        else:
+                            beijing_time = datetime.strptime(time_str, '%Y-%m-%d %H:%M:%S')
+                        beijing_time = beijing_time.replace(tzinfo=timezone(timedelta(hours=8)))
+                        print(f"使用苏宁时间API获取时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
+                        return beijing_time
+                    except:
+                        # 如果JSON解析失败，尝试从响应头获取时间
+                        pass
+                
+                # 尝试从响应头获取时间（适用于所有网站）
+                if 'Date' in response.headers:
+                    try:
+                        # 解析HTTP日期格式
+                        server_time_str = response.headers['Date']
+                        server_time = datetime.strptime(server_time_str, '%a, %d %b %Y %H:%M:%S %Z')
+                        # 转换为UTC+8时间
+                        beijing_time = server_time.replace(tzinfo=timezone.utc).astimezone(timezone(timedelta(hours=8)))
+                        
+                        # 根据API URL显示不同的信息
+                        if "baidu.com" in api_url:
+                            print(f"使用百度响应头时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
+                        elif "jd.com" in api_url:
+                            print(f"使用京东响应头时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
+                        elif "github.com" in api_url:
+                            print(f"使用GitHub响应头时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
+                        elif "huawei.com" in api_url:
+                            print(f"使用华为响应头时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
+                        elif "mi.com" in api_url:
+                            print(f"使用小米响应头时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
+                        else:
+                            print(f"使用响应头时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
+                        
+                        return beijing_time
+                    except Exception as e:
+                        print(f"解析响应头时间失败: {e}")
+                        continue
         except Exception as e:
             print(f"尝试使用时间API {api_url} 失败: {e}")
             continue
@@ -309,6 +329,7 @@ def main():
     black_domains, black_success = update_impurities_file("Black with impurities.txt", BLACKLIST_SOURCES, "黑名单", is_whitelist=False)
     
     # 更新白名单
+    print("\n=== 白名单源下载状态详情 ===")
     white_domains, white_success = update_impurities_file("White with impurities.txt", WHITELIST_SOURCES, "白名单", is_whitelist=True)
     
     # 更新主文件
