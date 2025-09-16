@@ -1,6 +1,6 @@
 import requests
 import os
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import re
 
 # 黑名单源
@@ -120,7 +120,12 @@ def update_impurities_file(filename, sources, file_type, is_whitelist=False):
     """更新包含杂质的文件"""
     print(f"开始更新 {filename}...")
     
-    all_content = ""
+    # 获取北京时间
+    beijing_time = get_beijing_time()
+    formatted_time = beijing_time.strftime('%Y-%m-%d %H:%M:%S')
+    
+    # 添加文件头注释
+    all_content = f"# 更新时间: {formatted_time}\n\n"
     all_domains = set()
     
     for name, url in sources.items():
@@ -163,6 +168,59 @@ def update_impurities_file(filename, sources, file_type, is_whitelist=False):
     print(f"{filename} 更新完成，共 {len(all_domains)} 个唯一域名")
     return all_domains
 
+def get_beijing_time():
+    """获取北京时间"""
+    # 首先尝试从多个时间API获取时间
+    time_apis = [
+        "http://worldtimeapi.org/api/timezone/Asia/Shanghai",
+        "http://api.m.taobao.com/rest/api3.do?api=mtop.common.getTimestamp",
+        "http://quan.suning.com/getSysTime.do"
+    ]
+    
+    for api_url in time_apis:
+        try:
+            if "worldtimeapi.org" in api_url:
+                response = requests.get(api_url, timeout=10)
+                if response.status_code == 200:
+                    data = response.json()
+                    # 解析时间字符串
+                    dt = datetime.fromisoformat(data['datetime'].replace('Z', '+00:00'))
+                    # 转换为北京时间（UTC+8）
+                    beijing_time = dt.astimezone(timezone(timedelta(hours=8)))
+                    print(f"使用网络时间API获取时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
+                    return beijing_time
+            elif "taobao.com" in api_url:
+                response = requests.get(api_url, timeout=10)
+                if response.status_code == 200:
+                    data = response.json()
+                    timestamp = int(data['data']['t']) / 1000  # 转换为秒
+                    beijing_time = datetime.fromtimestamp(timestamp, tz=timezone(timedelta(hours=8)))
+                    print(f"使用淘宝时间API获取时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
+                    return beijing_time
+            elif "suning.com" in api_url:
+                response = requests.get(api_url, timeout=10)
+                if response.status_code == 200:
+                    data = response.json()
+                    time_str = data['sysTime1']
+                    # 解析时间字符串（苏宁的时间格式是YYYYMMDDHHMMSS）
+                    if len(time_str) == 14:
+                        beijing_time = datetime.strptime(time_str, '%Y%m%d%H%M%S')
+                    else:
+                        beijing_time = datetime.strptime(time_str, '%Y-%m-%d %H:%M:%S')
+                    beijing_time = beijing_time.replace(tzinfo=timezone(timedelta(hours=8)))
+                    print(f"使用苏宁时间API获取时间: {beijing_time.strftime('%Y-%m-%d %H:%M:%S')}")
+                    return beijing_time
+        except Exception as e:
+            print(f"尝试使用时间API {api_url} 失败: {e}")
+            continue
+    
+    # 如果所有网络时间API都失败，使用本地时间
+    print("所有网络时间API均不可用，使用本地时间")
+    local_tz = timezone(timedelta(hours=8))
+    local_time = datetime.now(local_tz)
+    print(f"使用本地时间: {local_time.strftime('%Y-%m-%d %H:%M:%S')}")
+    return local_time
+
 def update_main_file(filename, domains, is_whitelist=False):
     """更新主文件（去重后的文件）"""
     print(f"正在更新主文件 {filename}...")
@@ -170,8 +228,12 @@ def update_main_file(filename, domains, is_whitelist=False):
     # 按字母顺序排序域名
     sorted_domains = sorted(domains)
     
+    # 获取北京时间
+    beijing_time = get_beijing_time()
+    formatted_time = beijing_time.strftime('%Y-%m-%d %H:%M:%S')
+    
     # 添加文件头注释
-    content = "# 更新时间: " + datetime.now().strftime('%Y-%m-%d %H:%M:%S') + "\n"
+    content = "# 更新时间: " + formatted_time + "\n"
     rule_type = "白名单" if is_whitelist else "黑名单"
     content += f"# {rule_type}规则数：{len(domains)}\n"
     content += "# 作者名称: Menghuibanxian\n"
