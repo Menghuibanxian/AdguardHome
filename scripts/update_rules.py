@@ -239,22 +239,45 @@ def update_main_file(filename, domains, is_whitelist=False):
     """更新主文件（去重后的文件）"""
     print(f"正在更新主文件 {filename}...")
     
-    # 按字母顺序排序域名
-    sorted_domains = sorted(domains)
+    # 按字母顺序排序域名并再次去重（确保没有重复规则）
+    # 先转换为集合去重，再排序
+    unique_domains = set()
+    for domain in domains:
+        # 移除行尾可能的注释（如果有）
+        clean_domain = domain.split('#')[0].strip() if '#' in domain else domain.strip()
+        if clean_domain:
+            unique_domains.add(clean_domain)
+    
+    sorted_domains = sorted(unique_domains)
     
     # 获取北京时间
     beijing_time = get_beijing_time()
     formatted_time = beijing_time.strftime('%Y-%m-%d %H:%M:%S')
     
-    # 添加文件头注释
-    content = "# 更新时间: " + formatted_time + "\n"
+    # 添加文件头注释（只保留必要信息）
+    content = f"# 更新时间: {formatted_time}\n"
     rule_type = "白名单" if is_whitelist else "黑名单"
-    content += f"# {rule_type}规则数：{len(domains)}\n"
+    content += f"# {rule_type}规则数：{len(unique_domains)}\n"
     content += "# 作者名称: Menghuibanxian\n"
     content += "# 作者主页: https://github.com/Menghuibanxian/AdguardHome\n\n"
     
     # 根据是黑名单还是白名单使用不同的格式
+    processed_domains = set()  # 额外的去重机制
     for domain in sorted_domains:
+        # 移除行尾可能的注释（如果有）
+        if '#' in domain:
+            domain = domain.split('#')[0].strip()
+            # 如果移除注释后为空行，则跳过
+            if not domain:
+                continue
+        
+        # 检查处理后的域名是否已存在
+        processed_domain = domain.strip()
+        if processed_domain in processed_domains:
+            print(f"跳过重复规则: {processed_domain}")
+            continue
+        processed_domains.add(processed_domain)
+        
         # 如果是白名单且规则以 @@ 开头，保持原始格式
         if is_whitelist and domain.startswith('@@'):
             content += f"{domain}\n"
@@ -271,7 +294,7 @@ def update_main_file(filename, domains, is_whitelist=False):
     with open(filename, "w", encoding="utf-8") as f:
         f.write(content)
     
-    print(f"{filename} 更新完成")
+    print(f"{filename} 更新完成，共 {len(processed_domains)} 个唯一规则")
 
 def main():
     """主函数"""
