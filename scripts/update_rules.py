@@ -17,7 +17,8 @@ BLACKLIST_SOURCES = {
     "那个谁520": "https://raw.githubusercontent.com/qq5460168/666/master/rules.txt",
     "1hosts": "https://o0.pages.dev/Lite/adblock.txt",
     "茯苓的广告规则": "https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingBlockList.txt",
-    "极客爱好者": "https://www.kbsml.com/wp-content/uploads/adblock/adguard/adg-kall-dns.txt"
+    "极客爱好者": "https://www.kbsml.com/wp-content/uploads/adblock/adguard/adg-kall-dns.txt",
+    "立场不定的": "https://raw.githubusercontent.com/Menghuibanxian/AdguardHome/refs/heads/main/Uncertain%20position.txt"
 }
 
 # 白名单源
