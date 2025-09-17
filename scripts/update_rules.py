@@ -8,8 +8,8 @@ import sys
 BLACKLIST_SOURCES = {
     "AdGuard DNS filter": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
     "秋风的规则": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt",
+    "乘风的规则": "https://raw.githubusercontent.com/xinggsf/Adblock-Plus-Rule/refs/heads/master/rule.txt",
     "GitHub加速": "https://raw.githubusercontent.com/521xueweihan/GitHub520/refs/heads/main/hosts",
-    "酷安广告规则": "https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/OtherRules/CoolapkRules.txt",
     "广告规则": "https://raw.githubusercontent.com/huantian233/HT-AD/main/AD.txt",
     "不是DD啊": "https://raw.githubusercontent.com/afwfv/DD-AD/main/rule/DD-AD.txt",
     "大萌主": "https://raw.githubusercontent.com/damengzhu/banad/main/jiekouAD.txt",
@@ -117,6 +117,41 @@ def extract_whitelist_domains(content):
             
     return domains
 
+def extract_domains_for_processing(content, is_whitelist=False):
+    """提取用于处理的规则（去除注释、空行）"""
+    rules = set()
+    
+    # 按行处理内容
+    for line in content.splitlines():
+        line = line.strip()
+        
+        # 跳过注释和空行 (只跳过每行第一个字符是 # 或 ! 的行)
+        if not line or (line.startswith('#') or line.startswith('!')):
+            continue
+            
+        # 对于白名单，保留 @@ 开头的规则
+        if is_whitelist and line.startswith('@@'):
+            # 修复白名单格式问题，确保是 @@|| 而不是 @@|
+            if line.startswith('@@|') and not line.startswith('@@||'):
+                line = line.replace('@@|', '@@||', 1)
+            rules.add(line)
+            continue
+            
+        # 对于黑名单，保留 || 开头或 * 开头或 IP 格式的规则
+        if not is_whitelist and (line.startswith('||') or line.startswith('*') or re.match(r'^\d+\.\d+\.\d+\.\d+\s+.*$', line)):
+            rules.add(line)
+            continue
+            
+        # 处理纯域名格式（添加适当的前缀）
+        domain_pattern = re.compile(r'^[0-9a-zA-Z]([0-9a-zA-Z\-]{0,61}[0-9a-zA-Z])?(\.[0-9a-zA-Z]([0-9a-zA-Z\-]{0,61}[0-9a-zA-Z])?)*$')
+        if domain_pattern.match(line):
+            if is_whitelist:
+                rules.add(f"@@||{line}^")
+            else:
+                rules.add(f"||{line}^")
+            
+    return rules
+
 def update_impurities_file(filename, sources, file_type, is_whitelist=False):
     """更新包含杂质的文件"""
     print(f"开始更新 {filename}...")
@@ -165,8 +200,9 @@ def update_impurities_file(filename, sources, file_type, is_whitelist=False):
             all_content += f"# 来源: {name} (下载失败)"
             failed_sources += 1
     
-    # 保存包含杂质的文件
-    impurities_path = os.path.join("Ipurities", filename)
+    # 保存包含杂质的文件到根目录
+    impurities_path = os.path.join("..", "Ipurities", filename)
+    os.makedirs(os.path.dirname(impurities_path), exist_ok=True)
     with open(impurities_path, "w", encoding="utf-8") as f:
         f.write(all_content)
     
@@ -259,16 +295,33 @@ def update_main_file(filename, domains, is_whitelist=False):
     """更新主文件（去重后的文件）"""
     print(f"正在更新主文件 {filename}...")
     
-    # 按字母顺序排序域名并再次去重（确保没有重复规则）
-    # 先转换为集合去重，再排序
-    unique_domains = set()
+    # 过滤规则
+    filtered_domains = set()
     for domain in domains:
         # 移除行尾可能的注释（如果有）
         clean_domain = domain.split('#')[0].strip() if '#' in domain else domain.strip()
-        if clean_domain:
-            unique_domains.add(clean_domain)
+        if not clean_domain:
+            continue
+            
+        # 对于黑名单，过滤掉不带.的规则和以.结尾的规则
+        if not is_whitelist:
+            # 跳过不包含.的规则
+            if '.' not in clean_domain:
+                continue
+            # 跳过以.结尾的规则
+            if clean_domain.endswith('.'):
+                continue
+                
+        # 对于白名单，修复格式问题
+        if is_whitelist:
+            # 修复白名单格式问题，确保是 @@|| 而不是 @@|
+            if clean_domain.startswith('@@|') and not clean_domain.startswith('@@||'):
+                clean_domain = clean_domain.replace('@@|', '@@||', 1)
+                
+        filtered_domains.add(clean_domain)
     
-    sorted_domains = sorted(unique_domains)
+    # 按字母顺序排序域名并再次去重（确保没有重复规则）
+    sorted_domains = sorted(filtered_domains)
     
     # 获取北京时间
     beijing_time = get_beijing_time()
@@ -277,7 +330,7 @@ def update_main_file(filename, domains, is_whitelist=False):
     # 添加文件头注释（只保留必要信息）
     content = f"# 更新时间: {formatted_time}\n"
     rule_type = "白名单" if is_whitelist else "黑名单"
-    content += f"# {rule_type}规则数：{len(unique_domains)}\n"
+    content += f"# {rule_type}规则数：{len(filtered_domains)}\n"
     content += "# 作者名称: Menghuibanxian\n"
     content += "# 作者主页: https://github.com/Menghuibanxian/AdguardHome\n\n"
     
@@ -311,35 +364,119 @@ def update_main_file(filename, domains, is_whitelist=False):
         else:
             content += f"||{domain}^\n"
     
-    with open(filename, "w", encoding="utf-8") as f:
+    # 保存主文件到根目录
+    file_path = os.path.join("..", filename)
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    with open(file_path, "w", encoding="utf-8") as f:
         f.write(content)
     
     print(f"{filename} 更新完成，共 {len(processed_domains)} 个唯一规则")
+
+def remove_whitelist_from_blacklist(black_rules, white_rules):
+    """从黑名单中移除白名单中的规则"""
+    # 提取白名单中的域名用于比较
+    white_domains = set()
+    for rule in white_rules:
+        # 提取白名单规则中的域名部分
+        if rule.startswith('@@||') and rule.endswith('^'):
+            domain = rule[4:-1]  # 去掉 @@|| 和 ^
+            white_domains.add(domain)
+        elif rule.startswith('@@|') and rule.endswith('^'):
+            # 处理 @@| 格式的白名单规则
+            domain = rule[3:-1]  # 去掉 @@| 和 ^
+            white_domains.add(domain)
+        elif not rule.startswith('@@') and not rule.startswith('||'):
+            # 处理纯域名格式
+            domain = rule.split('#')[0].strip()  # 去掉可能的注释
+            white_domains.add(domain)
+    
+    # 从黑名单中移除白名单中的规则
+    filtered_black_rules = set()
+    for rule in black_rules:
+        should_remove = False
+        # 检查黑名单规则中的域名是否在白名单中
+        if rule.startswith('||') and rule.endswith('^'):
+            domain = rule[2:-1]  # 去掉 || 和 ^
+            if domain in white_domains:
+                should_remove = True
+        elif rule.startswith('*') and rule.endswith('*'):
+            # 处理通配符规则
+            for white_domain in white_domains:
+                if white_domain in rule:
+                    should_remove = True
+                    break
+        elif re.match(r'^\d+\.\d+\.\d+\.\d+\s+.*$', rule):
+            # 处理hosts格式规则
+            parts = rule.split()
+            if len(parts) >= 2:
+                domain = parts[1]
+                if domain in white_domains:
+                    should_remove = True
+        elif not rule.startswith('||') and not rule.startswith('*'):
+            # 处理纯域名格式
+            domain = rule.split('#')[0].strip()  # 去掉可能的注释
+            if domain in white_domains:
+                should_remove = True
+        
+        if not should_remove:
+            filtered_black_rules.add(rule)
+    
+    return filtered_black_rules
 
 def main():
     """主函数"""
     print("开始更新广告拦截规则...")
     print("=" * 50)
     
-    # 确保Ipurities目录存在
-    if not os.path.exists("Ipurities"):
-        os.makedirs("Ipurities")
+    # 确保Ipurities目录存在（在根目录）
+    impurities_dir = os.path.join("..", "Ipurities")
+    os.makedirs(impurities_dir, exist_ok=True)
     
-    # 更新黑名单
+    # 下载并处理黑名单规则
+    print("开始处理黑名单规则...")
+    all_black_rules = set()
+    for name, url in BLACKLIST_SOURCES.items():
+        print(f"正在下载黑名单 {name} ({url})...")
+        content = download_file(url)
+        if content:
+            # 提取规则（去除注释）
+            rules = extract_domains_for_processing(content, is_whitelist=False)
+            all_black_rules.update(rules)
+            print(f"  - 提取到 {len(rules)} 条规则")
+        else:
+            print(f"  - 下载失败")
+    
+    # 下载并处理白名单规则
+    print("\n开始处理白名单规则...")
+    all_white_rules = set()
+    for name, url in WHITELIST_SOURCES.items():
+        print(f"正在下载白名单 {name} ({url})...")
+        content = download_file(url)
+        if content:
+            # 提取规则（去除注释）
+            rules = extract_domains_for_processing(content, is_whitelist=True)
+            all_white_rules.update(rules)
+            print(f"  - 提取到 {len(rules)} 条规则")
+        else:
+            print(f"  - 下载失败")
+    
+    # 从黑名单中移除白名单中的规则
+    print("\n正在从黑名单中移除白名单中的规则...")
+    filtered_black_rules = remove_whitelist_from_blacklist(all_black_rules, all_white_rules)
+    print(f"黑名单规则从 {len(all_black_rules)} 条减少到 {len(filtered_black_rules)} 条")
+    
+    # 更新包含杂质的文件
     black_domains, black_success = update_impurities_file("Black with impurities.txt", BLACKLIST_SOURCES, "黑名单", is_whitelist=False)
-    
-    # 更新白名单
-    print("\n=== 白名单源下载状态详情 ===")
     white_domains, white_success = update_impurities_file("White with impurities.txt", WHITELIST_SOURCES, "白名单", is_whitelist=True)
     
     # 更新主文件
-    update_main_file("Black.txt", black_domains, is_whitelist=False)
-    update_main_file("White.txt", white_domains, is_whitelist=True)
+    update_main_file("Black.txt", filtered_black_rules, is_whitelist=False)
+    update_main_file("White.txt", all_white_rules, is_whitelist=True)
     
     print("=" * 50)
     print("所有规则更新完成!")
-    print(f"黑名单域名数: {len(black_domains)}")
-    print(f"白名单域名数: {len(white_domains)}")
+    print(f"黑名单域名数: {len(filtered_black_rules)}")
+    print(f"白名单域名数: {len(all_white_rules)}")
     
     # 如果任何源下载失败，返回非零退出码
     if not black_success or not white_success:
