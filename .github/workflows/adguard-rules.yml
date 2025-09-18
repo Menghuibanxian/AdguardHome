@@ -45,16 +45,23 @@ jobs:
           # 添加所有规则文件
           git add Black.txt White.txt scripts/colorful.txt
       
-      - name: 提交更改
+      - name: 提交更改并推送
         run: |
           # 使用--allow-empty确保即使没有变更也创建提交
           git commit --allow-empty -m "Update AdGuard rules $(date +'%Y-%m-%d %H:%M:%S')"
-          # 使用GitHub令牌进行认证和推送
-          git push https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }} 2>&1
-          # 捕获错误
+          
+          # 设置分支变量，提取github.ref中的分支名
+          BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          echo "推送至分支: $BRANCH_NAME"
+          
+          # 使用统一的x-access-token方式进行推送，更安全且统一
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:$BRANCH_NAME
+          
+          # 捕获错误并提供清晰的日志
           if [ $? -ne 0 ]; then
-            echo "推送失败，尝试使用其他方式..."
-            git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.ref }}
+            echo "推送失败，退出代码: $?"
+            echo "请检查GitHub Actions权限设置和分支保护规则"
+            exit 1
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub Actions自动提供的令牌
