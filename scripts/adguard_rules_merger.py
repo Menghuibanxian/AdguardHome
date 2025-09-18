@@ -63,7 +63,7 @@ BLACKLIST_SOURCES = {
     "逆向涉猎            ": "https://raw.githubusercontent.com/790953214/qy-Ads-Rule/main/black.txt",
     "下个ID见           ": "https://raw.githubusercontent.com/2Gardon/SM-Ad-FuckU-hosts/master/SMAdHosts",
     "那个谁520          ": "https://raw.githubusercontent.com/qq5460168/666/master/rules.txt",
-    "1hosts            ": "https://o0.pages.dev/Lite/adblock.txt",
+    "1hosts            ": "https://raw.githubusercontent.com/badmojr/1Hosts/master/Lite/adblock.txt",
     "茯苓的广告规则       ": "https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingBlockList.txt",
     "立场不定的          ": "https://raw.githubusercontent.com/Menghuibanxian/AdguardHome/refs/heads/main/Uncertain%20position.txt"
 }
