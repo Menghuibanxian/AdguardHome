@@ -11,9 +11,13 @@ def get_beijing_time():
     """获取北京时间"""
     # 使用多个API源获取北京时间，增加可靠性
     urls = [
-        "https://time.geekbang.org/srv/time",
-        "https://www.baidu.com",
-        "https://www.sina.com.cn"
+        "https://quan.suning.com/getSysTime.do",  # 优先使用HTTPS版本的苏宁API
+        "https://www.baidu.com",                 # 从响应头获取时间
+        "https://a.jd.com/js/union_ajax.js",     # 从响应头获取时间
+        "https://pages.github.com",              # 从响应头获取时间
+        "https://consumer.huawei.com",           # 从响应头获取时间
+        "https://www.mi.com",                    # 从响应头获取时间
+        "http://quan.suning.com/getSysTime.do"    # 备用：HTTP版本的苏宁API
     ]
     
     for url in urls:
@@ -21,13 +25,6 @@ def get_beijing_time():
             # 设置较短的超时时间，避免长时间等待
             headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
             response = requests.get(url, timeout=3, headers=headers)
-            
-            # 如果是极客时间API，解析JSON获取时间
-            if url == "https://time.geekbang.org/srv/time":
-                data = json.loads(response.text)
-                timestamp = data.get('data', {}).get('current_ts', 0) / 1000
-                beijing_time = datetime.datetime.fromtimestamp(timestamp, datetime.timezone(datetime.timedelta(hours=8)))
-                return beijing_time.strftime("%Y-%m-%d %H:%M:%S")
             
             # 从响应头中获取时间
             if 'Date' in response.headers:
@@ -176,15 +173,6 @@ def main():
     # 下载所有黑名单源
     blacklist_rules = download_blacklist_sources()
     
-    # 如果没有下载到黑名单规则，创建一个示例文件
-    if not blacklist_rules:
-        print(f"警告：没有下载到黑名单规则，创建示例文件")
-        blacklist_rules = [
-            "||example.com^",
-            "@@||whitelisted.com^",
-            "||another-example.org^"
-        ]
-    
     # 从黑名单中提取白名单规则
     filtered_blacklist, extracted_whitelist = extract_whitelist_from_blacklist(blacklist_rules)
     print(f"从黑名单中提取的白名单规则数量: {len(extracted_whitelist)}")
@@ -202,7 +190,7 @@ def main():
         f.write(f"# 更新时间: {current_time}\n")
         f.write(f"# 黑名单规则数：{len(deduplicated_blacklist)}\n")
         f.write(f"# 作者名称: Menghuibanxian\n")
-        f.write(f"# 作者主页:https://github.com/Menghuibanxian/AdguardHome\n")
+        f.write(f"# 作者主页:https://github.com/Menghuibanxian/AdguardHome_all\n")
         f.write("\n")
         
         # 添加规则内容并过滤掉以[开头且以]结尾的行
@@ -244,7 +232,7 @@ def main():
         f.write(f"# 更新时间: {current_time}\n")
         f.write(f"# 白名单规则数：{len(deduplicated_whitelist)}\n")
         f.write(f"# 作者名称: Menghuibanxian\n")
-        f.write(f"# 作者主页:https://github.com/Menghuibanxian/AdguardHome\n")
+        f.write(f"# 作者主页:https://github.com/Menghuibanxian/AdguardHome_all\n")
         f.write("\n")
         
         # 添加规则内容并过滤掉以[开头且以]结尾的行
