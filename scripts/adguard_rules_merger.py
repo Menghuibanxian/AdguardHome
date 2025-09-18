@@ -2,6 +2,48 @@ import os
 import re
 import requests
 import time
+import json
+import datetime
+import os
+
+# 获取北京时间
+def get_beijing_time():
+    """获取北京时间"""
+    # 使用多个API源获取北京时间，增加可靠性
+    urls = [
+        "https://time.geekbang.org/srv/time",
+        "https://www.baidu.com",
+        "https://www.sina.com.cn"
+    ]
+    
+    for url in urls:
+        try:
+            # 设置较短的超时时间，避免长时间等待
+            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
+            response = requests.get(url, timeout=3, headers=headers)
+            
+            # 如果是极客时间API，解析JSON获取时间
+            if url == "https://time.geekbang.org/srv/time":
+                data = json.loads(response.text)
+                timestamp = data.get('data', {}).get('current_ts', 0) / 1000
+                beijing_time = datetime.datetime.fromtimestamp(timestamp, datetime.timezone(datetime.timedelta(hours=8)))
+                return beijing_time.strftime("%Y-%m-%d %H:%M:%S")
+            
+            # 从响应头中获取时间
+            if 'Date' in response.headers:
+                date_str = response.headers['Date']
+                # 解析HTTP日期格式
+                gmt_time = datetime.datetime.strptime(date_str, '%a, %d %b %Y %H:%M:%S GMT')
+                # 转换为北京时间（GMT+8）
+                beijing_time = gmt_time + datetime.timedelta(hours=8)
+                return beijing_time.strftime("%Y-%m-%d %H:%M:%S")
+        except Exception as e:
+            # 出错时继续尝试下一个源
+            continue
+    
+    # 如果所有API都失败，回退到本地时间
+    print("获取北京时间失败，使用本地时间")
+    return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
 # 文件路径配置
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -128,6 +170,9 @@ def download_whitelist_sources():
 def main():
     print("开始处理AdGuardHome规则...")
     
+    # 获取当前北京时间，只获取一次，所有文件使用相同的时间戳
+    current_time = get_beijing_time()
+    
     # 下载所有黑名单源
     blacklist_rules = download_blacklist_sources()
     
@@ -149,8 +194,7 @@ def main():
     deduplicated_blacklist = deduplicate_rules(filtered_blacklist)
     print(f"去重后的黑名单规则数量: {len(deduplicated_blacklist)}")
     
-    # 获取当前北京时间
-    current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    # 使用之前获取的时间戳
     
     # 保存处理后的黑名单
     with open(BLACKLIST_FILE, "w", encoding="utf-8") as f:
@@ -167,8 +211,7 @@ def main():
                 f.write(f"{rule}\n")
     print(f"已保存处理后的黑名单到 {BLACKLIST_FILE}")
     
-    # 获取当前北京时间
-    current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    # 使用之前获取的时间戳
     
     # 保存提取的白名单到colorful.txt
     with open(COLORFUL_FILE, "w", encoding="utf-8") as f:
@@ -194,8 +237,7 @@ def main():
     print(f"合并去重后的白名单规则数量: {len(deduplicated_whitelist)}")
     
     # 保存最终的白名单
-    # 获取当前北京时间
-    current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    # 使用之前获取的时间戳
     
     with open(WHITELIST_FILE, "w", encoding="utf-8") as f:
         # 按照用户要求的格式添加文件头部
