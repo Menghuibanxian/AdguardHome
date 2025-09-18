@@ -17,7 +17,6 @@ BLACKLIST_SOURCES = {
     "那个谁520": "https://raw.githubusercontent.com/qq5460168/666/master/rules.txt",
     "1hosts": "https://o0.pages.dev/Lite/adblock.txt",
     "茯苓的广告规则": "https://raw.githubusercontent.com/Kuroba-Sayuki/FuLing-AdRules/Master/FuLingRules/FuLingBlockList.txt",
-    "极客爱好者": "https://www.kbsml.com/wp-content/uploads/adblock/adguard/adg-kall-dns.txt",
     "立场不定的": "https://raw.githubusercontent.com/Menghuibanxian/AdguardHome/refs/heads/main/Uncertain%20position.txt"
 }
 
@@ -27,6 +26,7 @@ WHITELIST_SOURCES = {
     "666": "https://raw.githubusercontent.com/qq5460168/666/master/allow.txt",
     "个人自用白名单": "https://raw.githubusercontent.com/qq5460168/dangchu/main/white.txt",
     "冷漠白名单": "https://file-git.trli.club/file-hosts/allow/Domains"
+    "BlueSkyXN":"https://raw.githubusercontent.com/BlueSkyXN/AdGuardHomeRules/master/ok.txt",
 }
 
 def download_file(url, timeout=30):
