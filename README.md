@@ -9,6 +9,9 @@ https://raw.githubusercontent.com/Menghuibanxian/AdguardHome/refs/heads/main/Whi
 
 
 
+一个更激进的分支:
+https://github.com/Menghuibanxian/AdguardHome_all
+
 ## 项目结构
 
 ```
