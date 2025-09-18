@@ -1,4 +1,4 @@
-name: AdGuard Rules Merger
+name: Auto Update AdGuard Rules
 
 on:
   # 定时运行，每10分钟执行一次
@@ -6,29 +6,48 @@ on:
     - cron: '*/10 * * * *'
   # 允许手动触发工作流
   workflow_dispatch:
+  # 代码推送时自动运行
+  push:
+    branches:
+      - main
+
+# 添加权限配置
+permissions:
+  contents: write
 
 jobs:
   merge-adguard-rules:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # 需要写权限来提交更改
-    
+    # 添加超时设置
+    timeout-minutes: 10
     steps:
       - name: 检出代码库
         uses: actions/checkout@v3
         with:
           fetch-depth: 0  # 确保获取所有历史记录
-          persist-credentials: false  # 禁用默认凭据，使用GitHub令牌
+          persist-credentials: true  # 使用持久化凭据
       
       - name: 设置Python环境
         uses: actions/setup-python@v4
         with:
           python-version: '3.10'  # 使用Python 3.10版本
       
-      - name: 安装依赖
+      - name: 安装依赖（增加重试机制）
         run: |
-          python -m pip install --upgrade pip
-          pip install requests  # 我们的脚本需要requests库
+          for i in {1..3}; do
+            echo "Attempt $i to install dependencies"
+            if python -m pip install --upgrade pip && pip install requests; then
+              echo "Dependencies installed successfully"
+              break
+            else
+              echo "Attempt $i failed"
+              if [ $i -eq 3 ]; then
+                echo "All attempts failed"
+                exit 1
+              fi
+              sleep 5
+            fi
+          done
       
       - name: 运行AdGuard规则合并脚本
         run: |
@@ -36,9 +55,9 @@ jobs:
       
       - name: 配置Git环境
         run: |
-          # 配置Git用户信息
-          git config --global user.name 'GitHub Actions'
-          git config --global user.email 'github-actions@github.com'
+          # 配置Git用户信息为GitHub官方推荐格式
+          git config --local user.name 'github-actions[bot]'
+          git config --local user.email 'github-actions[bot]@users.noreply.github.com'
       
       - name: 添加规则文件
         run: |
@@ -47,21 +66,63 @@ jobs:
       
       - name: 提交更改并推送
         run: |
-          # 使用--allow-empty确保即使没有变更也创建提交
-          git commit --allow-empty -m "Update AdGuard rules $(date +'%Y-%m-%d %H:%M:%S')"
-          
           # 设置分支变量，提取github.ref中的分支名
           BRANCH_NAME=${GITHUB_REF#refs/heads/}
           echo "推送至分支: $BRANCH_NAME"
           
-          # 使用统一的x-access-token方式进行推送，更安全且统一
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:$BRANCH_NAME
-          
-          # 捕获错误并提供清晰的日志
-          if [ $? -ne 0 ]; then
-            echo "推送失败，退出代码: $?"
-            echo "请检查GitHub Actions权限设置和分支保护规则"
-            exit 1
+          # 检查是否有变更
+          if ! git diff --staged --quiet; then
+            # 有变更时创建普通提交
+            git commit -m "Auto update rules at $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"
+            
+            # 添加推送重试机制，处理non-fast-forward错误
+            for i in {1..3}; do
+              echo "Attempt $i to push changes"
+              if git push; then
+                echo "Changes committed and pushed successfully"
+                break
+              else
+                echo "Push attempt $i failed, trying to pull first"
+                if git pull --rebase; then
+                  echo "Pull successful, retrying push"
+                  if git push; then
+                    echo "Changes committed and pushed successfully after pull"
+                    break
+                  fi
+                fi
+                if [ $i -eq 3 ]; then
+                  echo "All push attempts failed"
+                  exit 1
+                fi
+                sleep 5
+              fi
+            done
+          else
+            # 无变更时创建特殊标记的空提交，便于追踪
+            git commit --allow-empty -m "Auto update rules at $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S') (no changes)"
+            
+            # 添加推送重试机制，处理non-fast-forward错误
+            for i in {1..3}; do
+              echo "Attempt $i to push empty commit"
+              if git push; then
+                echo "Empty commit created and pushed successfully"
+                break
+              else
+                echo "Push attempt $i failed, trying to pull first"
+                if git pull --rebase; then
+                  echo "Pull successful, retrying push"
+                  if git push; then
+                    echo "Empty commit pushed successfully after pull"
+                    break
+                  fi
+                fi
+                if [ $i -eq 3 ]; then
+                  echo "All push attempts failed"
+                  exit 1
+                fi
+                sleep 5
+              fi
+            done
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # GitHub Actions自动提供的令牌
