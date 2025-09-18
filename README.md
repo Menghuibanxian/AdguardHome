@@ -15,8 +15,7 @@
 │   └── workflows/
 │       └── auto-commit.yml        # GitHub Actions工作流配置
 ├── scripts/
-│   ├── update_rules.py            # 规则更新脚本
-│   └── auto_commit.py             # Git自动提交脚本
+│   └── adguard_rules_merger.py    # 规则更新脚本
 ├── Black.txt                      # 去重后的黑名单(最终黑名单)
 └── White.txt                      # 去重后的白名单(最终白名单)
 ```
