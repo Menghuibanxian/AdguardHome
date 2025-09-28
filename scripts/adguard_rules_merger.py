@@ -190,7 +190,7 @@ def main():
         f.write(f"# 更新时间: {current_time}\n")
         f.write(f"# 黑名单规则数：{len(deduplicated_blacklist)}\n")
         f.write(f"# 作者名称: Menghuibanxian\n")
-        f.write(f"# 作者主页:https://github.com/Menghuibanxian/AdguardHome_all\n")
+        f.write(f"# 作者主页:https://github.com/Menghuibanxian/AdguardHome\n")
         f.write("\n")
         
         # 添加规则内容并过滤掉以[开头且以]结尾的行
