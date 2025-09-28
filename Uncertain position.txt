@@ -6,7 +6,182 @@
 ||黑名单仅用于测试.com^
 
 
+
+
+
+
+
+#------------------------------#------------------------------#------------------------------
+
+
+# 通用开屏广告过滤规则（国内主流广告平台·精准子域版）
+# 一、字节跳动系（穿山甲/巨量引擎）
+||zijieapi.com^$app=*  # 字节跳动广告接口域名（巨量引擎/穿山甲，如ads5-normal-lf.zijieapi.com）
+||ad.fqnovel.com^$app=* # 番茄小说（字节旗下）广告专用子域（穿山甲，排除fqnovel.com主域）
+||ctobsnssdk.com^$app=* # 字节跳动广告相关子域（可能为snssdk.com误写，如frontier-toutiao.snssdk.com）
+||snsssdk.com^$app=*    # 字节跳动广告相关子域（可能为snssdk.com误写，如toutiao.snssdk.com）
+||volceapplog.com^$app=* # 字节跳动广告统计子域（火山引擎，穿山甲日志上报）
+||pangolin-sdk-toutiao-b.com^$app=* # 穿山甲广告SDK备用子域（穿山甲核心广告加载）
+||pglstatp-toutiao.com^$app=* # 穿山甲广告数据统计子域（用户行为、播放完成度统计）
+||pangolin-sdk-toutiao.com^$app=* # 穿山甲广告SDK主域（穿山甲广告请求核心）
+||i18n-pglstatp.com^$app=* # 穿山甲国际版广告统计子域（出海APP广告数据）
+||ad.bytedance.com^$app=* # 字节跳动广告主子域（巨量引擎广告投放、开屏广告加载）
+
+# 二、百度系（百度广告）
+||bdurl.net^$app=*  # 百度广告追踪/跳转专用子域（百度Ads，如dig.bdurl.net）
+||ad.baidu.com^$app=* # 百度广告主子域（百度搜索广告、开屏广告投放）
+||cpc.baidu.com^$app=* # 百度竞价排名广告子域（百度Ads，企业广告投放接口）
+||baidustatic.com/ad^$app=* # 百度广告静态资源子域（广告图片、视频加载）
+
+# 三、腾讯系（腾讯广告）
+||ad.qq.com^$app=*  # 腾讯广告主子域（QQ、微信生态开屏广告、信息流广告）
+||qchannel03.cn^$app=* # 腾讯广告渠道专用子域（广告投放渠道数据统计）
+||ad.weixin.qq.com^$app=* # 微信生态广告子域（微信公众号、小程序开屏广告）
+||tenpay.com/ad^$app=* # 腾讯支付关联广告子域（支付后推荐广告）
+
+# 四、阿里系（阿里妈妈）
+||ad.alimama.com^$app=* # 阿里妈妈广告主子域（淘宝、支付宝生态广告投放）
+||ad.taobao.com^$app=*  # 淘宝广告专用子域（商品推广、开屏广告加载）
+||ad.alipay.com^$app=*  # 支付宝广告子域（支付页、账单页开屏广告）
+||ad.tmall.com^$app=*   # 天猫广告子域（品牌推广、开屏广告）
+||ad.uc.cn^$app=*       # 阿里UC浏览器广告子域（UC生态开屏广告）
+
+# 五、快手系（快手广告）
+||ad.kuaishou.com^$app=* # 快手广告主子域（快手APP开屏广告、信息流广告）
+||kwaizt.com^$app=*    # 快手广告子域（广告素材加载、数据统计）
+||kuaishouzt.com^$app=* # 快手广告子域（广告投放渠道、追踪）
+||ad-api.kuaishou.com^$app=* # 快手广告API子域（广告请求、奖励验证）
+||ksadcdn.com^$app=*    # 快手广告CDN子域（广告图片、视频资源加载）
+
+# 六、360系（360广告）
+||ad.360.cn^$app=*    # 360广告主子域（360浏览器、手机卫士开屏广告）
+||cpc.360.cn^$app=*   # 360竞价广告子域（企业广告投放、开屏广告）
+||ad.360safe.com^$app=* # 360安全卫士广告子域（安全软件内开屏广告）
+||so.com/ad^$app=*     # 360搜索广告子域（搜索结果页广告、开屏广告）
+
+# 七、网易系（网易广告）
+||ad.163.com^$app=*   # 网易广告主子域（网易新闻、云音乐开屏广告）
+||e.163.com^$app=*    # 网易广告服务子域（广告请求、素材加载）
+||cpc.163.com^$app=*  # 网易竞价广告子域（新闻页、邮箱广告）
+||ad.126.com^$app=*   # 网易126邮箱广告子域（邮箱登录页开屏广告）
+||ad.netease.com^$app=* # 网易广告统一子域（全生态开屏广告投放）
+
+# 八、国际广告平台（国内常用版·精准子域）
+||moloco.com^$app=*       # Moloco广告主域（国际，国内游戏APP开屏广告常用）
+||adsmoloco.com^$app=*    # Moloco广告子域（广告素材、数据统计）
+||AppLovin.com^$app=*     # AppLovin广告主域（国际，国内游戏开屏广告）
+||DoubleClick.net^$app=*  # DoubleClick广告子域（Google旗下，国内部分APP使用）
+||Google Syndication.com^$app=* # Google广告分发子域（出海APP开屏广告）
+||pangle.io^$app=*        # 穿山甲国际版主域（字节跳动，出海APP开屏广告）
+||unityads.unity3d.com^$app=* # Unity Ads广告子域（Unity引擎游戏开屏广告）
+||mintegral.net^$app=*    # Mintegral（汇量科技）主域（国内游戏开屏广告）
+||anythinktech.com^$app=* # AnyThink广告主域（万普拉斯，游戏开屏广告）
+||vungle.com^$app=*       # Vungle广告主域（Unity旗下，游戏开屏广告）
+||ad.vungle.com^$app=*    # Vungle广告子域（广告素材加载、播放验证）
+
+# 说明：
+1. 精准适配：若需指定APP拦截（如仅拦截抖音开屏广告），将$app=*改为具体包名（如$app=com.ss.android.ugc.aweme）；
 #------------------------------
+
+# 完整微信（com.tencent.mm）广告过滤规则（含图片加载保障）
+
+# 一、广告核心域名拦截（覆盖全场景广告请求）
+## 1. 公众号全位置广告接口
+||mp.weixin.qq.com/mp/agw^$app=com.tencent.mm         # 文章全位置广告主接口
+||mp.weixin.qq.com/mp/adget^$app=com.tencent.mm       # 广告内容获取（含中间插入）
+||agw.weixin.qq.com/ad/mp/insert^$app=com.tencent.mm  # 中间广告调度接口
+||wx.gycode.com/mpad/insert^$app=com.tencent.mm       # 中间广告素材域名
+
+## 2. 腾讯系广告域名
+||ad.qq.com^$app=com.tencent.mm,domain=!ad.qq.com/photo  # 排除用户相册接口
+||ad.wechat.com^$app=com.tencent.mm,domain=!ad.wechat.com/adimg  # 排除广告图片子域
+||ad.tencent.com^$app=com.tencent.mm
+||adapi.qq.com^$app=com.tencent.mm
+||adconfig.qq.com^$app=com.tencent.mm
+
+## 3. 广告统计与追踪域名
+||track.wechat.com/mpad^$app=com.tencent.mm
+||log.ad.wechat.com/mp^$app=com.tencent.mm
+||analysis.tencent.com/mp_ad^$app=com.tencent.mm
+
+## 4. 动态广告加载脚本
+||mp.weixin.qq.com/mp/ads/insert.js^$app=com.tencent.mm
+||ad.wechat.com/js/mp_insert_ad.js^$app=com.tencent.mm
+
+
+# 二、广告元素隐藏规则（全位置覆盖）
+## 1. 按位置属性匹配
+com.tencent.mm##[data-ad-type="article_top"]          # 顶部广告
+com.tencent.mm##[data-ad-type="article_middle"]       # 中间插入广告
+com.tencent.mm##[data-ad-type="article_bottom"]       # 底部广告
+com.tencent.mm##[data-ad-position*="middle"]          # 含"middle"的中间广告
+
+## 2. 按容器特征匹配
+com.tencent.mm##.ad_article_insert                    # 中间插入广告容器
+com.tencent.mm##.interstitial_ad                      # 段落间插页广告
+com.tencent.mm##.ad_block:has(.ad_marker)             # 带标记的广告块
+com.tencent.mm##.wechat_ad:has([text*="广告"])        # 含"广告"文本的容器
+
+## 3. 按视觉特征匹配
+com.tencent.mm##[text*="广告"]                        # 所有"广告"标签
+com.tencent.mm##[text*="推广"]                        # 所有"推广"标签
+com.tencent.mm##.ad_label_wrap                        # 广告标签容器
+com.tencent.mm##.ad_image_container:has(img[src*="ad.wechat.com"])  # 广告专用图片容器
+
+## 4. 按父容器层级匹配
+com.tencent.mm##.rich_media_content:has([data-ad-type])  # 文章内容区所有广告
+com.tencent.mm##.msg_content:has(.ad_article_insert)     # 消息中的中间广告
+
+
+# 三、图片加载保障规则（核心豁免）
+## 1. 聊天与社交图片
+@@||mmbiz.qpic.cn^$app=com.tencent.mm,important        # 聊天/朋友圈图片（最高优先级）
+@@||wx.qlogo.cn^$app=com.tencent.mm,important          # 用户/群头像
+@@||mmbiz.qlogo.cn^$app=com.tencent.mm,important       # 公众号头像素材
+@@||mmbizfiles.tencent-cloud.com^$app=com.tencent.mm   # 云存储图片
+
+## 2. 短链接与动态图片
+@@||szextshort.weixin.qq.com^$app=com.tencent.mm       # 短链接图片跳转
+@@||mmbizurl.cn^$app=com.tencent.mm                    # 动态图片短域名
+
+## 3. 内置与功能图片
+@@||res.wx.qq.com^$app=com.tencent.mm                  # 表情/图标等内置资源
+@@||mmbizimg.qq.com^$app=com.tencent.mm                 # 聊天图片专用域名
+@@||file.wx.qq.com^$app=com.tencent.mm                  # 文件传输图片
+@@||video.weixin.qq.com/mp4preview^$app=com.tencent.mm  # 视频通话预览图
+
+## 4. 图片格式与路径豁免
+@@||mmbiz.qpic.cn/.*\.(jpg|jpeg|png|gif|webp)$app=com.tencent.mm  # 全格式图片允许
+@@||mmbiz.qpic.cn/ad/^$app=com.tencent.mm              # 含"ad"路径的正常图片
+
+
+# 四、核心功能豁免规则（确保正常使用）
+## 1. 公众号内容接口
+@@||mp.weixin.qq.com/mp/getappmsgext^$app=com.tencent.mm  # 文章正文接口
+@@||mp.weixin.qq.com/s^$app=com.tencent.mm                # 公众号文章链接
+@@||mp.weixin.qq.com/mp/profile_ext^$app=com.tencent.mm   # 公众号详情
+
+## 2. 交互功能接口
+@@||mp.weixin.qq.com/mp/getcomment^$app=com.tencent.mm    # 评论区接口
+@@||mp.weixin.qq.com/mp/like^$app=com.tencent.mm          # 点赞/在看功能
+
+## 3. 基础通信域名
+@@||wx.qq.com^$app=com.tencent.mm                         # 微信核心通信
+@@||qq.com^$app=com.tencent.mm,important                  # 腾讯基础服务
+
+
+
+
+
+
+
+
+
+
+
+
+
+#------------------------------#------------------------------#------------------------------
 @@||taobao.com^$important
 @@||tmall.com^$important
 @@||jd.com^important
