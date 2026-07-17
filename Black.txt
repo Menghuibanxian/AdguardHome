@@ -1,24 +1,23 @@
-﻿# 更新时间: 2026-07-17 20:14:46
-# 总规则数: 268027 (黑: 267549, 白: 478)
+﻿# 更新时间: 2026-07-17 22:09:11
+# 总规则数: 268046 (黑: 267568, 白: 478)
 # 作者: Menghuibanxian (Merged by Script)
 # ------------------------------------------
 
 /193.200.64.24:/
-103.246.246.144 github.global.ssl.fastly.net
 108.177.125.188 mtalk.google.com
 13.107.42.16 pipelines.actions.githubusercontent.com
+140.82.112.17 github.community
 140.82.112.18 github.community
-140.82.112.22 collector.github.com
+140.82.112.25 alive.github.com
 140.82.112.25 live.github.com
-140.82.112.26 alive.github.com
-140.82.113.21 central.github.com
+140.82.112.26 live.github.com
 140.82.113.21 collector.github.com
-140.82.113.21 education.github.com
-140.82.113.22 api.individual.githubcopilot.com
 140.82.113.22 central.github.com
+140.82.113.22 collector.github.com
 140.82.113.26 alive.github.com
-140.82.114.18 github.community
-140.82.114.26 live.github.com
+140.82.114.21 api.individual.githubcopilot.com
+140.82.114.21 central.github.com
+140.82.114.21 education.github.com
 142.250.107.188 alt5-mtalk.google.com
 142.250.115.188 alt6-mtalk.google.com
 142.250.152.188 alt7-mtalk.google.com
@@ -29,29 +28,27 @@
 146.75.48.133 objects.githubusercontent.com
 146.75.48.133 raw.githubusercontent.com
 146.75.48.133 release-assets.githubusercontent.com
-150.171.110.103 vscode.dev
+150.171.110.98 vscode.dev
 151.101.76.133 raw.github.com
-159.106.121.75 gist.github.com
-16.182.101.153 github-production-repository-file-5c1aeb.s3.amazonaws.com
-16.182.37.73 github-cloud.s3.amazonaws.com
-185.199.108.215 github.githubassets.com
-185.199.109.133 avatars.githubusercontent.com
-185.199.109.133 avatars0.githubusercontent.com
-185.199.109.133 avatars1.githubusercontent.com
-185.199.109.133 avatars2.githubusercontent.com
-185.199.109.133 avatars3.githubusercontent.com
-185.199.109.133 avatars4.githubusercontent.com
-185.199.109.133 avatars5.githubusercontent.com
-185.199.109.133 camo.githubusercontent.com
-185.199.109.133 cloud.githubusercontent.com
-185.199.109.133 desktop.githubusercontent.com
-185.199.109.133 favicons.githubusercontent.com
-185.199.109.133 github.map.fastly.net
-185.199.109.133 media.githubusercontent.com
-185.199.109.133 objects.githubusercontent.com
-185.199.109.133 private-user-images.githubusercontent.com
-185.199.109.133 raw.githubusercontent.com
-185.199.109.133 user-images.githubusercontent.com
+16.15.191.169 github-production-release-asset-2e65be.s3.amazonaws.com
+16.182.41.105 github-cloud.s3.amazonaws.com
+185.199.108.133 avatars.githubusercontent.com
+185.199.108.133 avatars0.githubusercontent.com
+185.199.108.133 avatars1.githubusercontent.com
+185.199.108.133 avatars2.githubusercontent.com
+185.199.108.133 avatars3.githubusercontent.com
+185.199.108.133 avatars4.githubusercontent.com
+185.199.108.133 avatars5.githubusercontent.com
+185.199.108.133 camo.githubusercontent.com
+185.199.108.133 cloud.githubusercontent.com
+185.199.108.133 desktop.githubusercontent.com
+185.199.108.133 favicons.githubusercontent.com
+185.199.108.133 github.map.fastly.net
+185.199.108.133 media.githubusercontent.com
+185.199.108.133 objects.githubusercontent.com
+185.199.108.133 private-user-images.githubusercontent.com
+185.199.108.133 raw.githubusercontent.com
+185.199.108.133 user-images.githubusercontent.com
 185.199.109.153 github.io
 185.199.109.153 githubstatus.com
 185.199.110.133 avatars.githubusercontent.com
@@ -71,6 +68,7 @@
 185.199.110.153 topjohnwu.github.io
 185.199.110.154 docs.github.com
 185.199.110.154 github.githubassets.com
+185.199.110.215 github.githubassets.com
 192.0.66.2 github.blog
 192.178.131.188 alt8-mtalk.google.com
 20.200.245.245 api.github.com
@@ -80,12 +78,14 @@
 20.205.243.166 github.com
 20.205.243.168 api.github.com
 20.43.185.14 github.dev
+203.98.7.65 gist.github.com
 255.255.255.255 broadcasthost
+31.13.85.169 github.global.ssl.fastly.net
 47.246.37.220 bigota.d.miui.com
 47.246.37.220 hugeota.d.miui.com
-52.216.26.124 github-com.s3.amazonaws.com
-52.216.33.241 github-production-user-asset-6210df.s3.amazonaws.com
-52.217.227.105 github-production-release-asset-2e65be.s3.amazonaws.com
+52.217.205.17 github-com.s3.amazonaws.com
+52.217.205.17 github-production-repository-file-5c1aeb.s3.amazonaws.com
+52.217.232.153 github-production-user-asset-6210df.s3.amazonaws.com
 74.125.200.188 alt2-mtalk.google.com
 analytics-*.aasaam.com
 apisgame.iqiyi.com
@@ -2012,6 +2012,7 @@ wykop.pl$badfilter
 ||22lmsi1t5.de^
 ||22media.world^
 ||22outplatforms.com^
+||22qcvn8hq.com^
 ||22qt1c4n.xyz^
 ||22svkcdbyp.com^
 ||22vie9ula.com^
@@ -40145,6 +40146,7 @@ wykop.pl$badfilter
 ||bxmo.cn^
 ||bxmyyupyexyci.space^
 ||bxnmviazvodeo.space^
+||bxnoqvufuzywk.online^
 ||bxnqrscxckqbk.space^
 ||bxolifojkkbue.space^
 ||bxpqva.housemate-navi.jp^
@@ -61230,6 +61232,7 @@ wykop.pl$badfilter
 ||ddlh1467paih3.cloudfront.net^
 ||ddlnk.net^
 ||ddlpahnomzxfn.website^
+||ddlxlkruvkceu.website^
 ||ddm.frandroid.com^
 ||ddm.io^
 ||ddmanuf.com^
@@ -69258,6 +69261,7 @@ wykop.pl$badfilter
 ||ecpipouvmimkr.site^
 ||ecpmrocks.com^
 ||ecqgoyev.shop^
+||ecqudigwdvksp.space^
 ||ecr-ev.com^
 ||ecreify.com^
 ||ecrilwzjkwqul.space^
@@ -69815,6 +69819,7 @@ wykop.pl$badfilter
 ||efadyz.smartbuyglasses.co.nz^
 ||efame.com^
 ||efanguide.us.intellitxt.com^
+||efaqipresgode.website^
 ||efashionsolutions.122.2o7.net^
 ||efbdcd3b.eulerian.io^
 ||efbdfbvpsmngh.site^
@@ -70866,6 +70871,7 @@ wykop.pl$badfilter
 ||elqtrk.sg.morningstar.com^
 ||elqtrk.stamford-avk.com^
 ||elqtrk.tw.morningstar.com^
+||elqunhaejiyfm.online^
 ||elqview.kofax.com^
 ||elqview.kofax.de^
 ||elqview.kofax.jp^
@@ -72480,6 +72486,7 @@ wykop.pl$badfilter
 ||eqclicks.movember.com^
 ||eqcoresandrecycling.com^
 ||eqcpn.semcostura.com^
+||eqcxugikqdfwf.website^
 ||eqddkngvrgvkw.site^
 ||eqflwqjdoucvm.space^
 ||eqfqekkgkwpya.online^
@@ -72765,6 +72772,7 @@ wykop.pl$badfilter
 ||ervtdgkyqbsdd.website^
 ||ervwyrdicmuvz.space^
 ||erwknxujxxxbh.space^
+||erwpdrfgxmlxe.website^
 ||erwqw.zh1155.com^
 ||erwr.ydjskvpd.com^
 ||erwtqfeyyhxgn.space^
@@ -72802,6 +72810,7 @@ wykop.pl$badfilter
 ||esashop.pl^
 ||esawbynaavjmi.online^
 ||esball.net^
+||esbuxwewlmsyo.space^
 ||esca-test.mno.link^
 ||esca.mno.link^
 ||escalated.io^
@@ -74211,6 +74220,7 @@ wykop.pl$badfilter
 ||evoandproud.foolhardywear.pro^
 ||evobet.com^
 ||evogarage.com^
+||evohladx.com^
 ||evokeinexpedientfastened.com^
 ||evolationst.mywellnessoffer.com^
 ||evoldantir.shop^
@@ -75226,6 +75236,7 @@ wykop.pl$badfilter
 ||f6c8374b9b.4c81b78eca.com^
 ||f6e0af5ee3.9fe84e92a1.com^
 ||f6jd4k4xgo.com^
+||f6mg4vjuhuklc21pngn5x.cfd^
 ||f703.twincities.com^
 ||f71hr4.thestorytime.pl^
 ||f72c70be39.c91a5db997.com^
@@ -94770,6 +94781,7 @@ wykop.pl$badfilter
 ||hoktrips.com^
 ||hokuspokus.tarnkappe.info^
 ||hol.dir.tvsmiles.tv^
+||hol15v9i25i68ttqu26r4.rest^
 ||hola.dekcoart.com^
 ||hola.flyavaay.com^
 ||hola.xebel.co^
@@ -109991,6 +110003,7 @@ wykop.pl$badfilter
 ||krfxvi.iconbydesign.com.au^
 ||krg4f5bo.xyz^
 ||krgoad.mauboussin.fr^
+||krhi1dc7m.com^
 ||krhmtdzuxxmsc.space^
 ||krhuixsm.com^
 ||kri45879oupj5plpcl.cfd^
@@ -140555,6 +140568,7 @@ wykop.pl$badfilter
 ||npdokqeighxsy.site^
 ||npdwrpqhfmlhfk.com^
 ||npdysftocspic.online^
+||npeeggzb.com^
 ||npfga.nourishpetfood.co.uk^
 ||npfnnmbcuotel.website^
 ||npfopn.mix.tokyo^
@@ -145248,6 +145262,7 @@ wykop.pl$badfilter
 ||oqbimz.aviasales.ru^
 ||oqbpqf.syretski-sady.com.ua^
 ||oqcw1f9yw.com^
+||oqdjincce.com^
 ||oqfrcpbn.site-shartbandi-farsi.com^
 ||oqfy4va7a.com^
 ||oqgelc.samuelhubbard.com^
@@ -146338,6 +146353,7 @@ wykop.pl$badfilter
 ||owebmoney.ru^
 ||owebsearch.com^
 ||owedicing.cyou^
+||owemcnw.com^
 ||owen.prolitteris.ch^
 ||owenismyeggmen.cfd^
 ||oweqehfrmrlfm.space^
@@ -150756,6 +150772,7 @@ wykop.pl$badfilter
 ||piratyaquarid.cfd^
 ||piresearch.info^
 ||piripro.com^
+||pirnedcuberawenzel.cfd^
 ||pirnn.hibobbie.com^
 ||pirnxbdjowuoi.online^
 ||pirogad.tophosting101.com^
@@ -203035,6 +203052,7 @@ wykop.pl$badfilter
 ||swiftalora.shop^
 ||swiftbzuy.shop^
 ||swiftfusion.tech^
+||swiftiemisdoneromal.cfd^
 ||swiftintro.com^
 ||swiftladle.com^
 ||swiftlymonumentcheating.com^
@@ -230885,6 +230903,7 @@ wykop.pl$badfilter
 ||wealthsimple-dwvip.com^
 ||wealthyvast.pro^
 ||weanerssouls.com^
+||weanyerknaw.cfd^
 ||weanyersociusnaggly.cfd^
 ||weapfuh.originalriver-tone.top^
 ||weaponschemicalenglish.com^
