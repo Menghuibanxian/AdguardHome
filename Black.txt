@@ -1,22 +1,22 @@
-﻿# 更新时间: 2026-07-19 17:23:44
-# 总规则数: 273462 (黑: 272983, 白: 479)
+﻿# 更新时间: 2026-07-19 18:55:53
+# 总规则数: 273486 (黑: 273007, 白: 479)
 # 作者: Menghuibanxian (Merged by Script)
 # ------------------------------------------
 
 /193.200.64.24:/
+108.160.172.232 github.global.ssl.fastly.net
 108.177.125.188 mtalk.google.com
 13.107.42.16 pipelines.actions.githubusercontent.com
 140.82.112.18 github.community
+140.82.112.21 central.github.com
 140.82.112.21 collector.github.com
-140.82.112.25 alive.github.com
+140.82.112.21 education.github.com
 140.82.112.25 live.github.com
+140.82.113.18 github.community
 140.82.113.21 collector.github.com
-140.82.113.22 api.individual.githubcopilot.com
 140.82.113.22 central.github.com
 140.82.113.26 alive.github.com
-140.82.114.17 github.community
-140.82.114.21 education.github.com
-140.82.114.26 live.github.com
+140.82.114.21 api.individual.githubcopilot.com
 142.250.107.188 alt5-mtalk.google.com
 142.250.115.188 alt6-mtalk.google.com
 142.250.152.188 alt7-mtalk.google.com
@@ -27,30 +27,8 @@
 146.75.48.133 objects.githubusercontent.com
 146.75.48.133 raw.githubusercontent.com
 146.75.48.133 release-assets.githubusercontent.com
-150.171.110.97 vscode.dev
+150.171.110.98 vscode.dev
 151.101.76.133 raw.github.com
-159.106.121.75 gist.github.com
-16.15.214.211 github-production-repository-file-5c1aeb.s3.amazonaws.com
-16.15.245.28 github-com.s3.amazonaws.com
-16.182.32.177 github-production-user-asset-6210df.s3.amazonaws.com
-174.37.154.236 github.global.ssl.fastly.net
-185.199.108.133 avatars.githubusercontent.com
-185.199.108.133 avatars0.githubusercontent.com
-185.199.108.133 avatars1.githubusercontent.com
-185.199.108.133 avatars2.githubusercontent.com
-185.199.108.133 avatars3.githubusercontent.com
-185.199.108.133 avatars4.githubusercontent.com
-185.199.108.133 avatars5.githubusercontent.com
-185.199.108.133 camo.githubusercontent.com
-185.199.108.133 cloud.githubusercontent.com
-185.199.108.133 desktop.githubusercontent.com
-185.199.108.133 favicons.githubusercontent.com
-185.199.108.133 github.map.fastly.net
-185.199.108.133 media.githubusercontent.com
-185.199.108.133 objects.githubusercontent.com
-185.199.108.133 private-user-images.githubusercontent.com
-185.199.108.133 raw.githubusercontent.com
-185.199.108.133 user-images.githubusercontent.com
 185.199.110.133 avatars.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
 185.199.110.133 avatars1.githubusercontent.com
@@ -69,6 +47,23 @@
 185.199.110.153 topjohnwu.github.io
 185.199.110.154 docs.github.com
 185.199.110.154 github.githubassets.com
+185.199.111.133 avatars.githubusercontent.com
+185.199.111.133 avatars0.githubusercontent.com
+185.199.111.133 avatars1.githubusercontent.com
+185.199.111.133 avatars2.githubusercontent.com
+185.199.111.133 avatars3.githubusercontent.com
+185.199.111.133 avatars4.githubusercontent.com
+185.199.111.133 avatars5.githubusercontent.com
+185.199.111.133 camo.githubusercontent.com
+185.199.111.133 cloud.githubusercontent.com
+185.199.111.133 desktop.githubusercontent.com
+185.199.111.133 favicons.githubusercontent.com
+185.199.111.133 github.map.fastly.net
+185.199.111.133 media.githubusercontent.com
+185.199.111.133 objects.githubusercontent.com
+185.199.111.133 private-user-images.githubusercontent.com
+185.199.111.133 raw.githubusercontent.com
+185.199.111.133 user-images.githubusercontent.com
 185.199.111.215 github.githubassets.com
 192.0.66.2 github.blog
 192.178.131.188 alt8-mtalk.google.com
@@ -80,10 +75,14 @@
 20.205.243.168 api.github.com
 20.43.185.14 github.dev
 255.255.255.255 broadcasthost
+46.82.174.68 gist.github.com
 47.246.37.220 bigota.d.miui.com
 47.246.37.220 hugeota.d.miui.com
-52.216.212.225 github-cloud.s3.amazonaws.com
-54.231.161.233 github-production-release-asset-2e65be.s3.amazonaws.com
+52.216.242.148 github-cloud.s3.amazonaws.com
+52.216.49.33 github-production-user-asset-6210df.s3.amazonaws.com
+52.217.170.169 github-production-repository-file-5c1aeb.s3.amazonaws.com
+54.231.136.233 github-production-release-asset-2e65be.s3.amazonaws.com
+54.231.160.49 github-com.s3.amazonaws.com
 74.125.200.188 alt2-mtalk.google.com
 analytics-*.aasaam.com
 apisgame.iqiyi.com
@@ -2722,6 +2721,7 @@ wykop.pl$badfilter
 ||3165463.notifysrv.com^
 ||316feq0nc.de^
 ||3170223.notifysrv.com^
+||3171253.notifysrv.com^
 ||317796hmh.de^
 ||3180555.com^
 ||31870.hittail.com^
@@ -3054,6 +3054,8 @@ wykop.pl$badfilter
 ||3ba1e5d478.com^
 ||3bb4f0.r.axf8.net^
 ||3bet.biz^
+||3bet.center^
+||3bet.city^
 ||3bet.host^
 ||3bet.la^
 ||3bet.llc^
@@ -5071,6 +5073,8 @@ wykop.pl$badfilter
 ||789club.ba^
 ||789club.biz^
 ||789club.com^
+||789club.gp^
+||789club.ke^
 ||789club.org^
 ||789club.sx^
 ||789club.vg^
@@ -28434,6 +28438,7 @@ wykop.pl$badfilter
 ||app.mt11.io^
 ||app.muny.org^
 ||app.musely.com^
+||app.mybestphotobook.com^
 ||app.mybigc.net^
 ||app.mybliss.ai^
 ||app.mycirclecare.com^
@@ -33210,7 +33215,9 @@ wykop.pl$badfilter
 ||balkliving.com^
 ||balkog.withmoment.co.kr^
 ||ball88.app^
+||ball88.casa^
 ||ball88.com^
+||ball88.cool^
 ||ball88.day^
 ||ball88.fun^
 ||ball88.fyi^
@@ -38126,11 +38133,13 @@ wykop.pl$badfilter
 ||bolussprugpupulo.qpon^
 ||bolwatt.com^
 ||bom52.club^
+||bom88.baby^
 ||bom88.click^
 ||bom88.com^
 ||bom88.cool^
 ||bom88.diy^
 ||bom88.ing^
+||bom88.la^
 ||bom88.net^
 ||bom88.pics^
 ||bom88.plus^
@@ -38972,7 +38981,6 @@ wykop.pl$badfilter
 ||brandlemilled.cyou^
 ||brandlock.io^
 ||brandmetrics.com^
-||brandmovers-delivery.reviveservers.com^
 ||brandmuscleinstantimpact.112.2o7.net^
 ||brandmuscleinstantimpactstaging.112.2o7.net^
 ||brandnewapp.pro^
@@ -45905,6 +45913,7 @@ wykop.pl$badfilter
 ||cfrnyp.kars4kids.org^
 ||cfs.uzone.id^
 ||cfs1.uzone.id^
+||cfs10.blog.daum.net^
 ||cfs13.tistory.com^
 ||cfs2.uzone.id^
 ||cfs7.blog.daum.net^
@@ -65303,6 +65312,7 @@ wykop.pl$badfilter
 ||dl.mbsea.com^
 ||dl.nalbes.com^
 ||dl.natgo.cn^
+||dl.nx5.com^
 ||dl.oneworldonesai.com^
 ||dl.ops.baidu.com^
 ||dl.orders.accredo.com^
@@ -67911,10 +67921,12 @@ wykop.pl$badfilter
 ||du88.care^
 ||du88.club^
 ||du88.com^
+||du88.guru^
 ||du88.in^
 ||du88.info^
 ||du88.life^
 ||du88.pro^
+||du88.sh^
 ||du99h8anpnevg.cloudfront.net^
 ||dualinvirallyfatuism.cyou^
 ||dualquiz.com^
@@ -94181,12 +94193,14 @@ wykop.pl$badfilter
 ||hbet.ac^
 ||hbet.club^
 ||hbet.fm^
+||hbet.la^
 ||hbet.li^
 ||hbet.lv^
 ||hbet.net^
 ||hbet.nl^
 ||hbet.ph^
 ||hbet.pw^
+||hbet.so^
 ||hbet.win^
 ||hbezqddptvioc.website^
 ||hbfdhkdeaatch.space^
@@ -107956,6 +107970,7 @@ wykop.pl$badfilter
 ||js.livehelper.com^
 ||js.lmggdka.cn^
 ||js.logentries.com^
+||js.lovexia.top^
 ||js.lwnne.cn^
 ||js.manga1000.top^
 ||js.manga1001.win^
@@ -109092,6 +109107,7 @@ wykop.pl$badfilter
 ||k88.art^
 ||k88.club^
 ||k88.mobi^
+||k88.moe^
 ||k88.pro^
 ||k88.win^
 ||k88zjx6h.britishswimschool.com^
@@ -123792,6 +123808,7 @@ wykop.pl$badfilter
 ||lu88.ai^
 ||lu88.ch^
 ||lu88.com^
+||lu88.de^
 ||lu88.ec^
 ||lu88.gdn^
 ||lu88.kim^
@@ -126585,6 +126602,7 @@ wykop.pl$badfilter
 ||man88.bz^
 ||man88.co^
 ||man88.la^
+||man88.li^
 ||man88.net^
 ||man88.ng^
 ||man88.pl^
@@ -148591,6 +148609,7 @@ wykop.pl$badfilter
 ||oxidarinca.cyou^
 ||oxidation83.com^
 ||oxidecimbrimiscrop.cyou^
+||oxidesearching.com^
 ||oxidizedbitumenpn.com^
 ||oxidy.com^
 ||oxifwsabgd.nzz.ch^
@@ -158578,7 +158597,6 @@ wykop.pl$badfilter
 ||pulvmarl.cfd^
 ||pulyxlgvrlqco.space^
 ||puma-api.iqiyi.com^
-||puma.112.2o7.net^
 ||puma.api.iqiyi.com^
 ||puma.islingtonmecc.org.uk^
 ||pumicewivern.cfd^
@@ -182052,6 +182070,7 @@ wykop.pl$badfilter
 ||sk.4wank.com^
 ||sk.5.p2l.info^
 ||sk.ball88.app^
+||sk.ball88.casa^
 ||sk.ball88.com^
 ||sk.ball88.day^
 ||sk.ball88.fun^
@@ -182105,6 +182124,7 @@ wykop.pl$badfilter
 ||sk.xibet.ec^
 ||sk.xibet.fun^
 ||sk.xibet.ing^
+||sk.xibet.nz^
 ||sk.xibet.vu^
 ||sk.zatube.com^
 ||sk.zbet.ws^
@@ -222641,8 +222661,10 @@ wykop.pl$badfilter
 ||tx88.navy^
 ||tx88.now^
 ||tx88.onl^
+||tx88.photo^
 ||tx88.top^
 ||tx88.vet^
+||tx88.zone^
 ||tx99y.net^
 ||txaxkc.dsc-nightstore.com^
 ||txb2p77g6bgihkug7.rest^
@@ -231947,6 +231969,7 @@ wykop.pl$badfilter
 ||vu88.la^
 ||vu88.live^
 ||vu88.lv^
+||vu88.moe^
 ||vu88.mx^
 ||vu88.net^
 ||vu88.sh^
@@ -272210,6 +272233,7 @@ wykop.pl$badfilter
 ||zovthurix-it.live^
 ||zovthurix.live^
 ||zowin.bh^
+||zowin.ci^
 ||zowin.esq^
 ||zowin.fan^
 ||zowin.im^
@@ -273337,13 +273361,13 @@ wykop.pl$badfilter
 @@||proto2ad.durasite.net^
 @@||pt.afl.rakuten.co.jp^
 @@||public-cis.exponea.com^
+@@||puma.112.2o7.net^
 @@||puser.funshion.com^
 @@||puzzles-games-api.gp-prod.conde.digital^
 @@||pv.sohu.com^
 @@||pvip.funshion.com^
 @@||px.a8.net^
 @@||q.i.gdt.qq.com^
-@@||qwhdcdn.cmcc-cs.cn^
 @@||qzonestyle.gtimg.cn^
 @@||radiofrance.targetspot.com^
 @@||rd.bizrate.com^
