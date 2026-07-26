@@ -1,23 +1,23 @@
-﻿# 更新时间: 2026-07-26 20:08:14
-# 总规则数: 287463 (黑: 286985, 白: 478)
+﻿# 更新时间: 2026-07-26 21:55:52
+# 总规则数: 287477 (黑: 286999, 白: 478)
 # 作者: Menghuibanxian (Merged by Script)
 # ------------------------------------------
 
 /193.200.64.24:/
-108.160.166.57 github.global.ssl.fastly.net
+108.160.169.186 github.global.ssl.fastly.net
 108.177.125.188 mtalk.google.com
 13.107.42.16 pipelines.actions.githubusercontent.com
 140.82.112.18 github.community
-140.82.112.22 central.github.com
+140.82.112.21 api.individual.githubcopilot.com
+140.82.112.21 central.github.com
 140.82.112.25 live.github.com
-140.82.112.26 alive.github.com
+140.82.113.18 github.community
 140.82.113.21 collector.github.com
 140.82.113.22 central.github.com
+140.82.113.22 collector.github.com
 140.82.113.26 alive.github.com
-140.82.114.17 github.community
-140.82.114.21 collector.github.com
+140.82.113.26 live.github.com
 140.82.114.21 education.github.com
-140.82.114.22 api.individual.githubcopilot.com
 142.250.107.188 alt5-mtalk.google.com
 142.250.115.188 alt6-mtalk.google.com
 142.250.152.188 alt7-mtalk.google.com
@@ -30,26 +30,27 @@
 146.75.48.133 release-assets.githubusercontent.com
 150.171.110.104 vscode.dev
 151.101.76.133 raw.github.com
-16.15.238.176 github-production-repository-file-5c1aeb.s3.amazonaws.com
-16.182.67.49 github-com.s3.amazonaws.com
-185.199.108.133 avatars.githubusercontent.com
-185.199.108.133 avatars0.githubusercontent.com
-185.199.108.133 avatars1.githubusercontent.com
-185.199.108.133 avatars2.githubusercontent.com
-185.199.108.133 avatars3.githubusercontent.com
-185.199.108.133 avatars4.githubusercontent.com
-185.199.108.133 avatars5.githubusercontent.com
-185.199.108.133 camo.githubusercontent.com
-185.199.108.133 cloud.githubusercontent.com
-185.199.108.133 desktop.githubusercontent.com
-185.199.108.133 favicons.githubusercontent.com
-185.199.108.133 github.map.fastly.net
-185.199.108.133 media.githubusercontent.com
-185.199.108.133 objects.githubusercontent.com
-185.199.108.133 private-user-images.githubusercontent.com
-185.199.108.133 raw.githubusercontent.com
-185.199.108.133 user-images.githubusercontent.com
-185.199.108.215 github.githubassets.com
+16.15.238.129 github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.244.127 github-production-repository-file-5c1aeb.s3.amazonaws.com
+185.199.109.133 avatars.githubusercontent.com
+185.199.109.133 avatars0.githubusercontent.com
+185.199.109.133 avatars1.githubusercontent.com
+185.199.109.133 avatars2.githubusercontent.com
+185.199.109.133 avatars3.githubusercontent.com
+185.199.109.133 avatars4.githubusercontent.com
+185.199.109.133 avatars5.githubusercontent.com
+185.199.109.133 camo.githubusercontent.com
+185.199.109.133 cloud.githubusercontent.com
+185.199.109.133 desktop.githubusercontent.com
+185.199.109.133 favicons.githubusercontent.com
+185.199.109.133 github.map.fastly.net
+185.199.109.133 media.githubusercontent.com
+185.199.109.133 objects.githubusercontent.com
+185.199.109.133 private-user-images.githubusercontent.com
+185.199.109.133 raw.githubusercontent.com
+185.199.109.133 user-images.githubusercontent.com
+185.199.109.153 github.io
+185.199.109.153 githubstatus.com
 185.199.110.133 avatars.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
 185.199.110.133 avatars1.githubusercontent.com
@@ -67,8 +68,7 @@
 185.199.110.153 topjohnwu.github.io
 185.199.110.154 docs.github.com
 185.199.110.154 github.githubassets.com
-185.199.111.153 github.io
-185.199.111.153 githubstatus.com
+185.199.110.215 github.githubassets.com
 192.0.66.2 github.blog
 192.178.131.188 alt8-mtalk.google.com
 20.200.245.245 api.github.com
@@ -78,14 +78,14 @@
 20.205.243.166 github.com
 20.205.243.168 api.github.com
 20.43.185.14 github.dev
+203.98.7.65 gist.github.com
 255.255.255.255 broadcasthost
 47.246.37.220 bigota.d.miui.com
 47.246.37.220 hugeota.d.miui.com
-52.216.211.145 github-cloud.s3.amazonaws.com
-52.217.122.57 github-production-user-asset-6210df.s3.amazonaws.com
-54.231.159.33 github-production-release-asset-2e65be.s3.amazonaws.com
+52.216.239.107 github-cloud.s3.amazonaws.com
+52.216.61.225 github-production-user-asset-6210df.s3.amazonaws.com
+54.231.128.217 github-com.s3.amazonaws.com
 74.125.200.188 alt2-mtalk.google.com
-78.16.49.15 gist.github.com
 analytics-*.aasaam.com
 apisgame.iqiyi.com
 banana.le.com
@@ -1073,6 +1073,7 @@ wykop.pl$badfilter
 ||13gv.l.mob.com^
 ||13j5.l.mob.com^
 ||13js1lbtbj3.sparkloop.app^
+||13o54zz4o18m3giptm4f9rn8.cfd^
 ||13p76nnir.de^
 ||13r6.l.mob.com^
 ||13tabs.com^
@@ -36737,6 +36738,7 @@ wykop.pl$badfilter
 ||bichircofttrue.cfd^
 ||bichyphysics.cfd^
 ||bickerpergola.cfd^
+||bickiron92.com^
 ||bicoastalholdings.com^
 ||bicoinsprofit.com^
 ||biconcave43.com^
@@ -56047,6 +56049,7 @@ wykop.pl$badfilter
 ||cunealwolvish.com^
 ||cuneiblabbed.cyou^
 ||cuneusmicrify.cyou^
+||cuneuswebelosoverage.cyou^
 ||cungv9choi.com^
 ||cunle.calliesbiscuits.com^
 ||cunningrespectable.com^
@@ -66885,6 +66888,7 @@ wykop.pl$badfilter
 ||dizhensubao.getui.com^
 ||dizimax2.com^
 ||diziwatchpreroll.pages.dev^
+||dizzardmags.cyou^
 ||dizzcloud.com^
 ||dizziedtokays.cyou^
 ||dizziness47.com^
@@ -82711,6 +82715,7 @@ wykop.pl$badfilter
 ||folvextirbot-ai.live^
 ||folvextirbot.live^
 ||folvextirsoftware.pro^
+||fombgqws.com^
 ||fomhr.superlash.pl^
 ||fomirpggopead.site^
 ||fonbet.com^
@@ -83579,6 +83584,7 @@ wykop.pl$badfilter
 ||fpzpmx.com^
 ||fpzzupe677ck1g.cfd^
 ||fqayoymigvmbw.website^
+||fqbazpdbkbvxt.online^
 ||fqbdn.footprintusa.co^
 ||fqceyqo.com^
 ||fqcqnb.dwr.com^
@@ -86569,6 +86575,7 @@ wykop.pl$badfilter
 ||gcskfemusrkho.online^
 ||gct.americanexpress.com^
 ||gctolasgflhnc.site^
+||gctpyuuymhwwt.website^
 ||gcudsn.tradetested.co.nz^
 ||gcuirx.ministryofsupply.com^
 ||gcvxhwgvpwpyv.online^
@@ -107891,6 +107898,7 @@ wykop.pl$badfilter
 ||ipvertnet.com^
 ||ipvhf.swingsetmall.com^
 ||ipvhrmk5toxhur659kte.cfd^
+||ipvxvlauplslp.website^
 ||ipw.metadsp.co.uk^
 ||ipwfxgwjrlrfa.site^
 ||ipwyyaiewuzfq.online^
@@ -109718,6 +109726,7 @@ wykop.pl$badfilter
 ||jeiwumcsw.com^
 ||jeixbwlazmpzc.site^
 ||jejlaueaxfsjt.website^
+||jejtyepybvjoc.website^
 ||jejunanieves.qpon^
 ||jejuskypension.com^
 ||jejzf.dearannabelle.com^
@@ -110571,6 +110580,7 @@ wykop.pl$badfilter
 ||jnjbq.monicavinader.com^
 ||jnjkkvkfwnlrd.site^
 ||jnjvfp.prychal-8.com.ua^
+||jnkfkqqqpqsbr.website^
 ||jnkqnf.cifraclub.com.br^
 ||jnkqnf.cifraclub.com^
 ||jnkqnf.palcomp3.com.br^
@@ -120664,6 +120674,7 @@ wykop.pl$badfilter
 ||lmolrbfl.tigarshark.com^
 ||lmoney01.com^
 ||lmorsb.highstreettv.com^
+||lmovixat.in^
 ||lmpadebis.gala-series.com^
 ||lmqh.ecoencomputer.com^
 ||lmrljuiymdtry.space^
@@ -138610,6 +138621,7 @@ wykop.pl$badfilter
 ||mkrfj.innasegal.com^
 ||mkronwjptnjrh.site^
 ||mkrplsblistuf.website^
+||mkrrnrahgsrbf.website^
 ||mkrygmdgxfkzy.online^
 ||mks8vq5qfu.com^
 ||mks98.com^
@@ -145850,6 +145862,7 @@ wykop.pl$badfilter
 ||njunyihalsdvb.site^
 ||njutbnafvyzwf.space^
 ||njvgksjrtiuqx.space^
+||njwnwczodnolp.online^
 ||njxcbzvxmmdgk.website^
 ||njxnmthoeyler.online^
 ||njxnsb.paodeacucar.com^
@@ -146721,6 +146734,7 @@ wykop.pl$badfilter
 ||noryzacryptonai.org^
 ||norzelo.vip^
 ||nosap.win^
+||nosdaydxatuaiy.com^
 ||nosdeoirs.fr^
 ||nosemorgue.com^
 ||nosenotch.com^
