@@ -1,23 +1,22 @@
-﻿# 更新时间: 2026-08-16 20:03:56
-# 总规则数: 289598 (黑: 289118, 白: 480)
+﻿# 更新时间: 2026-08-16 21:00:38
+# 总规则数: 289618 (黑: 289138, 白: 480)
 # 作者: Menghuibanxian (Merged by Script)
 # ------------------------------------------
 
 /193.200.64.24:/
 108.177.125.188 mtalk.google.com
-13.107.226.39 vscode.dev
 13.107.42.16 pipelines.actions.githubusercontent.com
 140.82.112.18 github.community
-140.82.112.25 alive.github.com
+140.82.112.22 central.github.com
+140.82.112.22 collector.github.com
 140.82.112.25 live.github.com
+140.82.112.26 alive.github.com
 140.82.113.21 collector.github.com
 140.82.113.22 central.github.com
-140.82.113.22 education.github.com
 140.82.113.26 alive.github.com
-140.82.113.26 live.github.com
 140.82.114.17 github.community
 140.82.114.22 api.individual.githubcopilot.com
-140.82.114.22 collector.github.com
+140.82.114.22 education.github.com
 142.250.107.188 alt5-mtalk.google.com
 142.250.115.188 alt6-mtalk.google.com
 142.250.152.188 alt7-mtalk.google.com
@@ -28,13 +27,31 @@
 146.75.48.133 objects.githubusercontent.com
 146.75.48.133 raw.githubusercontent.com
 146.75.48.133 release-assets.githubusercontent.com
+150.171.110.103 vscode.dev
 151.101.76.133 raw.github.com
-16.15.191.139 github-production-release-asset-2e65be.s3.amazonaws.com
-16.15.207.92 github-com.s3.amazonaws.com
-16.15.215.143 github-cloud.s3.amazonaws.com
-16.15.245.17 github-production-repository-file-5c1aeb.s3.amazonaws.com
-185.199.108.153 github.io
-185.199.108.153 githubstatus.com
+159.106.121.75 gist.github.com
+16.15.183.173 github-cloud.s3.amazonaws.com
+16.15.183.241 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.228.163 github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.254.96 github-com.s3.amazonaws.com
+162.125.34.133 github.global.ssl.fastly.net
+185.199.108.133 avatars.githubusercontent.com
+185.199.108.133 avatars0.githubusercontent.com
+185.199.108.133 avatars1.githubusercontent.com
+185.199.108.133 avatars2.githubusercontent.com
+185.199.108.133 avatars3.githubusercontent.com
+185.199.108.133 avatars4.githubusercontent.com
+185.199.108.133 avatars5.githubusercontent.com
+185.199.108.133 camo.githubusercontent.com
+185.199.108.133 cloud.githubusercontent.com
+185.199.108.133 desktop.githubusercontent.com
+185.199.108.133 favicons.githubusercontent.com
+185.199.108.133 github.map.fastly.net
+185.199.108.133 media.githubusercontent.com
+185.199.108.133 objects.githubusercontent.com
+185.199.108.133 private-user-images.githubusercontent.com
+185.199.108.133 raw.githubusercontent.com
+185.199.108.133 user-images.githubusercontent.com
 185.199.110.133 avatars.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
 185.199.110.133 avatars1.githubusercontent.com
@@ -53,26 +70,10 @@
 185.199.110.154 docs.github.com
 185.199.110.154 github.githubassets.com
 185.199.110.215 github.githubassets.com
-185.199.111.133 avatars.githubusercontent.com
-185.199.111.133 avatars0.githubusercontent.com
-185.199.111.133 avatars1.githubusercontent.com
-185.199.111.133 avatars2.githubusercontent.com
-185.199.111.133 avatars3.githubusercontent.com
-185.199.111.133 avatars4.githubusercontent.com
-185.199.111.133 avatars5.githubusercontent.com
-185.199.111.133 camo.githubusercontent.com
-185.199.111.133 cloud.githubusercontent.com
-185.199.111.133 desktop.githubusercontent.com
-185.199.111.133 favicons.githubusercontent.com
-185.199.111.133 github.map.fastly.net
-185.199.111.133 media.githubusercontent.com
-185.199.111.133 objects.githubusercontent.com
-185.199.111.133 private-user-images.githubusercontent.com
-185.199.111.133 raw.githubusercontent.com
-185.199.111.133 user-images.githubusercontent.com
+185.199.111.153 github.io
+185.199.111.153 githubstatus.com
 192.0.66.2 github.blog
 192.178.131.188 alt8-mtalk.google.com
-199.16.156.40 github.global.ssl.fastly.net
 20.200.245.245 api.github.com
 20.200.245.247 gist.github.com
 20.200.245.247 github.com
@@ -81,10 +82,9 @@
 20.205.243.168 api.github.com
 20.43.185.14 github.dev
 255.255.255.255 broadcasthost
-37.61.54.158 gist.github.com
 47.246.37.220 bigota.d.miui.com
 47.246.37.220 hugeota.d.miui.com
-52.217.123.201 github-production-user-asset-6210df.s3.amazonaws.com
+52.217.48.140 github-production-release-asset-2e65be.s3.amazonaws.com
 74.125.200.188 alt2-mtalk.google.com
 analytics-*.aasaam.com
 apisgame.iqiyi.com
@@ -34414,6 +34414,7 @@ wykop.pl$badfilter
 ||bartonpriority.com^
 ||barvynmarkstead.com^
 ||bas.boshi.tv^
+||basallyremetalflecker.cfd^
 ||basdhia.shop^
 ||base-cdn.admarvel.com^
 ||base-vod.pl^
@@ -36369,6 +36370,7 @@ wykop.pl$badfilter
 ||bfaubcoezrihe.site^
 ||bfblyaqvcnaat.space^
 ||bfbna.charleskeith.com^
+||bfbrnlmnspugt.online^
 ||bfc-mp.caisse-epargne.fr^
 ||bfdcdn.com^
 ||bfdnk.aroma360.pl^
@@ -44624,6 +44626,7 @@ wykop.pl$badfilter
 ||carefuldependent.pro^
 ||carefuldolls.com^
 ||careless05.com^
+||carelessemployment.pro^
 ||carelessnurse.com^
 ||carepay.gaf.com^
 ||careplusuk.org^
@@ -46968,6 +46971,7 @@ wykop.pl$badfilter
 ||celnivo.com^
 ||celoe.xyz^
 ||celorra-logic720-ai.live^
+||celosiaetwee.shop^
 ||celticmurgeon.shop^
 ||celticwealth.pro^
 ||celtra.com^
@@ -48626,6 +48630,7 @@ wykop.pl$badfilter
 ||cjmakeding.com^
 ||cjmkt.com^
 ||cjmob.com^
+||cjmrkbbc1i.com^
 ||cjnbqe.glamira.com.mx^
 ||cjncpwlbxitpf.website^
 ||cjoaootrbhfcx.site^
@@ -69473,6 +69478,7 @@ wykop.pl$badfilter
 ||dswhem.com^
 ||dswklo.com^
 ||dswlpq.com^
+||dswmrn.com^
 ||dswocr.com^
 ||dswppe.com^
 ||dswqea.com^
@@ -72836,6 +72842,7 @@ wykop.pl$badfilter
 ||efplso.epost.go.kr^
 ||efpsschecslmc.online^
 ||efragola.pl^
+||efrcbrvsoplfx.online^
 ||efreecode.com^
 ||efreedom.net^
 ||efrfdeoeodkisodoekds.site^
@@ -85354,6 +85361,7 @@ wykop.pl$badfilter
 ||fxipca.americanexpress.ca^
 ||fxipreferral.americanexpress.com^
 ||fxipwelcome.americanexpress.ca^
+||fxjfmzzscnqnw.space^
 ||fxjgmw.catran.com.br^
 ||fxjllndtgqsaf.site^
 ||fxjs.2541.com^
@@ -87811,6 +87819,7 @@ wykop.pl$badfilter
 ||gfpxw.com^
 ||gfqhvj.wunderkarten.de^
 ||gfrtjbihkgmzd.site^
+||gfrxkgesumcdq.online^
 ||gfstrck.com^
 ||gfsxnxkodn.com^
 ||gft2.de^
@@ -90705,6 +90714,7 @@ wykop.pl$badfilter
 ||gov.aniview.com^
 ||gov.yanao.ru^
 ||govaj.com^
+||govbyoxstgbpf.space^
 ||govchengdu.cn^
 ||government.informaengage.com^
 ||governmentcloud.avaya.com^
@@ -96334,6 +96344,7 @@ wykop.pl$badfilter
 ||h8btc1cy8v4um3.rest^
 ||h8cjr6nhm.com^
 ||h8h1ls3hg.com^
+||h8pc8w5twc.com^
 ||h9806gjhz.com^
 ||h9hy9.pyrenex.com^
 ||h9k9.com^
@@ -100016,6 +100027,7 @@ wykop.pl$badfilter
 ||hpymkg.air-austral.com^
 ||hpyrdr.com^
 ||hpyrgd.mentalup.net^
+||hpytwtfbbkqtq.space^
 ||hpzvitkflstxx.website^
 ||hq-celebrity.us.intellitxt.com^
 ||hq-tracking.qq.com^
@@ -100841,6 +100853,7 @@ wykop.pl$badfilter
 ||hvwgbj.wikinger-reisen.de^
 ||hvwoeavjjemhq.site^
 ||hvwsecjtqnbkv.online^
+||hvwybgexnzkuw.online^
 ||hvxymx.tui.pl^
 ||hvzbn.humbler.com^
 ||hw-cdn-ap.trafficjunky.net^
@@ -114766,6 +114779,7 @@ wykop.pl$badfilter
 ||konorkfghggnmcvvvbb.site^
 ||konozaxintiko24.today^
 ||konraddiscrimination.com^
+||konradissuesimperial.com^
 ||konradsheriff.com^
 ||konradterriblesect.com^
 ||konsor.ru^
@@ -148839,6 +148853,7 @@ wykop.pl$badfilter
 ||odbierz-bony.ovp.pl^
 ||odbierzdarmowedoladowanie.wordpress.com^
 ||odbsmbtdcjuzp.site^
+||odbweczisxca.com^
 ||odc.1und1.de^
 ||odc.starwave.com^
 ||odc.weather.com^
@@ -167181,6 +167196,7 @@ wykop.pl$badfilter
 ||raurread.com^
 ||rausougo.net^
 ||rauvoaty.net^
+||ravagesspeckyduller.cfd^
 ||ravalizio-fr.live^
 ||ravalizio-it.live^
 ||ravalizio.digital^
@@ -176604,6 +176620,7 @@ wykop.pl$badfilter
 ||sbvgrghfeedfp.com^
 ||sbvhn.com^
 ||sbvsb.inspiranzadesigns.com^
+||sbvxstmczhmh.com^
 ||sbw.ysjweb.com^
 ||sbx.daimlertruck.com^
 ||sbx.pagesjaunes.fr^
@@ -226183,6 +226200,7 @@ wykop.pl$badfilter
 ||trcp.gamefantech.com^
 ||trd3x.com^
 ||trdezwtminfdy.space^
+||trdimnhykngzu.site^
 ||trdnarendvina.com^
 ||trdrjqtjik.com^
 ||tre.trenditrove.shop^
@@ -237802,6 +237820,7 @@ wykop.pl$badfilter
 ||vpscash.nl^
 ||vpsncaqpzhurv.site^
 ||vpsyfw.dovolenaproseniory.cz^
+||vptabemq.com^
 ||vptbn.com^
 ||vptxmdgwwqotz.store^
 ||vpuonpcwtjgwe.online^
@@ -281829,6 +281848,7 @@ wykop.pl$badfilter
 ||xhijvczo.com^
 ||xhit.com^
 ||xhivjkfghj.com^
+||xhkdwqiojkohh.site^
 ||xhklrsxyhlcfr.site^
 ||xhktyryhxspej.online^
 ||xhluphuewwlbnc.com^
