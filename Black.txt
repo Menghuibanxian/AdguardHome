@@ -1,5 +1,5 @@
-﻿# 更新时间: 2026-08-17 07:56:48
-# 总规则数: 289732 (黑: 289252, 白: 480)
+﻿# 更新时间: 2026-08-17 09:28:48
+# 总规则数: 289744 (黑: 289265, 白: 479)
 # 作者: Menghuibanxian (Merged by Script)
 # ------------------------------------------
 
@@ -7,16 +7,17 @@
 108.177.125.188 mtalk.google.com
 13.107.42.16 pipelines.actions.githubusercontent.com
 140.82.112.18 github.community
+140.82.112.22 api.individual.githubcopilot.com
+140.82.112.22 collector.github.com
+140.82.112.25 alive.github.com
 140.82.112.25 live.github.com
+140.82.113.17 github.community
+140.82.113.21 central.github.com
 140.82.113.21 collector.github.com
-140.82.113.21 education.github.com
 140.82.113.22 central.github.com
 140.82.113.26 alive.github.com
-140.82.113.26 live.github.com
-140.82.114.18 github.community
-140.82.114.22 api.individual.githubcopilot.com
-140.82.114.22 central.github.com
-140.82.114.22 collector.github.com
+140.82.114.22 education.github.com
+140.82.114.26 live.github.com
 142.250.107.188 alt5-mtalk.google.com
 142.250.115.188 alt6-mtalk.google.com
 142.250.152.188 alt7-mtalk.google.com
@@ -27,13 +28,15 @@
 146.75.48.133 objects.githubusercontent.com
 146.75.48.133 raw.githubusercontent.com
 146.75.48.133 release-assets.githubusercontent.com
-150.171.110.104 vscode.dev
+150.171.110.101 vscode.dev
 151.101.76.133 raw.github.com
-16.15.230.21 github-production-repository-file-5c1aeb.s3.amazonaws.com
-16.15.245.21 github-com.s3.amazonaws.com
-16.15.245.255 github-production-release-asset-2e65be.s3.amazonaws.com
-16.15.246.166 github-cloud.s3.amazonaws.com
-16.15.254.24 github-production-user-asset-6210df.s3.amazonaws.com
+159.24.3.173 gist.github.com
+16.15.215.120 github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.229.214 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.245.172 github-com.s3.amazonaws.com
+16.15.245.173 github-cloud.s3.amazonaws.com
+16.15.253.195 github-production-repository-file-5c1aeb.s3.amazonaws.com
+185.199.109.215 github.githubassets.com
 185.199.110.133 avatars.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
 185.199.110.133 avatars1.githubusercontent.com
@@ -44,13 +47,7 @@
 185.199.110.133 camo.githubusercontent.com
 185.199.110.133 cloud.githubusercontent.com
 185.199.110.133 desktop.githubusercontent.com
-185.199.110.133 favicons.githubusercontent.com
 185.199.110.133 github.io
-185.199.110.133 github.map.fastly.net
-185.199.110.133 media.githubusercontent.com
-185.199.110.133 objects.githubusercontent.com
-185.199.110.133 private-user-images.githubusercontent.com
-185.199.110.133 raw.githubusercontent.com
 185.199.110.133 user-images.githubusercontent.com
 185.199.110.153 github.io
 185.199.110.153 githubstatus.com
@@ -58,10 +55,26 @@
 185.199.110.153 topjohnwu.github.io
 185.199.110.154 docs.github.com
 185.199.110.154 github.githubassets.com
-185.199.110.215 github.githubassets.com
+185.199.111.133 avatars.githubusercontent.com
+185.199.111.133 avatars0.githubusercontent.com
+185.199.111.133 avatars1.githubusercontent.com
+185.199.111.133 avatars2.githubusercontent.com
+185.199.111.133 avatars3.githubusercontent.com
+185.199.111.133 avatars4.githubusercontent.com
+185.199.111.133 avatars5.githubusercontent.com
+185.199.111.133 camo.githubusercontent.com
+185.199.111.133 cloud.githubusercontent.com
+185.199.111.133 desktop.githubusercontent.com
+185.199.111.133 favicons.githubusercontent.com
+185.199.111.133 github.map.fastly.net
+185.199.111.133 media.githubusercontent.com
+185.199.111.133 objects.githubusercontent.com
+185.199.111.133 private-user-images.githubusercontent.com
+185.199.111.133 raw.githubusercontent.com
+185.199.111.133 user-images.githubusercontent.com
 192.0.66.2 github.blog
 192.178.131.188 alt8-mtalk.google.com
-199.59.148.209 github.global.ssl.fastly.net
+199.59.148.106 github.global.ssl.fastly.net
 20.200.245.245 api.github.com
 20.200.245.247 gist.github.com
 20.200.245.247 github.com
@@ -70,7 +83,6 @@
 20.205.243.168 api.github.com
 20.43.185.14 github.dev
 255.255.255.255 broadcasthost
-46.82.174.68 gist.github.com
 47.246.37.220 bigota.d.miui.com
 47.246.37.220 hugeota.d.miui.com
 74.125.200.188 alt2-mtalk.google.com
@@ -79,7 +91,6 @@ apisgame.iqiyi.com
 banana.le.com
 charlestownwyllie.oaklawnnonantum.com^
 cm.l.qq.com
-de.as.pptv.com
 dlsdk.appsflyer.com^
 dlsdk.appsflyersdk.com^
 dynamic-report-api.appsflyersdk.com^
@@ -16204,7 +16215,6 @@ wykop.pl$badfilter
 ||ads-lite2.net^
 ||ads-log.huolala.cn^
 ||ads-lot.ru^
-||ads-marketing-vivofs.vivo.com.cn
 ||ads-marketing-vivofs.vivo.com.cn^
 ||ads-media.gameforge.com^
 ||ads-media.wildberries.ru^
@@ -18422,7 +18432,6 @@ wykop.pl$badfilter
 ||adserviceretry.kglink.cn^
 ||adserviceretry.kugou.com^
 ||adservices.brandcdn.com^
-||adserving-oss.bangdao-tech.com^
 ||adserving.aan.speedshiftmedia.com^
 ||adserving.autotrader.com^
 ||adserving.fyi-marketing.com^
@@ -108666,6 +108675,7 @@ wykop.pl$badfilter
 ||ivory-stitch.shop^
 ||ivorykapitmoor.net^
 ||ivox.socratos.net^
+||ivoxkuybivbme.space^
 ||ivoxua.socratos.net^
 ||ivpvb.sunriverhoney.com^
 ||ivqoc.eatzeats.com^
@@ -114165,6 +114175,7 @@ wykop.pl$badfilter
 ||kjosddyimi.com^
 ||kjpiug.whatgoesaroundnyc.com^
 ||kjpojl.sementa.com^
+||kjpwujecngtzm.online^
 ||kjqas.getbrewsy.com^
 ||kjqcaydxxrert.website^
 ||kjqkjp.arnewstyle.com^
@@ -147170,6 +147181,7 @@ wykop.pl$badfilter
 ||nqjnehyrguhlze.com^
 ||nqn7la7.de^
 ||nqnkwi1lfrygek7ucycj9uckq6r1y.rest^
+||nqnugcetgswly.online^
 ||nqoahhrkxtvsp.website^
 ||nqoqrotklafsb.space^
 ||nqouq.alexanderjane.com^
@@ -234084,6 +234096,7 @@ wykop.pl$badfilter
 ||vasudhaikafoundation.org^
 ||vatanclick.ir^
 ||vatgia306.com^
+||vathapvniskqb.website^
 ||vathosmercenza.live^
 ||vatizon.com^
 ||vatrack.hinet.net^
@@ -289582,7 +289595,6 @@ wykop.pl$badfilter
 @@||p6-flow-imagex-sign.byteimg.com^
 @@||p9-dcd-sign.byteimg.com^
 @@||p9-dcd.byteimg.com^
-@@||p9-dy.byteimg.com
 @@||p9-dy.byteimg.com^
 @@||p9-flow-imagex-sign.byteimg.com^
 @@||pagead.l.doubleclick.net^
