@@ -1,23 +1,24 @@
-﻿# 更新时间: 2026-08-22 12:09:22
-# 总规则数: 306545 (黑: 306067, 白: 478)
+﻿# 更新时间: 2026-08-22 12:49:29
+# 总规则数: 306561 (黑: 306083, 白: 478)
 # 作者: Menghuibanxian (Merged by Script)
 # ------------------------------------------
 
 /193.200.64.24:/
-108.160.167.165 github.global.ssl.fastly.net
+108.160.170.52 github.global.ssl.fastly.net
 108.177.125.188 mtalk.google.com
 13.107.42.16 pipelines.actions.githubusercontent.com
+140.82.112.17 github.community
 140.82.112.18 github.community
+140.82.112.21 api.individual.githubcopilot.com
+140.82.112.21 education.github.com
 140.82.112.25 live.github.com
-140.82.112.26 alive.github.com
-140.82.113.18 github.community
-140.82.113.21 api.individual.githubcopilot.com
 140.82.113.21 collector.github.com
 140.82.113.22 central.github.com
-140.82.113.22 collector.github.com
 140.82.113.26 alive.github.com
-140.82.113.26 live.github.com
-140.82.114.22 education.github.com
+140.82.114.21 central.github.com
+140.82.114.21 collector.github.com
+140.82.114.25 alive.github.com
+140.82.114.25 live.github.com
 142.250.107.188 alt5-mtalk.google.com
 142.250.115.188 alt6-mtalk.google.com
 142.250.152.188 alt7-mtalk.google.com
@@ -28,15 +29,31 @@
 146.75.48.133 objects.githubusercontent.com
 146.75.48.133 raw.githubusercontent.com
 146.75.48.133 release-assets.githubusercontent.com
-150.171.110.101 vscode.dev
+150.171.110.103 vscode.dev
 151.101.76.133 raw.github.com
-16.15.183.70 github-com.s3.amazonaws.com
-16.15.207.86 github-cloud.s3.amazonaws.com
-16.15.223.73 github-production-user-asset-6210df.s3.amazonaws.com
-16.15.229.82 github-production-repository-file-5c1aeb.s3.amazonaws.com
-16.182.70.113 github-production-release-asset-2e65be.s3.amazonaws.com
-185.199.109.153 github.io
-185.199.109.153 githubstatus.com
+16.15.212.82 github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.214.116 github-com.s3.amazonaws.com
+16.15.223.105 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.255.209 github-cloud.s3.amazonaws.com
+185.199.108.153 github.io
+185.199.108.153 githubstatus.com
+185.199.109.133 avatars.githubusercontent.com
+185.199.109.133 avatars0.githubusercontent.com
+185.199.109.133 avatars1.githubusercontent.com
+185.199.109.133 avatars2.githubusercontent.com
+185.199.109.133 avatars3.githubusercontent.com
+185.199.109.133 avatars4.githubusercontent.com
+185.199.109.133 avatars5.githubusercontent.com
+185.199.109.133 camo.githubusercontent.com
+185.199.109.133 cloud.githubusercontent.com
+185.199.109.133 desktop.githubusercontent.com
+185.199.109.133 favicons.githubusercontent.com
+185.199.109.133 github.map.fastly.net
+185.199.109.133 media.githubusercontent.com
+185.199.109.133 objects.githubusercontent.com
+185.199.109.133 private-user-images.githubusercontent.com
+185.199.109.133 raw.githubusercontent.com
+185.199.109.133 user-images.githubusercontent.com
 185.199.110.133 avatars.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
 185.199.110.133 avatars1.githubusercontent.com
@@ -47,13 +64,7 @@
 185.199.110.133 camo.githubusercontent.com
 185.199.110.133 cloud.githubusercontent.com
 185.199.110.133 desktop.githubusercontent.com
-185.199.110.133 favicons.githubusercontent.com
 185.199.110.133 github.io
-185.199.110.133 github.map.fastly.net
-185.199.110.133 media.githubusercontent.com
-185.199.110.133 objects.githubusercontent.com
-185.199.110.133 private-user-images.githubusercontent.com
-185.199.110.133 raw.githubusercontent.com
 185.199.110.133 user-images.githubusercontent.com
 185.199.110.153 githubstatus.com
 185.199.110.153 lsposed.github.io
@@ -71,9 +82,10 @@
 20.205.243.168 api.github.com
 20.43.185.14 github.dev
 255.255.255.255 broadcasthost
-46.82.174.68 gist.github.com
+37.61.54.158 gist.github.com
 47.246.37.220 bigota.d.miui.com
 47.246.37.220 hugeota.d.miui.com
+54.231.169.17 github-production-release-asset-2e65be.s3.amazonaws.com
 74.125.200.188 alt2-mtalk.google.com
 analytics-*.aasaam.com
 apisgame.iqiyi.com
@@ -1418,7 +1430,6 @@ wykop.pl$badfilter
 ||1dgfd.cc^
 ||1dm6ccvy8.com^
 ||1dmp.io^
-||1dor1d6vc.com^
 ||1drj.com^
 ||1dtdsln1j.de^
 ||1e03d2091a.com^
@@ -1503,6 +1514,7 @@ wykop.pl$badfilter
 ||1iw9r46xh5.com^
 ||1j2juw.skin^
 ||1j2n061x3td.www.digi.no^
+||1j397opcuw.com^
 ||1j771bhgi.de^
 ||1jb2h3.skin^
 ||1jlp1qbgu.com^
@@ -3510,7 +3522,6 @@ wykop.pl$badfilter
 ||4epekgfpjyut6iviypfkhoth63.cfd^
 ||4ever.cc^
 ||4f2sm1y1ss.com^
-||4f3tsea1m.com^
 ||4f8g9foqwy.com^
 ||4f97ca6908.b0f0e80461.com^
 ||4fajonline.shop^
@@ -12025,6 +12036,7 @@ wykop.pl$badfilter
 ||abyssmedia.fr^
 ||abzadd.com^
 ||abzkyjleooqja.top^
+||abzkyjlkzabwb.top^
 ||ac*.786ip.com^
 ||ac*.faxingchina.com^
 ||ac-3.mix.tokyo^
@@ -133935,6 +133947,7 @@ wykop.pl$badfilter
 ||lockvisitingdisprove.com^
 ||locmomo.com^
 ||locnbrochanvenerer.cfd^
+||locnromanlyarean.cfd^
 ||locolava.com^
 ||locomantubar.cyou^
 ||locomotiva.drcristianojuliani.com.br^
@@ -159427,6 +159440,7 @@ wykop.pl$badfilter
 ||ofpodconnmtyd.space^
 ||ofppahlkiz.com^
 ||ofptzgmiiyeod.website^
+||ofpwwzlrf5l7wqbn1if7.cfd^
 ||ofqkbk.proclipusa.com^
 ||ofqlvcujykanc.site^
 ||ofracosmetics.fr^
@@ -159540,6 +159554,7 @@ wykop.pl$badfilter
 ||ogury.com^
 ||ogvadixmxosiq.online^
 ||ogvnjrogfmglm.website^
+||ogvpztzhpq74nfyu3ttvo7m12.rest^
 ||ogwjcrwlwacxrny.com^
 ||ogwsktwhfwlky.space^
 ||ogwzby.peek-und-cloppenburg.de^
@@ -259960,6 +259975,7 @@ wykop.pl$badfilter
 ||wektorkapitewnia.shop^
 ||wel-wel-fie.com^
 ||wel.mecstore.com.br^
+||welchedcamletairflow.qpon^
 ||welcome.99medispa.com.au^
 ||welcome.ciscopowerofpartnership.com^
 ||welcome.coniferhealth.com^
@@ -260692,6 +260708,7 @@ wykop.pl$badfilter
 ||whriwifnxuvmg.website^
 ||whrsen.itemmania.com^
 ||whsdjatjd1.go-static.info^
+||whsealfirk.shop^
 ||whshorsing.com^
 ||whswprjesbewv.site^
 ||whsyfigscmbif.space^
@@ -299627,7 +299644,6 @@ wykop.pl$badfilter
 ||xn--22455-udb.biz^
 ||xn--2ss830adjbqy7h.xn--fiqs8s^
 ||xn--30986-udb.biz^
-||xn--6kr65fctg2t4e.com^
 ||xn--80afden1bnch4a.xn--p1ai^
 ||xn--adspace-kvg.ero-advertising.com^
 ||xn--agiel-kursawnia-hkd.org^
