@@ -1,23 +1,21 @@
-﻿# 更新时间: 2026-08-23 12:07:20
-# 总规则数: 306839 (黑: 306361, 白: 478)
+﻿# 更新时间: 2026-08-23 12:52:21
+# 总规则数: 306855 (黑: 306377, 白: 478)
 # 作者: Menghuibanxian (Merged by Script)
 # ------------------------------------------
 
 /193.200.64.24:/
 108.177.125.188 mtalk.google.com
-128.242.250.155 github.global.ssl.fastly.net
 13.107.42.16 pipelines.actions.githubusercontent.com
 140.82.112.18 github.community
-140.82.112.22 api.individual.githubcopilot.com
-140.82.112.22 collector.github.com
+140.82.112.25 alive.github.com
 140.82.112.25 live.github.com
-140.82.113.21 central.github.com
+140.82.113.21 api.individual.githubcopilot.com
 140.82.113.21 collector.github.com
 140.82.113.22 central.github.com
+140.82.113.22 collector.github.com
 140.82.113.26 alive.github.com
 140.82.114.22 education.github.com
-140.82.114.25 alive.github.com
-140.82.114.25 live.github.com
+140.82.114.26 live.github.com
 142.250.107.188 alt5-mtalk.google.com
 142.250.115.188 alt6-mtalk.google.com
 142.250.152.188 alt7-mtalk.google.com
@@ -30,30 +28,14 @@
 146.75.48.133 release-assets.githubusercontent.com
 150.171.110.103 vscode.dev
 151.101.76.133 raw.github.com
-159.24.3.173 gist.github.com
-16.15.214.200 github-production-repository-file-5c1aeb.s3.amazonaws.com
-16.15.223.2 github-cloud.s3.amazonaws.com
-16.15.228.158 github-production-user-asset-6210df.s3.amazonaws.com
-16.15.228.172 github-production-release-asset-2e65be.s3.amazonaws.com
-16.15.252.185 github-com.s3.amazonaws.com
-185.199.109.133 avatars.githubusercontent.com
-185.199.109.133 avatars0.githubusercontent.com
-185.199.109.133 avatars1.githubusercontent.com
-185.199.109.133 avatars2.githubusercontent.com
-185.199.109.133 avatars3.githubusercontent.com
-185.199.109.133 avatars4.githubusercontent.com
-185.199.109.133 avatars5.githubusercontent.com
-185.199.109.133 camo.githubusercontent.com
-185.199.109.133 cloud.githubusercontent.com
-185.199.109.133 desktop.githubusercontent.com
-185.199.109.133 favicons.githubusercontent.com
-185.199.109.133 github.map.fastly.net
-185.199.109.133 media.githubusercontent.com
-185.199.109.133 objects.githubusercontent.com
-185.199.109.133 private-user-images.githubusercontent.com
-185.199.109.133 raw.githubusercontent.com
-185.199.109.133 user-images.githubusercontent.com
-185.199.109.215 github.githubassets.com
+16.15.191.134 github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.236.16 github-cloud.s3.amazonaws.com
+16.15.237.46 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.255.107 github-production-repository-file-5c1aeb.s3.amazonaws.com
+184.72.1.148 github.global.ssl.fastly.net
+185.199.108.215 github.githubassets.com
+185.199.109.153 github.io
+185.199.109.153 githubstatus.com
 185.199.110.133 avatars.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
 185.199.110.133 avatars1.githubusercontent.com
@@ -66,12 +48,28 @@
 185.199.110.133 desktop.githubusercontent.com
 185.199.110.133 github.io
 185.199.110.133 user-images.githubusercontent.com
-185.199.110.153 github.io
 185.199.110.153 githubstatus.com
 185.199.110.153 lsposed.github.io
 185.199.110.153 topjohnwu.github.io
 185.199.110.154 docs.github.com
 185.199.110.154 github.githubassets.com
+185.199.111.133 avatars.githubusercontent.com
+185.199.111.133 avatars0.githubusercontent.com
+185.199.111.133 avatars1.githubusercontent.com
+185.199.111.133 avatars2.githubusercontent.com
+185.199.111.133 avatars3.githubusercontent.com
+185.199.111.133 avatars4.githubusercontent.com
+185.199.111.133 avatars5.githubusercontent.com
+185.199.111.133 camo.githubusercontent.com
+185.199.111.133 cloud.githubusercontent.com
+185.199.111.133 desktop.githubusercontent.com
+185.199.111.133 favicons.githubusercontent.com
+185.199.111.133 github.map.fastly.net
+185.199.111.133 media.githubusercontent.com
+185.199.111.133 objects.githubusercontent.com
+185.199.111.133 private-user-images.githubusercontent.com
+185.199.111.133 raw.githubusercontent.com
+185.199.111.133 user-images.githubusercontent.com
 192.0.66.2 github.blog
 192.178.131.188 alt8-mtalk.google.com
 20.200.245.245 api.github.com
@@ -81,9 +79,11 @@
 20.205.243.166 github.com
 20.205.243.168 api.github.com
 20.43.185.14 github.dev
+203.98.7.65 gist.github.com
 255.255.255.255 broadcasthost
 47.246.37.220 bigota.d.miui.com
 47.246.37.220 hugeota.d.miui.com
+54.231.166.249 github-com.s3.amazonaws.com
 74.125.200.188 alt2-mtalk.google.com
 analytics-*.aasaam.com
 apisgame.iqiyi.com
@@ -11409,6 +11409,7 @@ wykop.pl$badfilter
 ||abandonment6.saas.seewhy.com^
 ||abaolokyjmlvj.top^
 ||abaolokyjmryv.top^
+||abaolokzrkvrj.top^
 ||abaryoyidjcso.store^
 ||abasedmeeds.cyou^
 ||abashfireworks.com^
@@ -35422,6 +35423,7 @@ wykop.pl$badfilter
 ||bcrct.bumpboxx.com^
 ||bcrdao.apollo.de^
 ||bcs.actonservice.com^
+||bcscodanngnhc.site^
 ||bcsfpwmjulcxw.site^
 ||bcsjcj.nasdaq.com^
 ||bcswwwzqophyk.site^
@@ -59252,6 +59254,7 @@ wykop.pl$badfilter
 ||d1j6limf657foe.cloudfront.net^
 ||d1j818d3wapogd.cloudfront.net^
 ||d1j9qsxe04m2ki.cloudfront.net^
+||d1jbmblqtpfad4.cloudfront.net^
 ||d1jcj9gy98l90g.cloudfront.net^
 ||d1jd9usa22o1l7.cloudfront.net^
 ||d1jikhx1ssl81z.cloudfront.net^
@@ -68978,6 +68981,7 @@ wykop.pl$badfilter
 ||digitfoto.fr^
 ||digitgear.site^
 ||digithalo.com^
+||digitizedcopy.com^
 ||digitlayerlabs.site^
 ||digitnex.site^
 ||digitru.st^
@@ -90524,6 +90528,7 @@ wykop.pl$badfilter
 ||galileotelemetry.tencent.com^
 ||galitaillevessels.cfd^
 ||galiysana.vip^
+||galjagersmelitis.cfd^
 ||galjoeniowa.qpon^
 ||gallantfamineana.com^
 ||galleonentopic.com^
@@ -95537,6 +95542,7 @@ wykop.pl$badfilter
 ||gougingskillo.shop^
 ||gouikrywyxnmo.store^
 ||goujayunwind.qpon^
+||goujlizglqlgj.online^
 ||goulanwattles.cfd^
 ||gounauenjail.cyou^
 ||gouploads.nocoshop.ru^
@@ -109650,6 +109656,7 @@ wykop.pl$badfilter
 ||idwxyc.rosettastone.de^
 ||idx.m.hub.sandai.net^
 ||idx.pekarna-pecjak.si^
+||idxhqpjycfupd.site^
 ||idylsrebank.com^
 ||idyyfyfjwydte.space^
 ||idyzvclzesbnu.website^
@@ -116571,6 +116578,7 @@ wykop.pl$badfilter
 ||izcjyeehxaesm.online^
 ||izcle.com^
 ||izcloacciv.com^
+||izcqvrjkriinu.site^
 ||izdonegkaboga.website^
 ||izea.com^
 ||izearanks.com^
@@ -148468,6 +148476,7 @@ wykop.pl$badfilter
 ||mkounjuehhkhn.store^
 ||mkpjchfevxpud.website^
 ||mkrfj.innasegal.com^
+||mkrgqgkwvtc2gtgw4zlt.rest^
 ||mkrplsblistuf.website^
 ||mkrygmdgxfkzy.online^
 ||mks8vq5qfu.com^
@@ -154324,6 +154333,7 @@ wykop.pl$badfilter
 ||nerlano.com^
 ||nerldv.ullapopken.pl^
 ||nero.live^
+||nero5cvchf5jn58.cfd^
 ||nerodavolasicilia.it^
 ||nerohut.com^
 ||neronicenteria.cyou^
@@ -157890,6 +157900,7 @@ wykop.pl$badfilter
 ||nunkypyrrol.cyou^
 ||nuntcnartgyaj.site^
 ||nuoajfndg.com^
+||nuoclylezmnvn.site^
 ||nuoigada.com^
 ||nuquds.citizenwatch.com^
 ||nuqwe.com^
@@ -166908,6 +166919,7 @@ wykop.pl$badfilter
 ||pfgbyn.24mx.pl^
 ||pfgfre.kidscoco.com^
 ||pfghc.nutriwise.com^
+||pfhnrxinmndvx.site^
 ||pfhub.petitfute.cn^
 ||pfhub.petitfute.co.uk^
 ||pfhub.petitfute.com^
@@ -174777,6 +174789,7 @@ wykop.pl$badfilter
 ||pzsibp.sweetyspoon.co.kr^
 ||pzsvltbfzoqwt.space^
 ||pzsvp.theadventurechallenge.com^
+||pztblvfedjxnd.site^
 ||pztnzqwz.icu^
 ||pztpegrrlrurn.com^
 ||pzutrasyzdrowia.pl^
@@ -184168,6 +184181,7 @@ wykop.pl$badfilter
 ||runninghorselive.com^
 ||runnybottom.com^
 ||runnzk.pch-shop.de^
+||runoverphyliclotrite.cyou^
 ||runsadjustmerit.com^
 ||runsbelovedrudimentary.com^
 ||runshour.com^
@@ -225710,6 +225724,7 @@ wykop.pl$badfilter
 ||steamcommumminty.cam^
 ||steamcommummity.cam^
 ||steamcomrnuunity.com^
+||steamedkipper.cyou^
 ||steamers77.com^
 ||steamgifts.5v.pl^
 ||steamierazour.shop^
@@ -237440,6 +237455,7 @@ wykop.pl$badfilter
 ||tml.clmbtech.com^
 ||tmlfunrthtnff.online^
 ||tmlhmihwqzcfmoonp9gw.cfd^
+||tmlsxuvjfzyhz.space^
 ||tmlt.actonservice.com^
 ||tmluyaszhetwu.online^
 ||tmlyhh.icu^
