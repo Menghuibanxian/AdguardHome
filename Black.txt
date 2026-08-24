@@ -1,22 +1,24 @@
-﻿# 更新时间: 2026-08-24 18:03:17
-# 总规则数: 295870 (黑: 295390, 白: 480)
+﻿# 更新时间: 2026-08-24 18:52:22
+# 总规则数: 295871 (黑: 295391, 白: 480)
 # 作者: Menghuibanxian (Merged by Script)
 # ------------------------------------------
 
 /193.200.64.24:/
-103.214.168.106 github.global.ssl.fastly.net
 108.177.125.188 mtalk.google.com
+13.107.253.59 vscode.dev
 13.107.42.16 pipelines.actions.githubusercontent.com
 140.82.112.18 github.community
+140.82.112.21 api.individual.githubcopilot.com
 140.82.112.21 central.github.com
-140.82.112.22 api.individual.githubcopilot.com
+140.82.112.21 collector.github.com
+140.82.112.21 education.github.com
 140.82.112.25 live.github.com
+140.82.113.18 github.community
 140.82.113.21 collector.github.com
 140.82.113.22 central.github.com
+140.82.113.25 alive.github.com
 140.82.113.26 alive.github.com
 140.82.113.26 live.github.com
-140.82.114.21 collector.github.com
-140.82.114.22 education.github.com
 142.250.107.188 alt5-mtalk.google.com
 142.250.115.188 alt6-mtalk.google.com
 142.250.152.188 alt7-mtalk.google.com
@@ -27,14 +29,12 @@
 146.75.48.133 objects.githubusercontent.com
 146.75.48.133 raw.githubusercontent.com
 146.75.48.133 release-assets.githubusercontent.com
-150.171.110.104 vscode.dev
 151.101.76.133 raw.github.com
-159.106.121.75 gist.github.com
-16.15.183.19 github-cloud.s3.amazonaws.com
-16.15.229.168 github-production-user-asset-6210df.s3.amazonaws.com
-16.15.236.9 github-production-release-asset-2e65be.s3.amazonaws.com
-16.15.244.104 github-com.s3.amazonaws.com
-16.15.252.33 github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.212.196 github-production-release-asset-2e65be.s3.amazonaws.com
+16.15.213.166 github-cloud.s3.amazonaws.com
+16.15.252.126 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.253.155 github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.255.172 github-com.s3.amazonaws.com
 185.199.108.133 avatars.githubusercontent.com
 185.199.108.133 avatars0.githubusercontent.com
 185.199.108.133 avatars1.githubusercontent.com
@@ -52,8 +52,6 @@
 185.199.108.133 private-user-images.githubusercontent.com
 185.199.108.133 raw.githubusercontent.com
 185.199.108.133 user-images.githubusercontent.com
-185.199.109.153 github.io
-185.199.109.153 githubstatus.com
 185.199.110.133 avatars.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
 185.199.110.133 avatars1.githubusercontent.com
@@ -66,6 +64,7 @@
 185.199.110.133 desktop.githubusercontent.com
 185.199.110.133 github.io
 185.199.110.133 user-images.githubusercontent.com
+185.199.110.153 github.io
 185.199.110.153 githubstatus.com
 185.199.110.153 lsposed.github.io
 185.199.110.153 topjohnwu.github.io
@@ -78,10 +77,12 @@
 20.200.245.247 gist.github.com
 20.200.245.247 github.com
 20.205.243.165 codeload.github.com
+20.205.243.166 gist.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
 20.43.185.14 github.dev
 255.255.255.255 broadcasthost
+31.13.82.33 github.global.ssl.fastly.net
 47.246.37.220 bigota.d.miui.com
 47.246.37.220 hugeota.d.miui.com
 74.125.200.188 alt2-mtalk.google.com
