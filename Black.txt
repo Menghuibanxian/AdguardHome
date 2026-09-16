@@ -1,24 +1,23 @@
-﻿# 更新时间: 2026-09-17 02:22:45
-# 总规则数: 293650 (黑: 293168, 白: 482)
+﻿# 更新时间: 2026-09-17 05:36:06
+# 总规则数: 293656 (黑: 293174, 白: 482)
 # 作者: Menghuibanxian (Merged by Script)
 # ------------------------------------------
 
 /193.200.64.24:/
-108.160.166.62 github.global.ssl.fastly.net
 108.177.125.188 mtalk.google.com
 13.107.42.16 pipelines.actions.githubusercontent.com
 140.82.112.18 github.community
+140.82.112.22 central.github.com
+140.82.112.25 alive.github.com
 140.82.112.25 live.github.com
-140.82.113.18 github.community
-140.82.113.21 api.individual.githubcopilot.com
-140.82.113.21 central.github.com
 140.82.113.21 collector.github.com
-140.82.113.21 education.github.com
+140.82.113.22 api.individual.githubcopilot.com
 140.82.113.22 central.github.com
-140.82.113.22 collector.github.com
-140.82.113.25 alive.github.com
 140.82.113.26 alive.github.com
-140.82.113.26 live.github.com
+140.82.114.18 github.community
+140.82.114.21 education.github.com
+140.82.114.22 collector.github.com
+140.82.114.26 live.github.com
 142.250.107.188 alt5-mtalk.google.com
 142.250.115.188 alt6-mtalk.google.com
 142.250.152.188 alt7-mtalk.google.com
@@ -29,13 +28,13 @@
 146.75.48.133 objects.githubusercontent.com
 146.75.48.133 raw.githubusercontent.com
 146.75.48.133 release-assets.githubusercontent.com
-150.171.110.108 vscode.dev
+150.171.110.102 vscode.dev
 151.101.76.133 raw.github.com
-16.15.191.237 github-com.s3.amazonaws.com
-16.15.244.179 github-production-release-asset-2e65be.s3.amazonaws.com
-16.15.244.179 github-production-user-asset-6210df.s3.amazonaws.com
-16.15.245.186 github-cloud.s3.amazonaws.com
-16.15.253.156 github-production-repository-file-5c1aeb.s3.amazonaws.com
+157.240.6.35 github.global.ssl.fastly.net
+16.15.214.54 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.223.48 github-cloud.s3.amazonaws.com
+16.15.253.157 github-com.s3.amazonaws.com
+16.182.70.65 github-production-release-asset-2e65be.s3.amazonaws.com
 185.199.109.133 avatars.githubusercontent.com
 185.199.109.133 avatars0.githubusercontent.com
 185.199.109.133 avatars1.githubusercontent.com
@@ -53,7 +52,6 @@
 185.199.109.133 private-user-images.githubusercontent.com
 185.199.109.133 raw.githubusercontent.com
 185.199.109.133 user-images.githubusercontent.com
-185.199.109.215 github.githubassets.com
 185.199.110.133 avatars.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
 185.199.110.133 avatars1.githubusercontent.com
@@ -73,19 +71,21 @@
 185.199.110.154 github.githubassets.com
 185.199.111.153 github.io
 185.199.111.153 githubstatus.com
+185.199.111.215 github.githubassets.com
 192.0.66.2 github.blog
 192.178.131.188 alt8-mtalk.google.com
 20.200.245.245 api.github.com
 20.200.245.247 gist.github.com
 20.200.245.247 github.com
 20.205.243.165 codeload.github.com
-20.205.243.166 gist.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
 20.43.185.14 github.dev
 255.255.255.255 broadcasthost
+37.61.54.158 gist.github.com
 47.246.37.220 bigota.d.miui.com
 47.246.37.220 hugeota.d.miui.com
+52.217.164.145 github-production-repository-file-5c1aeb.s3.amazonaws.com
 74.125.200.188 alt2-mtalk.google.com
 analytics-*.aasaam.com
 apisgame.iqiyi.com
@@ -12846,6 +12846,7 @@ wykop.pl$badfilter
 ||ad-dp-drcn.cloud.huawei.com.cn^
 ||ad-drop.jp^
 ||ad-drs-ipv6.52qumao.com^
+||ad-drs.52qumao.com
 ||ad-drs.52qumao.com^
 ||ad-dsp-1251779293.file.myqcloud.com^
 ||ad-ebis.bookpass.auone.jp^
@@ -16015,6 +16016,7 @@ wykop.pl$badfilter
 ||ads-log.huolala.cn^
 ||ads-lot.ru^
 ||ads-m.rustore.ru^
+||ads-marketing-vivofs.vivo.com.cn
 ||ads-marketing-vivofs.vivo.com.cn^
 ||ads-media.gameforge.com^
 ||ads-media.wildberries.ru^
@@ -39718,6 +39720,7 @@ wykop.pl$badfilter
 ||bouldersparhaven.net^
 ||boulesdeplumes.goasrv.com^
 ||boulevardrunningprofane.com^
+||boulimyaurigo.com^
 ||boultelelatcha.com^
 ||bounce-ads.de^
 ||bounceads.net^
@@ -92045,6 +92048,7 @@ wykop.pl$badfilter
 ||glvlnlfchhcao.site^
 ||glvmtlnxdxdhl.website^
 ||glvrlmlyidyfj.space^
+||glwcxjcrnpjfb.site^
 ||glwdce.thewinecollective.com.au^
 ||glwisiqnbmvmd.site^
 ||glxacqtlhomgu.online^
@@ -121299,6 +121303,7 @@ wykop.pl$badfilter
 ||kyriostweaky.qpon^
 ||kyson.ad.daum.net^
 ||kyson.kakao.com^
+||kysqkugzkbfpg.website^
 ||kysrwh.izlato24.cz^
 ||kyszhn.qvc.jp^
 ||kytrzcenkcvyo.space^
@@ -238920,6 +238925,7 @@ wykop.pl$badfilter
 ||trade30maxair.com^
 ||trade360.com^
 ||tradeadexchange.com^
+||tradeadsexchange.com^
 ||tradeaisystem.net^
 ||tradeapperatrade.de^
 ||tradeapptrade.com^
