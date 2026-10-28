@@ -1,5 +1,5 @@
-﻿# 更新时间: 2026-10-28 16:45:29
-# 总规则数: 301633 (黑: 301178, 白: 455)
+﻿# 更新时间: 2026-10-28 23:33:22
+# 总规则数: 301696 (黑: 301241, 白: 455)
 # 作者: Menghuibanxian (Merged by Script)
 # ------------------------------------------
 
@@ -7,16 +7,15 @@
 108.177.125.188 mtalk.google.com
 13.107.42.16 pipelines.actions.githubusercontent.com
 140.82.112.18 github.community
+140.82.112.22 education.github.com
 140.82.112.25 live.github.com
-140.82.112.26 alive.github.com
+140.82.113.21 api.individual.githubcopilot.com
 140.82.113.21 central.github.com
 140.82.113.21 collector.github.com
 140.82.113.26 alive.github.com
-140.82.113.26 live.github.com
-140.82.114.18 github.community
+140.82.114.17 github.community
 140.82.114.21 collector.github.com
-140.82.114.22 api.individual.githubcopilot.com
-140.82.114.22 education.github.com
+140.82.114.26 live.github.com
 142.250.107.188 alt6-mtalk.google.com
 142.250.115.188 alt7-mtalk.google.com
 142.250.152.188 alt8-mtalk.google.com
@@ -28,16 +27,31 @@
 146.75.48.133 objects.githubusercontent.com
 146.75.48.133 raw.githubusercontent.com
 146.75.48.133 release-assets.githubusercontent.com
-150.171.110.104 vscode.dev
+150.171.110.100 vscode.dev
 151.101.76.133 raw.github.com
-16.15.163.220 github-production-user-asset-6210df.s3.amazonaws.com
-16.15.171.240 github-production-repository-file-5c1aeb.s3.amazonaws.com
-16.15.183.122 github-com.s3.amazonaws.com
-16.15.239.14 github-production-release-asset-2e65be.s3.amazonaws.com
-16.15.253.252 github-cloud.s3.amazonaws.com
-185.199.109.153 github.io
-185.199.109.153 githubstatus.com
-185.199.109.215 github.githubassets.com
+157.240.16.50 github.global.ssl.fastly.net
+16.15.191.199 github-production-user-asset-6210df.s3.amazonaws.com
+16.15.213.125 github-production-repository-file-5c1aeb.s3.amazonaws.com
+16.15.215.171 github-com.s3.amazonaws.com
+16.15.236.85 github-cloud.s3.amazonaws.com
+16.15.237.245 github-production-release-asset-2e65be.s3.amazonaws.com
+185.199.109.133 avatars.githubusercontent.com
+185.199.109.133 avatars0.githubusercontent.com
+185.199.109.133 avatars1.githubusercontent.com
+185.199.109.133 avatars2.githubusercontent.com
+185.199.109.133 avatars3.githubusercontent.com
+185.199.109.133 avatars4.githubusercontent.com
+185.199.109.133 avatars5.githubusercontent.com
+185.199.109.133 camo.githubusercontent.com
+185.199.109.133 cloud.githubusercontent.com
+185.199.109.133 desktop.githubusercontent.com
+185.199.109.133 favicons.githubusercontent.com
+185.199.109.133 github.map.fastly.net
+185.199.109.133 media.githubusercontent.com
+185.199.109.133 objects.githubusercontent.com
+185.199.109.133 private-user-images.githubusercontent.com
+185.199.109.133 raw.githubusercontent.com
+185.199.109.133 user-images.githubusercontent.com
 185.199.110.133 avatars.githubusercontent.com
 185.199.110.133 avatars0.githubusercontent.com
 185.199.110.133 avatars1.githubusercontent.com
@@ -53,33 +67,18 @@
 185.199.110.153 githubstatus.com
 185.199.110.154 docs.github.com
 185.199.110.154 github.githubassets.com
-185.199.111.133 avatars.githubusercontent.com
-185.199.111.133 avatars0.githubusercontent.com
-185.199.111.133 avatars1.githubusercontent.com
-185.199.111.133 avatars2.githubusercontent.com
-185.199.111.133 avatars3.githubusercontent.com
-185.199.111.133 avatars4.githubusercontent.com
-185.199.111.133 avatars5.githubusercontent.com
-185.199.111.133 camo.githubusercontent.com
-185.199.111.133 cloud.githubusercontent.com
-185.199.111.133 desktop.githubusercontent.com
-185.199.111.133 favicons.githubusercontent.com
-185.199.111.133 github.map.fastly.net
-185.199.111.133 media.githubusercontent.com
-185.199.111.133 objects.githubusercontent.com
-185.199.111.133 private-user-images.githubusercontent.com
-185.199.111.133 raw.githubusercontent.com
-185.199.111.133 user-images.githubusercontent.com
-185.60.216.11 github.global.ssl.fastly.net
+185.199.110.215 github.githubassets.com
+185.199.111.153 github.io
+185.199.111.153 githubstatus.com
 192.0.66.2 github.blog
 20.200.245.245 api.github.com
 20.200.245.247 gist.github.co
 20.200.245.247 github.com
 20.205.243.165 codeload.github.com
+20.205.243.166 gist.github.com
 20.205.243.166 github.com
 20.205.243.168 api.github.com
 20.43.185.14 github.dev
-203.98.7.65 gist.github.com
 255.255.255.255 broadcasthost
 47.246.37.220 bigota.d.miui.com
 47.246.37.220 hugeota.d.miui.com
@@ -159,6 +158,7 @@ wykop.pl$badfilter
 ||-bobo_recommend_^
 ||0.0.0.0.creative.hpyrdr.com^
 ||0.0.0.0.hpyrdr.com^
+||0.0.0sc.origins.en25.com^
 ||0.ackzany.com^
 ||0.athwartwhoafat.com^
 ||0.avmarket.rs^
@@ -532,6 +532,7 @@ wykop.pl$badfilter
 ||0tc1bdbgsm.com^
 ||0tfsd2rwwu3xjstb.edge41.testandtarget.omniture.com^
 ||0tkwnl1cw.com^
+||0twork.com.ve^
 ||0u9w05cxo.com^
 ||0uflbn.dobrewyniki.pl^
 ||0v0qj9fnwf.top^
@@ -578,7 +579,6 @@ wykop.pl$badfilter
 ||1.allyes.com.cn^
 ||1.arpun.com^
 ||1.athwartwhoafat.com^
-||1.b6y1umem7u4794h1.cfd^
 ||1.bashenghuo.com^
 ||1.bh5.com.cn^
 ||1.blissfullyzebra.com^
@@ -1461,7 +1461,6 @@ wykop.pl$badfilter
 ||16134024.artcollection.io^
 ||161779.publy.co^
 ||161i.l.mob.com^
-||162.252.214.4^
 ||163.wrating.com^
 ||16425bafe4.com^
 ||1643.5imr6oz792gi1jh9ml8m.cyou^
@@ -3436,7 +3435,6 @@ wykop.pl$badfilter
 ||4.afs.googleadservices.com^
 ||4.athwartwhoafat.com^
 ||4.blissfullyzebra.com^
-||4.btqz5ehvpub65t.cfd^
 ||4.dlevo.com^
 ||4.duhquietly.com^
 ||4.e-why.net^
@@ -3971,7 +3969,6 @@ wykop.pl$badfilter
 ||50m.gkcyc.com^
 ||50services.net^
 ||50union.com^
-||51.77.227.97^
 ||51.la^
 ||51015kidpl.shop^
 ||5101c555fc.com^
@@ -5569,7 +5566,6 @@ wykop.pl$badfilter
 ||7godscasino.com^
 ||7hdl8dlfjm4g.www.cybernetman.com^
 ||7ho8oc3svg.com^
-||7i1ry5nnxglqg7xrwvn.z6x5e11rcm98m5zbruvfb.cfd^
 ||7imgl76f9cgpbgnh7ik.fxc5fklv2b43juz3hr35h.cyou^
 ||7imiy33o9vkqvrggxo2xr8y3.rest^
 ||7imz0d5nay.com^
@@ -6739,7 +6735,6 @@ wykop.pl$badfilter
 ||9p7q3nw.pics^
 ||9p81m19kr.com^
 ||9pbeoey9j.com^
-||9pmufxiivog3mn.l9f7pjkhkcn2x21fet.cfd^
 ||9print.pl^
 ||9pub.io^
 ||9pyn42z6d.com^
@@ -6778,7 +6773,6 @@ wykop.pl$badfilter
 ||9xeqynu3gt7c.com^
 ||9xmqne726ur9fp5eqcb52.cfd^
 ||9xob25oszs.com^
-||9xpkghf.8vu8uth3yp3r545ki1q7g1ytuq2.cfd^
 ||9xu.com^
 ||9yad.com^
 ||9yspkomgq.com^
@@ -9282,7 +9276,6 @@ wykop.pl$badfilter
 ||a35094.actonservice.com^
 ||a35110.actonservice.com^
 ||a3514.casalemedia.com^
-||a35161.actonservice.com^
 ||a3518.casalemedia.com^
 ||a352.sandiegouniontribune.com^
 ||a35310.actonservice.com^
@@ -14452,7 +14445,6 @@ wykop.pl$badfilter
 ||ad.virtual-nights.com^
 ||ad.vkool.net^
 ||ad.vo-media.ru^
-||ad.voiceads.cn^
 ||ad.vrvm.com^
 ||ad.walkgame.com^
 ||ad.wanderlist.com^
@@ -14470,7 +14462,6 @@ wykop.pl$badfilter
 ||ad.wretch.cc^
 ||ad.wrtn.ai^
 ||ad.wsod.com^
-||ad.wtzw.com^
 ||ad.wurangxian.top^
 ||ad.wx.com^
 ||ad.wynk.in^
@@ -15609,6 +15600,7 @@ wykop.pl$badfilter
 ||adform.com^
 ||adform.net^
 ||adformdsp.net^
+||adfox.cam^
 ||adfox.ru^
 ||adfox.yandex.ru^
 ||adfp.send.microad.jp^
@@ -19033,7 +19025,6 @@ wykop.pl$badfilter
 ||adservice.google.se^
 ||adservice.google.vg^
 ||adservice.hani.co.kr^
-||adservice.huawei.com^
 ||adservice.kugou.com^
 ||adservice.sbs.co.kr^
 ||adservice.sigmob.cn^
@@ -19135,7 +19126,6 @@ wykop.pl$badfilter
 ||adskeeper.com^
 ||adsklick.de^
 ||adskom.com^
-||adskp.org^
 ||adslb.cc^
 ||adslidango.com^
 ||adslivecorp.com^
@@ -20169,7 +20159,6 @@ wykop.pl$badfilter
 ||adx.com.ru^
 ||adx.dable.io^
 ||adx.dlads.cn^
-||adx.domobcdn.com^
 ||adx.doumpaq.com^
 ||adx.fulcrum.com.fj^
 ||adx.g.doubleclick.net^
@@ -20193,7 +20182,6 @@ wykop.pl$badfilter
 ||adx.mossru.com^
 ||adx.ocala.com^
 ||adx.opera.com^
-||adx.oppomobile.com^
 ||adx.pro.cn^
 ||adx.proadscdn.com^
 ||adx.rrt365.com^
@@ -22015,6 +22003,7 @@ wykop.pl$badfilter
 ||ajggnilcptlgz.site^
 ||ajgkdt.eazy.de^
 ||ajhdf.com^
+||ajhdleafwepkj.online^
 ||ajhqtaffmiusv.online^
 ||ajhwwlye.com^
 ||ajiag.bullybunches.com^
@@ -27465,7 +27454,6 @@ wykop.pl$badfilter
 ||api.advancedtracking.com.br^
 ||api.adviad.com^
 ||api.advocaciajacobi.com.br^
-||api.adx.oppomobile.com^
 ||api.adxnow.com^
 ||api.adxpand.com^
 ||api.ae888.com^
@@ -33498,6 +33486,7 @@ wykop.pl$badfilter
 ||aw.perlesandco.com^
 ||awaaalxhkqivc.site^
 ||awae-shop.com^
+||awahirechhfxc.space^
 ||awaitingcoordinatelassitude.com^
 ||awake-stats.jpush.cn^
 ||awakebird.com^
@@ -33912,6 +33901,7 @@ wykop.pl$badfilter
 ||ayfufj.almacenesbrissa.com.co^
 ||aygccr.eonet.jp^
 ||ayghoddmrzret.space^
+||aygyjouabyojsd.com^
 ||ayhfjurkrfdcr.online^
 ||ayhleywwvdply.space^
 ||ayhnnonnjqgkb.space^
@@ -35724,6 +35714,7 @@ wykop.pl$badfilter
 ||bawarnojtsa.in^
 ||bawattbzy.com^
 ||bawdybalance.com^
+||bawdybeast.com^
 ||bawixi.xyz^
 ||bawosdwu.com^
 ||bawqpynu.com^
@@ -36020,7 +36011,6 @@ wykop.pl$badfilter
 ||bcnewltd.club^
 ||bcnmnhublbnsw.website^
 ||bcnonwgwntvpv.website^
-||bcnsport.us^
 ||bcob.charlotte.edu^
 ||bcob.uncc.edu^
 ||bcobdykvrlfhe.website^
@@ -37039,6 +37029,7 @@ wykop.pl$badfilter
 ||bestadbid.com^
 ||bestadload.com^
 ||bestadsforyou.com^
+||bestaindocking.cyou^
 ||bestappinstalls.com^
 ||bestaryua.com^
 ||bestbet.com^
@@ -38478,6 +38469,7 @@ wykop.pl$badfilter
 ||bird.hecten.com^
 ||bird.thechristmasfabric.com^
 ||bird.webitizevoice.com^
+||birdebigottyasteer.cfd^
 ||birdlab.digital^
 ||birdmedia.com^
 ||birdmedia.digital^
@@ -38766,7 +38758,6 @@ wykop.pl$badfilter
 ||bjlsvzikxpjxq.space^
 ||bjlsx.nativecos.com^
 ||bjlwmgypnxmwr.space^
-||bjm.1vkx.cn^
 ||bjm.cipelipampam.com^
 ||bjmantis.net^
 ||bjmcmj.cn^
@@ -38957,6 +38948,7 @@ wykop.pl$badfilter
 ||blackbirdventures.actonservice.com^
 ||blackboardholdingrpm.com^
 ||blackbook.coniferhealth.com^
+||blackbrake.com^
 ||blackchek.popunder.ru^
 ||blackdagger.openapp.link^
 ||blackdogboxing.com^
@@ -39069,7 +39061,6 @@ wykop.pl$badfilter
 ||bleepgizmorecital.com^
 ||bleepidolon.cfd^
 ||bleepingcomputer.us.intellitxt.com^
-||bleezyhyper.cyou^
 ||bleffsemen.store^
 ||blehcourt.com^
 ||blekdkibtepdo.site^
@@ -40305,6 +40296,7 @@ wykop.pl$badfilter
 ||boorantech.com^
 ||booseed.com^
 ||boosensei.goaserv.com^
+||boosespars.com^
 ||boost-cdn.manatee.dk^
 ||boost-cmp.hismarttv.com^
 ||boost-next.co.jp^
@@ -40506,6 +40498,7 @@ wykop.pl$badfilter
 ||bouncingbuzz.com^
 ||bouncy-castle.1462172.n4.goasrv.com^
 ||bouncyproperty.com^
+||bouncyridge.com^
 ||boundarybusiness.com^
 ||boundlessargument.com^
 ||boundlessbrake.com^
@@ -40537,6 +40530,7 @@ wykop.pl$badfilter
 ||bovinetimingunsaddle.com^
 ||bovmkbuiaddbb.website^
 ||bovqari.shop^
+||bovvaivwmnjxa.site^
 ||bovwyqmgrejwz.space^
 ||bowablejusting.cfd^
 ||bowed-tackle.com^
@@ -40574,7 +40568,6 @@ wykop.pl$badfilter
 ||box2020.oxbetd.com^
 ||boxadstop.com^
 ||boxandcover.com^
-||boxatech.com^
 ||boxbwxhkzwwpe.website^
 ||boxcartidalvoicing.com^
 ||boxeasynews.digital^
@@ -41044,6 +41037,7 @@ wykop.pl$badfilter
 ||bravtriq.com^
 ||brawnergrice.shop^
 ||braxiesoutredegenys.cfd^
+||braxybanty.com^
 ||braychirt.cfd^
 ||brayvo.shop^
 ||braze.com^
@@ -41363,7 +41357,6 @@ wykop.pl$badfilter
 ||bro1.biz^
 ||broadbandy.net^
 ||broadborder.com^
-||broadboundary.com^
 ||broadcast.piximedia.fr^
 ||broadcastbed.com^
 ||broadcaster.streamate.com^
@@ -45700,7 +45693,7 @@ wykop.pl$badfilter
 ||caudalenceai.com^
 ||caudalinversoria.digital^
 ||caudexintrine.com^
-||cauditcommernal.com^
+||cauditcommernrilenews.com^
 ||caue971.org^
 ||cauldronfest.com^
 ||caulenginear.info^
@@ -49007,6 +49000,7 @@ wykop.pl$badfilter
 ||chymiadolors.com^
 ||chyomb.vertbaudet.pt^
 ||chyong27.go-static.info^
+||chyttrjedemlq.website^
 ||chzcjttcjtycz.site^
 ||chzhqwirsxmad.online^
 ||chzowqzedjocl.space^
@@ -49430,6 +49424,7 @@ wykop.pl$badfilter
 ||ckbxxryowtyne.website^
 ||ckcikq.dondup.com^
 ||ckcw4x.twojsukcespro.pl^
+||ckffxtbzbbrlf.site^
 ||ckfkkwjvpcsbw.site^
 ||ckfkzn.dubz.com^
 ||ckg.vipyl.com^
@@ -54602,6 +54597,7 @@ wykop.pl$badfilter
 ||corba.adtech.fr^
 ||corba.adtech.us^
 ||corbalanlopez.com^
+||corbanunfit.qpon^
 ||corbettsports.com^
 ||corbettstudios.com^
 ||cordaltavric.com^
@@ -55870,6 +55866,7 @@ wykop.pl$badfilter
 ||crasspied.shop^
 ||cratecamera.com^
 ||craterbox.com^
+||craterboxl.info^
 ||cratestable.com^
 ||cratky.moonpod.co^
 ||craurxxwkhbup.space^
@@ -56088,7 +56085,6 @@ wykop.pl$badfilter
 ||creeduserbane.com^
 ||creeperoaring.cyou^
 ||creeperplotgrove.com^
-||creeperpummels.com^
 ||creepgrandpa.com^
 ||creepparalysisdrill.com^
 ||creepy-frame.com^
@@ -56380,7 +56376,6 @@ wykop.pl$badfilter
 ||crtznwsuivbvt.online^
 ||crucialostensiblestops.com^
 ||crudenessfinishersacred.com^
-||crudychello.com^
 ||cruelnichil.shop^
 ||cruetyvraic.com^
 ||cruhliip.com^
@@ -57329,6 +57324,7 @@ wykop.pl$badfilter
 ||culturedcamera.com^
 ||culturedfeather.com^
 ||cumberlandvalleynews.com^
+||cumbersomecar.com^
 ||cumbersomecarpenter.com^
 ||cumbersomeexpressingimplement.com^
 ||cumbersomegarmentmortify.com^
@@ -57356,7 +57352,6 @@ wykop.pl$badfilter
 ||cunhalvormarkets.net^
 ||cunjahtewly.com^
 ||cunle.calliesbiscuits.com^
-||cunnidissait.com^
 ||cunningrespectable.com^
 ||cunningthong.com^
 ||cuntwars.com^
@@ -57475,6 +57470,7 @@ wykop.pl$badfilter
 ||curvedhoney.com^
 ||curvemodernforester.com^
 ||curveshore.com^
+||curvycord.com^
 ||curvycry.com^
 ||curyhi.chuo-besthome.co.jp^
 ||curyingarmenic.qpon^
@@ -57638,7 +57634,6 @@ wykop.pl$badfilter
 ||cutie.kidsmagictree.com^
 ||cutld.kahootsfeedandpet.com^
 ||cutletyet.com^
-||cutoffclerks.com^
 ||cutsmarter.net^
 ||cutterbewilderedvile.com^
 ||cutting-edge.in^
@@ -57652,7 +57647,6 @@ wykop.pl$badfilter
 ||cuutiethm.com^
 ||cuuunrzplrqwe.website^
 ||cuvannuqxzpek.space^
-||cuvetteacknown.com^
 ||cuvqero.shop^
 ||cuvriko.shop^
 ||cuwtqn.doseofcolors.com^
@@ -60059,6 +60053,7 @@ wykop.pl$badfilter
 ||d3gi6isrskhoq.cloudfront.net^
 ||d3glbzj5024wpt.cloudfront.net^
 ||d3glxtkdbno0so.cloudfront.net^
+||d3h02f4xol.com^
 ||d3h2eyuxrf2jr9.cloudfront.net^
 ||d3h4vtr7axmx3p.cloudfront.net^
 ||d3hdbjtb1686tn.cloudfront.net^
@@ -60519,6 +60514,7 @@ wykop.pl$badfilter
 ||dacfhprtw.com^
 ||daciuehpyf.com^
 ||dackpartner-web.s3.amazonaws.com^
+||dacniayalmuxj.space^
 ||dacobi.pl^
 ||dacocorp.actonservice.com^
 ||dacor.samsungusa.com^
@@ -60982,6 +60978,7 @@ wykop.pl$badfilter
 ||dark-utilities.xyz^
 ||darkandlight.ru^
 ||darkartsyoga.com^
+||darkerwagging.cyou^
 ||darkfailllnkf4vf.onion.pet^
 ||darkhorizons.us.intellitxt.com^
 ||darki.sokolovelaw.com^
@@ -67527,6 +67524,7 @@ wykop.pl$badfilter
 ||deadlinescreechvisit.com^
 ||deadlyfeasible.com^
 ||deafening-area.pro^
+||deafeningdock.com^
 ||deafeningphone.com^
 ||deafensgrip.shop^
 ||deaferfutiley.com^
@@ -67667,6 +67665,7 @@ wykop.pl$badfilter
 ||decisive-wait.com^
 ||decisivebase.com^
 ||decisivedrawer.com^
+||decisiveducks.com^
 ||deck.versafloor.com^
 ||deckalibisbricks.com^
 ||deckbuilders-tampafl.com^
@@ -68067,6 +68066,7 @@ wykop.pl$badfilter
 ||deltabehavioralhealth.org^
 ||deltadigs.com^
 ||deltadna.net^
+||deltafault.com^
 ||deltago.com^
 ||deltarockme.com^
 ||deltarviews.bond^
@@ -68205,7 +68205,6 @@ wykop.pl$badfilter
 ||dens1raec.com^
 ||densanox.pl^
 ||denseceleryliver.com^
-||densenbl.com^
 ||dentairemalin.com^
 ||dental.nightanddayemergencydentist-acton.co.uk^
 ||dentalfix.shop^
@@ -69322,6 +69321,7 @@ wykop.pl$badfilter
 ||did.ijinshan.com^
 ||did.kr^
 ||didit.com^
+||didlemesas.com^
 ||didna-d.openx.net^
 ||didna.b-cdn.net^
 ||didna.io^
@@ -69809,6 +69809,7 @@ wykop.pl$badfilter
 ||dipan.com^
 ||diparazoto.store^
 ||diplnnoidyhexameter.info^
+||diplomahawaii.com^
 ||dipperflightrecommend.com^
 ||dippergeologyprescribe.com^
 ||dippingearlier.com^
@@ -70088,7 +70089,6 @@ wykop.pl$badfilter
 ||dismalscrew.com^
 ||dismantlepenantiterrorist.com^
 ||dismas.novusordowatch.org^
-||dismastlemosi.com^
 ||dismisscomplicatedfoolproof.com^
 ||disney.demdex.net^
 ||disney.my.sentry.io^
@@ -72461,6 +72461,7 @@ wykop.pl$badfilter
 ||drupalcms-sgtm-staging.1800gotjunk.com^
 ||drupalcms-sgtm.1800gotjunk.com^
 ||drupalmetrics.ppg.apple.com^
+||drurlpyshgher.website^
 ||drutsylaylzqx.site^
 ||druvani.shop^
 ||druvexo.shop^
@@ -73414,7 +73415,6 @@ wykop.pl$badfilter
 ||duckswillsmoochyou.com^
 ||duckvoidrebuke.com^
 ||ducoa.inthecompanyofdogs.com^
-||ductilevoider.com^
 ||duda.raioxpreditivoacademy.com.br^
 ||dude.trinitygaming.net^
 ||dudgzruk.onepathnetwork.com^
@@ -74002,6 +74002,7 @@ wykop.pl$badfilter
 ||dwvohsgysgfrr.online^
 ||dwwnz.indianapolismotorspeedway.com^
 ||dwwpaoatfgjvo.space^
+||dwwrdbvrzuiya.space^
 ||dwxlqmcwoyuub.space^
 ||dwyeuy.com^
 ||dwzacisze.com.pl^
@@ -75134,6 +75135,7 @@ wykop.pl$badfilter
 ||e68k5d1yw6.com^
 ||e695de9aef.com^
 ||e6b1cbefe5.com^
+||e6ufjn5obiieftle9oywq5cq5nbo3.rest^
 ||e6ui8pc.com^
 ||e6w6aq.nyfurr.pl^
 ||e7.wetterkameras.com^
@@ -75309,6 +75311,7 @@ wykop.pl$badfilter
 ||eaetyfdjguduu.site^
 ||eafro.kissdonttell.com^
 ||eagamesuk.112.2o7.net^
+||eagereden.com^
 ||eagerflame.com^
 ||eagerknight.com^
 ||eagerlycuisinecast.com^
@@ -75926,6 +75929,7 @@ wykop.pl$badfilter
 ||ec114.ronada.eu^
 ||ec114.ungeziefershop.de^
 ||ec2-44-233-143-239.us-west-2.compute.amazonaws.com^
+||ec2ic6ew5k.com^
 ||ec375309c1.com^
 ||ec37d6572b.com^
 ||ec5baba40e.ca0a2147af.com^
@@ -76062,7 +76066,6 @@ wykop.pl$badfilter
 ||ecoiccydon.store^
 ||ecoklahomanews.com^
 ||ecollege.goasrv.com^
-||ecologystoter.com^
 ||ecolorsrl.com^
 ||ecom.bambe.ma^
 ||ecom.goasrv.com^
@@ -76196,6 +76199,7 @@ wykop.pl$badfilter
 ||edaciousedaciousozgiggle.com^
 ||edacrunilyqu.info^
 ||edafz.hoka.com^
+||edakqvqveiqxi.website^
 ||edam.goasrv.com^
 ||edanyked.mediatel.net.pl^
 ||edasa.goaserv.com^
@@ -76838,7 +76842,6 @@ wykop.pl$badfilter
 ||effervescentcoral.com^
 ||effervescentvista.com^
 ||effexor-xr.1.p2l.info^
-||effic.pro^
 ||efficiency.nl.visma.com^
 ||efficiency.visma.com^
 ||efficiency.visma.dk^
@@ -77296,6 +77299,7 @@ wykop.pl$badfilter
 ||eighthpowerfully.com^
 ||eiglvuts.eu.malinandgoetz.com^
 ||eiglvuts.www.malinandgoetz.com^
+||eihcaairynifs.space^
 ||eihtu.happiestbaby.com^
 ||eiiknsfpyarmi.site^
 ||eiizoc.poeles-et-granules.fr^
@@ -77419,6 +77423,7 @@ wykop.pl$badfilter
 ||ejxaihnkjwwce.space^
 ||ejxhiitnxgwun.site^
 ||ejywxd.mynavi.agentsearch.jp^
+||ejyymghi.com^
 ||ejzdijlxrxwlg.site^
 ||ejzhvfarjiily.website^
 ||ejzr.golden1.sogou.com^
@@ -77651,7 +77656,6 @@ wykop.pl$badfilter
 ||elephant.fotostrana.ru^
 ||elephant.superdense.com^
 ||elephantdata.net^
-||elephantqueue.com^
 ||elerscxhgclau.site^
 ||elerxbfwrkwnb.site^
 ||elevate.spacenews.com^
@@ -78451,7 +78455,6 @@ wykop.pl$badfilter
 ||emalio.shop^
 ||emalori.shop^
 ||emamz.sunstrucktm.com^
-||emanatelaxism.com^
 ||emancipatoccrnonambiguous.info^
 ||emarbox.com^
 ||emarilo.shop^
@@ -78783,7 +78786,6 @@ wykop.pl$badfilter
 ||enchantedrock.actonservice.com^
 ||enchantedskyline.com^
 ||enchantingdiscovery.com^
-||enchantingenchantment.com^
 ||enchantingtundra.com^
 ||enchantingvalley.com^
 ||enchantmentstatenews.com^
@@ -78799,7 +78801,6 @@ wykop.pl$badfilter
 ||encounter.bz.mgtv.com^
 ||encouragedflamboyant.com^
 ||encouragementsqueal.com^
-||encourageshock.com^
 ||encouragingjawsordinarily.com^
 ||encouragingthread.com^
 ||encratykenelm.com^
@@ -80035,6 +80036,7 @@ wykop.pl$badfilter
 ||escalaopulex.digital^
 ||escalated.io^
 ||escalatenetwork.com^
+||escalopbabis.cfd^
 ||escalopdryestburoo.qpon^
 ||escape-ec.metropolitan-touring.com^
 ||escape.insites.eu^
@@ -80521,7 +80523,6 @@ wykop.pl$badfilter
 ||ettcc.steute.com^
 ||ettkn.lemanmercer.com^
 ||ettlederethicgriskin.cyou^
-||ettledmousoni.shop^
 ||ettxtermined.info^
 ||etual.boggbag.com^
 ||etude.epidemiologie-pop-ge.ch^
@@ -82318,6 +82319,7 @@ wykop.pl$badfilter
 ||exyufrolhwzxs.space^
 ||exyxni.bicyclebluebook.com^
 ||exyznpzyprchx.site^
+||exzhygdndixyk.website^
 ||exzocglvthjxr.space^
 ||exzumzcaqqdny.site^
 ||ey.eyeforfashion.pl^
@@ -82899,6 +82901,7 @@ wykop.pl$badfilter
 ||facf31c1c8559131d653f3c5ad4ecc78.safeframe.googlesyndication.com^
 ||fachadasalaire.com^
 ||facialwaxmaxfaxlax3.com^
+||faciendfauna.cyou^
 ||facil-iti.com^
 ||facilewhiteruinous.com^
 ||faciliatemate.com^
@@ -82939,6 +82942,7 @@ wykop.pl$badfilter
 ||fadskis.com^
 ||fadslimz.com^
 ||faduciwup.z4.web.core.windows.net^
+||fadyz.smartbuyglasses.co.nz^
 ||fae78df702.570657a8d8.com^
 ||fae868edc8.com^
 ||faecbooks.com^
@@ -83222,7 +83226,6 @@ wykop.pl$badfilter
 ||fanmanreeves.com^
 ||fanners.ero-advertising.com^
 ||fanniemae.fr^
-||fannybacker.com^
 ||fanpagecaseverify.com^
 ||fanpapers.com^
 ||fanpingbi*.gaokao.com^
@@ -84398,6 +84401,7 @@ wykop.pl$badfilter
 ||festival-pl.top^
 ||festivalcasketfrench.com^
 ||festivalpronoundeserve.com^
+||festivehorse.com^
 ||festo.actonservice.com^
 ||festtube.com^
 ||festyfa.com^
@@ -84415,6 +84419,7 @@ wykop.pl$badfilter
 ||feudalbetrayalcast.com^
 ||feudalisssts.info^
 ||feudalrival.com^
+||feudstainer.qpon^
 ||feuqzl.woolrich.com^
 ||feuxdvvkealfs.site^
 ||fev.fyber.com^
@@ -84782,6 +84787,7 @@ wykop.pl$badfilter
 ||fibularwinking.cyou^
 ||fibulxxascoempting.info^
 ||fibvg.mathishome.com^
+||fichesflutier.qpon^
 ||fichier-pdfr.fr^
 ||fickletewing.com^
 ||ficonexchange.com^
@@ -86921,7 +86927,6 @@ wykop.pl$badfilter
 ||fixionmedia.com^
 ||fixpass.net^
 ||fixtures.onet.pl^$badfilter
-||fixuresrethink.cfd^
 ||fixwap.net^
 ||fixxermorsel.za.com^
 ||fixxzeywgnnfm.website^
@@ -87867,7 +87872,6 @@ wykop.pl$badfilter
 ||fomirpggopead.site^
 ||fonbet.com^
 ||fondingczzhiller.info^
-||fondleaegipan.shop^
 ||fondonazionale-digital.pages.dev^
 ||fondprof.oewabox.at^
 ||fondstudy.com^
@@ -87911,8 +87915,6 @@ wykop.pl$badfilter
 ||foodstats.eurofins.de^
 ||foodstorage.news^
 ||foodsupply.news^
-||foodycallat.com^
-||foodymange.com^
 ||foojfzqypsubg.online^
 ||foojrvqictgwx.website^
 ||foolhardy-wall.com^
@@ -89341,7 +89343,6 @@ wykop.pl$badfilter
 ||froggytest.fr.intellitxt.com^
 ||frogletutopism.com^
 ||froglytics.eventfrog.ch^
-||frogsfinds.com^
 ||froling.bee.pl^
 ||frombparae.store^
 ||fromhttptohttps.atea.fi^
@@ -89944,6 +89945,7 @@ wykop.pl$badfilter
 ||fusestats.com^
 ||fusetracking.com^
 ||fusetv.112.2o7.net^
+||fushtbordels.com^
 ||fusion-files-cf.pinsightmedia.com^
 ||fusion-iad-dev-clogs-eqbrmmvphc.elasticbeanstalk.com^
 ||fusion.adtoma.com^
@@ -89968,6 +89970,7 @@ wykop.pl$badfilter
 ||fussyreturn.com^
 ||fustavi.shop^
 ||fusterquaver.com^
+||fustianwaked.com^
 ||fustiscora.store^
 ||fustyjako.com^
 ||fusuvwypvpnka.online^
@@ -91240,6 +91243,7 @@ wykop.pl$badfilter
 ||gaoedezhoupukediqiji.go-static.info^
 ||gaoguai.com^
 ||gaohnonowmxay.website^
+||gaolageakali.cyou^
 ||gaothings.com^
 ||gaoui.goasrv.com^
 ||gap.112.2o7.net^
@@ -91253,6 +91257,7 @@ wykop.pl$badfilter
 ||gapn.quoinrock.co.za^
 ||gapn.status.stape.global^
 ||gapp1.com^
+||gappedpeatmen.com^
 ||gapwadfcmeilz.space^
 ||gaqmda.docspartan.com^
 ||gaqxkizfpyhpc.site^
@@ -91333,6 +91338,7 @@ wykop.pl$badfilter
 ||garichawyp.shop^
 ||garigueomen.shop^
 ||garlandcelaeno.shop^
+||garlicice.store^
 ||garm9yuma.com^
 ||garmelori.com^
 ||garmentcivilizepitcher.com^
@@ -91352,6 +91358,7 @@ wykop.pl$badfilter
 ||garppjpuuhbby.site^
 ||garrafaspotted.com^
 ||garrenamembershipp.com^
+||garrotedacron.com^
 ||garss.jp^
 ||garss.tv^
 ||garudaairlines.com^
@@ -91386,6 +91393,7 @@ wykop.pl$badfilter
 ||gasprofit-ai.com^
 ||gaspsoap.com^
 ||gassales.eversource.com^
+||gassedapelet.com^
 ||gassedcruset.shop^
 ||gassitnumud.com^
 ||gastdn.wolfandbadger.com^
@@ -91994,6 +92002,7 @@ wykop.pl$badfilter
 ||gearbestkorea.net.mydays.de^
 ||gearbubbles.com^
 ||gearcambridge.com^
+||gearmanswings.com^
 ||gearmantacts.com^
 ||gearwom.de^
 ||geastyetis.com^
@@ -93854,6 +93863,7 @@ wykop.pl$badfilter
 ||glaucusworries.com^
 ||glaverinsea.shop^
 ||glavhnwuadguq.online^
+||glazenrattoon.com^
 ||glazereeks.com^
 ||glazingretentionupcoming.com^
 ||glb.adtechus.com^
@@ -93951,6 +93961,7 @@ wykop.pl$badfilter
 ||glmkvgkuuayau.online^
 ||glnvdc.cn^
 ||gload.adhood.com^
+||gloamsenceint.com^
 ||gloaphoo.net^
 ||gloatqueen.com^
 ||global-aircraft-maintenance.com^
@@ -94013,7 +94024,7 @@ wykop.pl$badfilter
 ||globalnews247.net^
 ||globaloffers.link^
 ||globalorders.net^
-||globalresearch.ca^
+||globalrservice.com^
 ||globalsellingads.com^
 ||globalshopping.website^
 ||globalsiteanalytics.com^
@@ -94060,6 +94071,7 @@ wykop.pl$badfilter
 ||gloriaagrarianstatement.com^
 ||gloriafacsim.cyou^
 ||gloriafreeway.com^
+||gloriamfob.qpon^
 ||glorifynucleitripping.com^
 ||glorious-card.pro^
 ||gloriousbeef.com^
@@ -94126,6 +94138,7 @@ wykop.pl$badfilter
 ||glucosesalique.com^
 ||glue.evansadhesive.com^
 ||glue1lazy.com^
+||glueyoutbox.com^
 ||glugherg.net^
 ||gluiesttubelet.shop^
 ||gluingwatson.cyou^
@@ -94247,6 +94260,7 @@ wykop.pl$badfilter
 ||gmrliq.ilcaffeitaliano.com^
 ||gmrwfbtsnbzxj.site^
 ||gms.greatschools.org^
+||gmseaouomryxx.online^
 ||gmshopping.shop^
 ||gmsllx.sorteonline.com.br^
 ||gmt-stape.powermatch.dk^
@@ -94289,6 +94303,7 @@ wykop.pl$badfilter
 ||gnapgvjdksfyl.space^
 ||gnar.grammarly.com^
 ||gnasniojreobn.website^
+||gnawinglimnshairse.cfd^
 ||gnawingspomxxpano.info^
 ||gnawpush.com^
 ||gnbcz.oakwell.com^
@@ -94341,6 +94356,7 @@ wykop.pl$badfilter
 ||gnnes.mintrx.com^
 ||gnnkrz.josbank.com^
 ||gno-protect.pro^
+||gnomonsgashly.com^
 ||gnowkn.keessmit.nl^
 ||gnowknhepfxie.website^
 ||gnowobwyya.com^
@@ -96366,6 +96382,7 @@ wykop.pl$badfilter
 ||grandiosepride.pro^
 ||grandjunctiontimes.com^
 ||grandkingdom.com^
+||grandmatootsy.com^
 ||grandmods.com^
 ||grandrapidsreporter.com^
 ||grandtheftwiki.fr^
@@ -96589,6 +96606,7 @@ wykop.pl$badfilter
 ||grevalisse.net^
 ||grewiabromus.com^
 ||greyaxgqpraqj.website^
+||greyinstrument.com^
 ||greylagbact.com^
 ||greymia.net^
 ||greynomadsontheroad.com^
@@ -97192,6 +97210,7 @@ wykop.pl$badfilter
 ||gtjogn.rockdenim.com^
 ||gtjpbvbdqwnlp.site^
 ||gtkdp.phyto-c.com^
+||gtkgxcfx5f.com^
 ||gtlmblpvpirgj.site^
 ||gtlp.net.cn^
 ||gtm-2.destruindometas.com.br^
@@ -102964,6 +102983,7 @@ wykop.pl$badfilter
 ||guardedoccupybatter.com^
 ||guardedschool.com^
 ||guardeewansith.com^
+||guardfruit.com^
 ||guardian-app.hotdoc.com.au^
 ||guardian.amp.permutive.com^
 ||guardianapps.co.uk^
@@ -103207,11 +103227,13 @@ wykop.pl$badfilter
 ||guuulmhvdijwj.space^
 ||guvmmaolnk.com^
 ||guvoh.6labz.com^
+||guvrwavupliw.in^
 ||guwd.cn^
 ||guwjqfme.com^
 ||guwuym.barneys.co.jp^
 ||guwvktpsqxcsu.online^
 ||guxmeli.shop^
+||guyersludibry.cfd^
 ||guyjrraidsrlk.store^
 ||guyoetiepwijy.online^
 ||guyotcalmer.com^
@@ -103560,7 +103582,6 @@ wykop.pl$badfilter
 ||gyrebagpipe.com^
 ||gyrestregerg.com^
 ||gyro-n.com^
-||gyrocarkluck.com^
 ||gyros.es^
 ||gyrzdgtnhijjf.online^
 ||gys5.com^
@@ -103764,7 +103785,6 @@ wykop.pl$badfilter
 ||h250p-y3urn.ads.tremorhub.com^
 ||h27aq0mc6.com^
 ||h2bw8mf933ikjzquoruig.cfd^
-||h2pbjf.2wn4bycie4tznq44mf396xojlrl5f.cfd^
 ||h2sry.site^
 ||h2tcbox.baidu.com^
 ||h2x7v9n.pics^
@@ -103861,7 +103881,6 @@ wykop.pl$badfilter
 ||h9oyqup9rc4rjoz8qqny.rmviw5wnktt1jgkr.cyou^
 ||h9p9.cn^
 ||h9tkd.rdtk.io^
-||h9u76cmz.3luxfu12wxlli8kbq9pbk358wb8l.cfd^
 ||h9w02sx7t9.com^
 ||h9x3v7n.pics^
 ||h9x6mq.lat^
@@ -103884,6 +103903,7 @@ wykop.pl$badfilter
 ||habirimodioli.com^
 ||habitattexture.com^
 ||habitoutsifteikons.cyou^
+||habitualhumor.com^
 ||habituekosimo.cfd^
 ||habrigzhfiddw.online^
 ||habsqzkeeemjm.store^
@@ -104465,6 +104485,7 @@ wykop.pl$badfilter
 ||hatchord.com^
 ||hatchway14.com^
 ||hatdfg-rhgreh684.frge.io^
+||hatefulrequest.com^
 ||hathomeynapoleon.com^
 ||hathor.eztonez.com^
 ||hatmiso.net^
@@ -104997,6 +105018,7 @@ wykop.pl$badfilter
 ||heads-fa.spotify.com^
 ||headshot.monster^
 ||headydegree.com^
+||headyhook.com^
 ||healcheck.adpia.vn^
 ||healfast.healfast.com^
 ||healfast.healfastproducts.com^
@@ -105074,6 +105096,7 @@ wykop.pl$badfilter
 ||heardspadedime.com^
 ||hearingaidscouthq.com^
 ||hearingintentionally.com^
+||hearinglizards.com^
 ||hearob.klix.ba^
 ||hearst.amp.permutive.com^
 ||hearst.blueconic.net^
@@ -105141,6 +105164,7 @@ wykop.pl$badfilter
 ||heavepacepallor.com^
 ||heaviermetal.net^
 ||heavierpristishoplite.cfd^
+||heavilyaflareknifes.qpon^
 ||heavilyhelp.com^
 ||heavmgby.www.doubleb.bio^
 ||heavy-flood.com^
@@ -105374,7 +105398,6 @@ wykop.pl$badfilter
 ||hentavost.fr^
 ||hente.afffclaimscenter.com^
 ||hentent.stre4mplay.one^
-||henterjacksaw.com^
 ||hentgesmarkets.com^
 ||hentheautumnca.org^
 ||henwilkson.com^
@@ -105918,7 +105941,6 @@ wykop.pl$badfilter
 ||higbju.lovelingjewelry.co.kr^
 ||high.adhd-founder.com^
 ||high.useoxepay.com.br^
-||highathel.com^
 ||highbeam.122.2o7.net^
 ||highconvertingformats.com^
 ||highcountrytimes.com^
@@ -107294,7 +107316,6 @@ wykop.pl$badfilter
 ||horsemangoescalm.com^
 ||horsemanlaxwriter.com^
 ||horsesoda.com^
-||horsiergrassed.com^
 ||horsinessewws.info^
 ||hortestoz.com^
 ||horze-pl.shop^
@@ -107663,6 +107684,7 @@ wykop.pl$badfilter
 ||hplkcs.emp-shop.no^
 ||hplorfdbzidtd.site^
 ||hplrqg.interflora.fr^
+||hpmasjykycyjv.online^
 ||hpmstr.com^
 ||hpmwssxqqqnrt.site^
 ||hpn-collector.cliqz.com^
@@ -108445,6 +108467,7 @@ wykop.pl$badfilter
 ||humiliatingstay.pro^
 ||huminfakt.ru^
 ||hummerleaked.cyou^
+||humming-ruin.com^
 ||hummingbird.mavencoalition.io^
 ||hummingexam.com^
 ||humongousconnection.com^
@@ -108799,6 +108822,7 @@ wykop.pl$badfilter
 ||hxomxwkfmxmzy.site^
 ||hxpfsdvfm.com^
 ||hxqu.com^
+||hxsmecpevwbzj.website^
 ||hxspc.com^
 ||hxsxw.net^
 ||hxtgnyqwykqrn.online^
@@ -109005,6 +109029,7 @@ wykop.pl$badfilter
 ||hzcizi.estyle.com.br^
 ||hzcjelplyiidts.com^
 ||hzckfr472tn.bk4q9cfvzummpuqk1x7q9yn.cyou^
+||hzcwvvxyzlidj.website^
 ||hzcyhe.alvadi.ee^
 ||hzdaye.m.zwdu.com^
 ||hzdhn.getredge.com^
@@ -111771,7 +111796,6 @@ wykop.pl$badfilter
 ||imbgvfpeczzbl.site^
 ||imbhdu.housedo.co.jp^
 ||imbiaundoc.store^
-||imbondozorils.com^
 ||imbrierbioticsmoneron.cyou^
 ||imbriinagr.store^
 ||imbuemadeup.com^
@@ -111867,7 +111891,6 @@ wykop.pl$badfilter
 ||img.atdmt.com^
 ||img.avatraffic.com^
 ||img.awr.im^
-||img.ayghbngnazh.xyz^
 ||img.bbchat.tv^
 ||img.bet-at-home.com^
 ||img.biospace.com^
@@ -111935,7 +111958,6 @@ wykop.pl$badfilter
 ||img.hcwifi.cn^
 ||img.healthecareers.com^
 ||img.hrm.groups.be^
-||img.huanagyehgn.xyz^
 ||img.i2i.jp^
 ||img.il8r.com^
 ||img.img-taboola.com^
@@ -111950,7 +111972,6 @@ wykop.pl$badfilter
 ||img.jgchq.com^
 ||img.jiguang.cn^
 ||img.jizzads.com^
-||img.juhagngj.xyz^
 ||img.justifiedlaboratories.com^
 ||img.jwgro.com^
 ||img.kukudm.com^
@@ -111958,7 +111979,6 @@ wykop.pl$badfilter
 ||img.lavanetwork.net^
 ||img.layer-ads.de^
 ||img.learn.abreon.com^
-||img.leiahngiuheong.xyz^
 ||img.liczniki.org^
 ||img.link.cabinetry.com^
 ||img.linkstorm.net^
@@ -111975,7 +111995,6 @@ wykop.pl$badfilter
 ||img.may88.us^
 ||img.metaffiliation.com^
 ||img.min88.com^
-||img.mjhsghnwg.xyz^
 ||img.mobee2.jp^
 ||img.msgtag.com^
 ||img.mu9.club^
@@ -112013,17 +112032,14 @@ wykop.pl$badfilter
 ||img.scupio.com^
 ||img.sedoparking.com^
 ||img.sheyuansu.com^
-||img.shznegh.xyz^
 ||img.side.mythiell.com^
 ||img.simply.bwin.com^
 ||img.sn00.net^
-||img.soweonglsh.xyz^
 ||img.sparkasse-koelnbonn.de^
 ||img.ssl.msdk.qq.com^
 ||img.sunmediaads.com^
 ||img.supfast.net^
 ||img.sxcol.cn^
-||img.syebgng.xyz^
 ||img.tan5858.com^
 ||img.taotaosou.cn^
 ||img.tcdxt.com^
@@ -112039,7 +112055,6 @@ wykop.pl$badfilter
 ||img.wan.sogou.com^
 ||img.warron.cn^
 ||img.website-security.symantec.com^
-||img.wqpamgngnb.xyz^
 ||img.wuben56.com^
 ||img.xa9t.com^
 ||img.xgo.com.cn^
@@ -112051,10 +112066,8 @@ wykop.pl$badfilter
 ||img.yingshidiguo.cn^
 ||img.yomereba.com^
 ||img.yqgytx.com^
-||img.yuwhehan.xyz^
 ||img.yuyue007.cn^
 ||img.zeruinong.com^
-||img.zhangilihew.xyz^
 ||img.zsj18.com^
 ||img.zuowen8.com^
 ||img.zuowenwang.net^
@@ -114438,7 +114451,6 @@ wykop.pl$badfilter
 ||ins.leavitt.com^
 ||ins.oberpfalzmedien.de^
 ||ins.wolterskluwerfs.com^
-||insanechitin.com^
 ||insanityzealovercome.com^
 ||insaoke-sacombank.com^
 ||insatibivhwin.space^
@@ -115638,7 +115650,6 @@ wykop.pl$badfilter
 ||ipogh.magicmolecule.com^
 ||ipomeatiptop.qpon^
 ||iporallfnlarv.website^
-||iporngay.com^
 ||ipouucslkqmra.site^
 ||ipponemvvceeing.info^
 ||ippscriptbear.com^
@@ -116114,7 +116125,6 @@ wykop.pl$badfilter
 ||isoplexis.actonservice.com^
 ||isoposbacc.store^
 ||isoprengra.store^
-||isoptichabiru.com^
 ||isoreli.shop^
 ||isoucarmtosoz.online^
 ||isov-qa.cn.miaozhen.com^
@@ -116492,7 +116502,6 @@ wykop.pl$badfilter
 ||ivcxpw.kogan.com^
 ||ivcymdknugpjt.site^
 ||ivdguf.elephorm.com^
-||ivdjs.com^
 ||ivdsxn.atimes.co.jp^
 ||ivdtc.lgbeauty.com^
 ||ivdtruneda.com^
@@ -117034,7 +117043,6 @@ wykop.pl$badfilter
 ||jadedtwist.com^
 ||jadehlbswdlqw.online^
 ||jadeinvitelawsuit.com^
-||jadeitite.com^
 ||jadjkuofzwad.com^
 ||jadkuwwtyp.in^
 ||jads.cc^
@@ -117646,6 +117654,7 @@ wykop.pl$badfilter
 ||jeflakrlrdysq.website^
 ||jeflrvle.facialteam.eu^
 ||jegiopad.top^
+||jegksgumzeszc.online^
 ||jegouryzasiao.site^
 ||jehfl.shoepalace.com^
 ||jeipory.space^
@@ -118754,6 +118763,7 @@ wykop.pl$badfilter
 ||johnnymarr.go-static.info^
 ||johnslots.com^
 ||johnsoncitytimes.com^
+||johnsortita.cfd^
 ||johnston.grapeshot.co.uk^
 ||johnston.net.mydays.de^
 ||johnstonreporter.com^
@@ -120877,7 +120887,6 @@ wykop.pl$badfilter
 ||kaiserslots.com^
 ||kaisizhenrenyulecheng.goaserv.com^
 ||kaithiphones.cfd^
-||kaithiunmoldy.com^
 ||kaiu-marketing.com^
 ||kaivip.club^
 ||kaizenplatform.net^
@@ -122277,6 +122286,7 @@ wykop.pl$badfilter
 ||kissmybingo.com^
 ||kissoffering.com^
 ||kissvan.com^
+||kistopctxrvar.online^
 ||kistured.com^
 ||kit.fyft.cz^
 ||kit.fyft.de^
@@ -123654,6 +123664,7 @@ wykop.pl$badfilter
 ||ktjtqehd.prograd.uk^
 ||ktkjmp.com^
 ||ktkuxm.norsan.de^
+||ktlhehgts.com^
 ||ktlrv.hotelcollection.no^
 ||ktlwulkjhxmhb.space^
 ||ktlztpx8f.com^
@@ -125225,7 +125236,6 @@ wykop.pl$badfilter
 ||latam.adspecs.yahoo.com^
 ||latam.thomsonreuters.com^
 ||latamdcs.com^
-||latcherjeannieturrets.click^
 ||latchfateverybody.com^
 ||latdr.mycarpe.com^
 ||late-anxiety.com^
@@ -125322,7 +125332,7 @@ wykop.pl$badfilter
 ||lawdrrnforvzy.space^
 ||lawfirm.paperbirdtech.com^
 ||lawful-promise.com^
-||lawfullygreater.com^
+||lawfullygreatersun88.sc^
 ||lawfullylimetreecharges.com^
 ||lawfulness85.com^
 ||lawlowvat.net^
@@ -126636,6 +126646,7 @@ wykop.pl$badfilter
 ||lftza.simplyseattle.com^
 ||lfuzec.bglen.net^
 ||lfvjt.banded.com^
+||lfvqqcrsuzxia.website^
 ||lfwieehqopggy.website^
 ||lfwotwipuezvd.online^
 ||lfxdqs.mamasandpapas.ae^
@@ -137572,7 +137583,6 @@ wykop.pl$badfilter
 ||loijtoottuleringv.info^
 ||loind.mobio.vn^
 ||loinstaggerpamphlet.com^
-||loinwryneck.com^
 ||loirs.fr^
 ||lois.nend.net^
 ||loiuewr.weebly.com^
@@ -137955,7 +137965,6 @@ wykop.pl$badfilter
 ||loupan99.com^
 ||loupenzzapiculus.info^
 ||loupesstavedtriene.cyou^
-||loupmismaze.com^
 ||lourdoueisienne.website^
 ||louse.demaree.space^
 ||louse.seanconnolly.dev^
@@ -140291,7 +140300,7 @@ wykop.pl$badfilter
 ||m.miaoxinqipei.com^
 ||m.mibet.win^
 ||m.mibet88.com^
-||m.mig8vn.com^
+||m.mig.com^
 ||m.mightiger.net^
 ||m.miupp.com^
 ||m.mixadvert.com^
@@ -141869,7 +141878,6 @@ wykop.pl$badfilter
 ||maobtqwrqrzxm.com^
 ||maocai.xvtpvc.cn^
 ||maoistshellers.com^
-||maolmjnsxhry.com^
 ||maomaoschout.com^
 ||maomaotang.com^
 ||maonhrxyewyjr.com^
@@ -150424,9 +150432,7 @@ wykop.pl$badfilter
 ||mevlowkjylvbj.online^
 ||mewbhapcrrrou.website^
 ||mewgzllnsp.com^
-||mewlersunluck.com^
 ||mews2ruck.com^
-||mexicalsubsea.com^
 ||mexico.balluff.com^
 ||mexicobusinessdaily.com^
 ||meyddubqxekbd.site^
@@ -150952,6 +150958,7 @@ wykop.pl$badfilter
 ||mifvigmz.com^
 ||mig.str.mdt.qq.com^
 ||mig8fans.com^
+||mig8vn.com^
 ||migaelqamaefp.online^
 ||migcreport.g.mi.com^
 ||mightycause.com^
@@ -151087,7 +151094,6 @@ wykop.pl$badfilter
 ||mim-event.mfg.macquarie.com^
 ||mim26.papigames.bet.br^
 ||mimakiusa.actonservice.com^
-||mimamsaslews.com^
 ||mimavarabe.store^
 ||mimeihui.com^
 ||mimeioagotwvo.online^
@@ -151160,7 +151166,6 @@ wykop.pl$badfilter
 ||minewhat.com^
 ||minfo.wps.cn^
 ||ming-dun.com.tw^
-||mingieglossed.com^
 ||mingkuaian.cn.miaozhen.com^
 ||mingleassertiveregard.com^
 ||mingledseeded.cyou^
@@ -151289,7 +151294,6 @@ wykop.pl$badfilter
 ||miraclethisaddicted.com^
 ||miraculousdnb.com^
 ||miragesdiazid.com^
-||mirakdunes.com^
 ||mirando.de^
 ||miravay.org^
 ||miraz.mtbazzar.com^
@@ -151304,7 +151308,6 @@ wykop.pl$badfilter
 ||mirificskillet.shop^
 ||mirillis.fr^
 ||mirkieraerier.com^
-||mirkymochas.com^
 ||mirlaxmtyjapd.site^
 ||mirpedarfer.lovable.app^
 ||mirror-theater.com^
@@ -151400,7 +151403,6 @@ wykop.pl$badfilter
 ||mistermarketpro.com^
 ||mistertees.net^
 ||mistervillas.com^
-||mistimecargo.com^
 ||mistmere.com^
 ||mistralkapitoire.digital^
 ||mistresscoat.com^
@@ -151417,7 +151419,6 @@ wykop.pl$badfilter
 ||mistysteel.co^
 ||misunderstandprodigalnovember.com^
 ||misuragowf.cfd^
-||misusedhough.com^
 ||misvedefic.store^
 ||misweenownself.com^
 ||miswwoprostol.info^
@@ -152088,7 +152089,6 @@ wykop.pl$badfilter
 ||mmzuidfhzk.com^
 ||mn-tz.com^
 ||mn.5.p2l.info^
-||mn.browpotware.com^
 ||mn.doorsfixedfast.com^
 ||mn.homecoming.be^
 ||mn.mankaakura.com^
@@ -152877,6 +152877,7 @@ wykop.pl$badfilter
 ||moneyvi.xyz^
 ||moneywallet.cf^
 ||monfex.com^
+||monfzt9ntt3x337q7ii6ogyw4eyy5qum.rest^
 ||monfzx.pioro.co^
 ||mongo.rottne.com^
 ||mongo.tbllrej.com^
@@ -153307,7 +153308,6 @@ wykop.pl$badfilter
 ||mounteehut.com^
 ||mountrobbervaliant.com^
 ||mournenterprise.com^
-||mournerslath.com^
 ||mouse.anthony-noel.com^
 ||mouse.seekingtv.com^
 ||mouse3k.com^
@@ -153510,7 +153510,7 @@ wykop.pl$badfilter
 ||mpkcabinnyaab.site^
 ||mpkfjptigpown.site^
 ||mpkip.boostmediagroup.com^
-||mpl.live^
+||mpl.liv.com^
 ||mplat-ppcprotect.com^
 ||mplaylist-ads.zadn.vn^
 ||mplaylist-ads.zascdn.me^
@@ -154469,7 +154469,6 @@ wykop.pl$badfilter
 ||mucho.us-assistance.org^
 ||mucquanly247.com^
 ||mucu.jp^
-||mucuslotos.com^
 ||mucvi-dientu247.com^
 ||mucvidientu24-7.com^
 ||mucvidientuvietnam247.com^
@@ -154480,7 +154479,6 @@ wykop.pl$badfilter
 ||muddlingthroughcode.com^
 ||muddy-match.com^
 ||muddyclassic.com^
-||mudejartitoism.com^
 ||mudfall.com^
 ||mudguard68.com^
 ||mudmonster.org^
@@ -154509,7 +154507,6 @@ wykop.pl$badfilter
 ||mugcix.hessnatur.com^
 ||muggedregent.com^
 ||muggpolys.com^
-||muggurssalited.com^
 ||mughal.sobiratel.info^
 ||mugkk.toynk.com^
 ||mugpothop.com^
@@ -155484,7 +155481,6 @@ wykop.pl$badfilter
 ||myreqdcompany.com^
 ||myretailmatch.actonservice.com^
 ||myrfdq.emmi.jp^
-||myricylhoihere.com^
 ||myrnovika.com^
 ||myrogers-dashboard-signin.net^
 ||myroitracking.com^
@@ -155547,7 +155543,6 @@ wykop.pl$badfilter
 ||mysticalagoon.com^
 ||mysticforge.live^
 ||mysticomen.com^
-||mystifycabala.com^
 ||mystore.bttn.io^
 ||mysumo.de^
 ||mysunwest.fmservice.com^
@@ -155964,7 +155959,6 @@ wykop.pl$badfilter
 ||nailsome.marketing-tech.io^
 ||naim.obs-solutions.fi^
 ||nainagukpiwkm.site^
-||nainepidia.com^
 ||nairabet.com^
 ||nairapp.com^
 ||nairastake.com^
@@ -156563,6 +156557,7 @@ wykop.pl$badfilter
 ||nbadgnaqqqrxx.website^
 ||nbads.com^
 ||nbagametimeprod.112.2o7.net^
+||nbbaltzvkcpme.online^
 ||nbbpkflruqfsn.space^
 ||nbbpynkclbynx.online^
 ||nbbtcqoejxhgd.online^
@@ -157703,6 +157698,7 @@ wykop.pl$badfilter
 ||newlovez2.co^
 ||newlovez3.co^
 ||newlovez4.co^
+||newlyhalloed.com^
 ||newmail.rottne.com^
 ||newmayads.com^
 ||newmedia.az^
@@ -158311,6 +158307,7 @@ wykop.pl$badfilter
 ||nganhangtructuyen24-7.com^
 ||nganhangtructuyen24h.com^
 ||nganhangwu.com^
+||ngapicornishcoupes.cfd^
 ||ngastatic.com^
 ||ngayhoilienquan.vn^
 ||ngaytetlienquan.com^
@@ -158461,6 +158458,7 @@ wykop.pl$badfilter
 ||nhantienvivnpay.com^
 ||nhanvientiki.info^
 ||nhanvimomo2021.weebly.com^
+||nhanweigh.com^
 ||nhapcode-lienquan-garena.net^
 ||nhapvang.pro^
 ||nhat.bet^
@@ -159440,6 +159438,7 @@ wykop.pl$badfilter
 ||nodopatrimonza-click.pages.dev^
 ||nodorendione.com^
 ||noella-voyance.fr^
+||noemisnakier.com^
 ||noen.oewabox.at^
 ||noextramoney.com^
 ||nofeu.com^
@@ -160764,6 +160763,7 @@ wykop.pl$badfilter
 ||nutrired.org^
 ||nutristape.drrsantiago.com^
 ||nutritionpenguinbiopsy.com^
+||nutritiousbean.com^
 ||nutritiousrush.com^
 ||nutritioussilver.com^
 ||nutsag.com^
@@ -160847,6 +160847,7 @@ wykop.pl$badfilter
 ||nvjk.faptor.com^
 ||nvjqm.com^
 ||nvjrxh.nl.bauhaus^
+||nvkvewpkhoiak.site^
 ||nvlteojdxnwmp.online^
 ||nvmkozixnjkwg.website^
 ||nvmrtixasylwt.online^
@@ -160985,7 +160986,7 @@ wykop.pl$badfilter
 ||nwtrih.ticket.com.br^
 ||nwtwincities.com^
 ||nwufgvturduja.site^
-||nwvalleytimes.com^
+||nwvalleybalconfig.aiclk.com^
 ||nwvkpbrceeutp.site^
 ||nwvupz.cljoias.com.br^
 ||nwwashingtonnews.com^
@@ -161504,6 +161505,7 @@ wykop.pl$badfilter
 ||oar2dddpk2.sydensferiehuse.dk^
 ||oardilin.com^
 ||oarlock47.top^
+||oarsmanmicro.cfd^
 ||oas-c18.adnxs.com^
 ||oas-central.east.realmedia.com^
 ||oas-central.realmedia.com^
@@ -161712,6 +161714,7 @@ wykop.pl$badfilter
 ||objects.abcvisiteurs.com^
 ||objects.designbloxlive.com^
 ||objects.tremormedia.com^
+||objectsnetwork.com^
 ||objevuj.amazingplaces.cz^
 ||objnrhfizzfkf.space^
 ||objru.thankgodforcoffee.com^
@@ -161774,6 +161777,7 @@ wykop.pl$badfilter
 ||obscure.stomp-nutrition.com^
 ||obscureanyway.com^
 ||obscurespace.com^
+||observantice.com^
 ||observare.de^
 ||observationtable.com^
 ||observativus.com^
@@ -161980,6 +161984,7 @@ wykop.pl$badfilter
 ||oct-pass.net^
 ||oct8ne.com^
 ||octan.foundr.com^
+||octaneblood.com^
 ||octavius.rocks^
 ||octbgrwqwmnuu.site^
 ||octectlycopin.com^
@@ -162608,6 +162613,7 @@ wykop.pl$badfilter
 ||ogladajmy.pl^
 ||oglasi.posjetnica.com^
 ||ogle-0740lb.com^
+||ogledcatchup.com^
 ||ogloszenia-ukrainek.pl^
 ||ogloszenie02042.sbs^
 ||ogloszenie129102.shop^
@@ -162863,6 +162869,7 @@ wykop.pl$badfilter
 ||oj2q8.montecarlosbm.book-secure.com^
 ||oj95rctd5.com^
 ||ojang.pe.kr^
+||ojccpggkwvauk.online^
 ||ojcg5dfr.eu.cc^
 ||ojclas.flower-webshop.jp^
 ||ojdcebrmfzcnf.store^
@@ -163109,6 +163116,7 @@ wykop.pl$badfilter
 ||oldgladly.com^
 ||oldk.gtifund.cn^
 ||oldlandoftly.shop^
+||oldnessdernly.qpon^
 ||oldnorthnews.com^
 ||oldportcoffee.com^
 ||oldschoollicious.com^
@@ -163721,7 +163729,9 @@ wykop.pl$badfilter
 ||omegaadblock.net^
 ||omegadblocker.com^
 ||omegaroutes.com^
+||omegatootler.rest^
 ||omegatrak.com^
+||omegoidergoted.com^
 ||omeldrane.com^
 ||omeletscarsoncairene.cfd^
 ||omelette12.top^
@@ -163894,6 +163904,7 @@ wykop.pl$badfilter
 ||omni.westernasset.com^
 ||omni.yellowpages.com^
 ||omniacasino.com^
+||omnibuswaist.com^
 ||omnicleaningservices.com^
 ||omniconvert.com^
 ||omnifpc.devry.edu^
@@ -164195,6 +164206,7 @@ wykop.pl$badfilter
 ||oncustomer.asia^
 ||ondermaat.nl^
 ||ondialrelay.fr^
+||ondingfoute.com^
 ||ondqytiskpgyp.site^
 ||ondrotnw.com^
 ||ondu.ru^
@@ -164427,6 +164439,7 @@ wykop.pl$badfilter
 ||onlinedownloads.org^
 ||onlineflix.pl^
 ||onlinegurupopularsitecom.112.2o7.net^
+||onlinehentai.tv^
 ||onlineindigoca.112.2o7.net^
 ||onlineis.actonservice.com^
 ||onlinekino.pl^
@@ -164640,6 +164653,7 @@ wykop.pl$badfilter
 ||oovnncozruz8bn9.mfwg1299ek6tjegle68fv.cyou^
 ||oowqcmolqtwai.online^
 ||oowvaygribfhj.space^
+||oowxeugbvqfnr.site^
 ||ooydxblhaegrz.website^
 ||oozgka.immoscout24.ch^
 ||oozkgskdzgdde.site^
@@ -165165,6 +165179,7 @@ wykop.pl$badfilter
 ||oqphmccprsyie.site^
 ||oqqaagrfdsaxu.online^
 ||oqr4.destinia.in^
+||oqsfkkoakxhjj.space^
 ||oqsuhoaevgmnz.site^
 ||oqtdwteacikkzz.com^
 ||oqttewnjznbo.com^
@@ -165682,6 +165697,7 @@ wykop.pl$badfilter
 ||osmmdczessxuq.site^
 ||osmmfycaqh.in^
 ||osmnv.happyhairbrush.com.au^
+||osmolalsunned.com^
 ||osmosisfalerno.com^
 ||osmosisventures.net^
 ||osn15ovaad.eu.cc^
@@ -165729,6 +165745,7 @@ wykop.pl$badfilter
 ||oss.weread.qq.com^
 ||ossapp.suning.com^
 ||ossarrecli.store^
+||ossetbulimus.com^
 ||ossgogoaton.com^
 ||ossgw.alicdn.com^
 ||osshydreigonan.com^
@@ -165938,6 +165955,7 @@ wykop.pl$badfilter
 ||otvojqdrozce.com^
 ||otvqghgmkpkhc.site^
 ||otwaagpjpgctw.online^
+||otwaahn.com^
 ||otwarte24.com.pl^
 ||otwwlhdrok.com^
 ||otwwuluktaena.site^
@@ -166038,6 +166056,7 @@ wykop.pl$badfilter
 ||ourtown.toledoparent.com^
 ||ourtown.westportjournal.com^
 ||ourzjibwnnpet.site^
+||ousiademark.com^
 ||ousmucfrfbqfo.online^
 ||oustoope.com^
 ||out-lok.hpage.com^
@@ -166083,6 +166102,7 @@ wykop.pl$badfilter
 ||outdoorgear24.top^
 ||outdoorsoil.com^
 ||outdoorthingy.com^
+||outdrawcrayons.com^
 ||outer.anquan.org^
 ||outerbankstimes.com^
 ||outerenhance.com^
@@ -166108,6 +166128,7 @@ wykop.pl$badfilter
 ||outlettaschenbooks.shop^
 ||outliercrocker.qpon^
 ||outlinedesignateinstalment.com^
+||outlinediabase.com^
 ||outlinedistinguish.com^
 ||outlookabsorb.com^
 ||outlookads.live.com^
@@ -166127,6 +166148,7 @@ wykop.pl$badfilter
 ||outqukkoting.info^
 ||outracedeccductibles.info^
 ||outrageoussquad.com^
+||outrailfoulish.com^
 ||outreach.connectednation.org^
 ||outreach.crossref.org^
 ||outreach.kansashealthsystem.com^
@@ -166507,6 +166529,7 @@ wykop.pl$badfilter
 ||oxwsggbacrrdl.website^
 ||oxwytjjqlkoqm.website^
 ||oxxhknxonyoac.website^
+||oxyacidalogia.com^
 ||oxybe.com^
 ||oxygenfuse.com^
 ||oxygenopposed.com^
@@ -166616,6 +166639,7 @@ wykop.pl$badfilter
 ||ozmiku.shop^
 ||ozmmzgezcybxp.website^
 ||ozmwpmwfujjmv.site^
+||ozndiwnclypzf.online^
 ||oznlro.sanity.com.au^
 ||ozofreshen-ss.shopperzelo.com^
 ||ozoj.com^
@@ -166859,6 +166883,7 @@ wykop.pl$badfilter
 ||p0.raasnet.com^
 ||p004.raffi-hair.com^
 ||p005.raffi-hair.com^
+||p01.8vn.com^
 ||p01.sc.origins.en25.com^
 ||p016eshru.kaybe.co.uk^
 ||p03.sc.origins.en25.com^
@@ -167596,6 +167621,7 @@ wykop.pl$badfilter
 ||pamini.fr^
 ||pamoran.net^
 ||pampacapitalpro.com^
+||pamphiltre.com^
 ||pampopholf.com^
 ||pamsg.online^
 ||pamsttbogginesses.info^
@@ -167715,6 +167741,7 @@ wykop.pl$badfilter
 ||papageienseite.de^
 ||papaljacked.com^
 ||papamug.com^
+||papaneecorche.com^
 ||papaqq.com^
 ||papatrol.xyz^
 ||papawrefits.com^
@@ -167861,6 +167888,7 @@ wykop.pl$badfilter
 ||parplatsvip.shop^
 ||parquet.armparquet.it^
 ||parrable.com^
+||parrbetire.com^
 ||parrelsquantatasten.cfd^
 ||parronnotandone.info^
 ||parrot-flow.com^
@@ -169392,6 +169420,7 @@ wykop.pl$badfilter
 ||pecklehydro.com^
 ||pecorafougue.com^
 ||pecoraturkois.shop^
+||pecpmcavfjqcs.online^
 ||pectatedopa.qpon^
 ||pectinweskits.com^
 ||pectosealvia.click^
@@ -169426,7 +169455,6 @@ wykop.pl$badfilter
 ||peer39.com^
 ||peer39.net^
 ||peeragelevyne.com^
-||peeredupseize.com^
 ||peerfly.com^
 ||peeringhost.net^
 ||peerius.com^
@@ -169574,6 +169602,7 @@ wykop.pl$badfilter
 ||peoplefirst.fmservice.com^
 ||peoplehr.actonservice.com^
 ||peoriacommunityagainstviolence.org^
+||peorianclerked.com^
 ||peoriastandard.com^
 ||peoriasun.com^
 ||peoxsw.korres.com^
@@ -169598,7 +169627,6 @@ wykop.pl$badfilter
 ||peppertreefrosty.com^
 ||peppvverinessesinfaunae.info^
 ||peppy2lon1g1stalk.com^
-||pepscarn.com^
 ||pepsico.demdex.net^
 ||pepsinenookies.shop^
 ||pepstaketrx.net^
@@ -169777,7 +169805,6 @@ wykop.pl$badfilter
 ||persianvocabularypeasant.com^
 ||persicmps.store^
 ||persifleux.info^
-||persinners.com^
 ||persistarcticthese.com^
 ||persistdeportraid.com^
 ||perso.aws.arc.pub^
@@ -170203,7 +170230,6 @@ wykop.pl$badfilter
 ||phentermine.webpark.pl^
 ||phenver.com^
 ||phenylloxia.com^
-||phenylsgeed.com^
 ||phezh.xsuit.com^
 ||phfmm.sundeapparel.com^
 ||phfuhedbph.com^
@@ -170808,7 +170834,6 @@ wykop.pl$badfilter
 ||pillulesiering.com^
 ||pilot.nlccwi.org^
 ||pilotignoranceitch.com^
-||pilotijuly.com^
 ||pilotoccasionallygarlic.com^
 ||pilotpoems.com^
 ||pilotstracking.com^
@@ -171100,7 +171125,6 @@ wykop.pl$badfilter
 ||pithyfigures.cyou^
 ||pithyiwgz.top^
 ||pithylunula.cfd^
-||pitiersvide.com^
 ||pitifulrelationship.com^
 ||pitk.birdgesdk.com^
 ||pitkinvstatefarmgeneralinsurancecompany.e.epiqnotification.com^
@@ -173595,7 +173619,6 @@ wykop.pl$badfilter
 ||pophandler.net^
 ||pophit.net^
 ||popina.ir^
-||popinacmolpe.com^
 ||popinads.com^
 ||popit.mediumpimpin.com^
 ||popjanuary.shop^
@@ -173926,6 +173949,7 @@ wykop.pl$badfilter
 ||potentialanalyse.aec-disc.de^
 ||potentialbiriiacial.info^
 ||potentmagic.com^
+||potentymoa.com^
 ||potestio.xyz^
 ||potfulplumpeffr.info^
 ||potherbiassed.cyou^
@@ -177363,6 +177387,7 @@ wykop.pl$badfilter
 ||pwaefamkqslht.site^
 ||pwaoyd.kras.nl^
 ||pwawlikobyjyb.online^
+||pwbgfclmc5hwuuh.cfd^
 ||pwbs.l9c4s.cn^
 ||pwbxyinigxrju.website^
 ||pwdh28pof.com^
@@ -178182,6 +178207,7 @@ wykop.pl$badfilter
 ||qeecl.bewegungsmeister.de^
 ||qeefxyltwpruv.website^
 ||qeezie.folm.de^
+||qefgrktzkhkvv.space^
 ||qefwqf.chungdamgirl.com^
 ||qehcierotgrrk.site^
 ||qeicbuekdqyna.website^
@@ -178901,6 +178927,7 @@ wykop.pl$badfilter
 ||qofzpsdexjmbw.site^
 ||qohdzcdlxukep.online^
 ||qohlsl.drawer.fr^
+||qohsbzioyziuq.site^
 ||qoiaqd.horchow.com^
 ||qoijertneio.com^
 ||qoiqfckhwinup.online^
@@ -178997,6 +179024,7 @@ wykop.pl$badfilter
 ||qpnippagdkadi.online^
 ||qpolitical.com^
 ||qppq166n.de^
+||qppxmooxdtnqr.site^
 ||qpqgb.nordiccatch.com^
 ||qpqtdv.royalbathrooms.co.uk^
 ||qprfs.drunkelephant.com^
@@ -179334,6 +179362,7 @@ wykop.pl$badfilter
 ||qtdkxs.travellink.dk^
 ||qtevriko.com^
 ||qtfnvf.ethika.com^
+||qtfqacahhqnwm.website^
 ||qtgge.darngoodyarn.com^
 ||qtgoiasqfgbgb.space^
 ||qthij.naturalizer.com^
@@ -179794,6 +179823,7 @@ wykop.pl$badfilter
 ||quixoticzest.com^
 ||quixova.com^
 ||quixxveringly.info^
+||quizlookup.com^
 ||quiztoolbox.com^
 ||quizzical-topic.com^
 ||quizzicalpartner.com^
@@ -180176,7 +180206,6 @@ wykop.pl$badfilter
 ||qzqipwaflejcj.site^
 ||qzreoh.squatwolf.com^
 ||qzruomjczpdzt.store^
-||qzs.gdt.qq.com^
 ||qzs.gdtimg.com^
 ||qzs.qq.com^
 ||qzs43ai3p.com^
@@ -180249,7 +180278,6 @@ wykop.pl$badfilter
 ||r.dmp.sina.cn^
 ||r.dmp.sina.com.cn^
 ||r.domob.cn^
-||r.domobcdn.com^
 ||r.drchrislima.com.br^
 ||r.drinksdirect.net^
 ||r.dvx.domob.cn^
@@ -180896,6 +180924,7 @@ wykop.pl$badfilter
 ||ratemodels.net^
 ||rateonclick.com^
 ||raterestrict.com^
+||ratexchange.net^
 ||rathebecalms.qpon^
 ||rating-widget.com^
 ||rating.in^
@@ -181560,7 +181589,6 @@ wykop.pl$badfilter
 ||rebootsormers.com^
 ||rebootv5.adfuture.cn^
 ||rebootv5.adsunflower.com^
-||rebopsmurly.com^
 ||rebotepierre.com^
 ||rebsoljuhmrdy.com^
 ||rebtelnetworks.112.2o7.net^
@@ -182109,10 +182137,10 @@ wykop.pl$badfilter
 ||reflection67.top^
 ||reflector19.com^
 ||reflectpaint.com^
+||reflewupcurls.qpon^
 ||reflexikkngcoherent.info^
 ||refnippod.com^
 ||reforestscantunlaced.com^
-||reforgefuhrer.com^
 ||refoundpeletre.com^
 ||refpa.top^
 ||refpa4293501.top^
@@ -182246,7 +182274,6 @@ wykop.pl$badfilter
 ||reglienquan.online^
 ||reglorifyinssg.info^
 ||regmdr.pref.ims.dialog-direct.com^
-||regodipylon.com^
 ||regpole.com^
 ||regretfinancially.com^
 ||regretnotestool.com^
@@ -183100,6 +183127,7 @@ wykop.pl$badfilter
 ||respectrain.com^
 ||respiratorcontainssomeday.com^
 ||respiunita.store^
+||resplendentecho.com^
 ||responder.wt-safetag.com^
 ||responder.wt.heise.de^
 ||respons.intern.schibsted.no^
@@ -183328,7 +183356,6 @@ wykop.pl$badfilter
 ||rettica.com^
 ||rettornrhema.com^
 ||rettypholos.com^
-||retuneprofess.com^
 ||return.adsame.com^
 ||return.bs.domainnamesales.com^
 ||return.domainnamesales.com^
@@ -184054,7 +184081,6 @@ wykop.pl$badfilter
 ||rikvip.win^
 ||rikvipchinhhang.com^
 ||rilegdoman.store^
-||rilenews.com^
 ||rilevwomen.store^
 ||rillekizil.cfd^
 ||rillforgecapital.net^
@@ -184203,6 +184229,7 @@ wykop.pl$badfilter
 ||rituationscardb.info^
 ||ritufgrand.store^
 ||ritzumafma.com^
+||ritzykey.com^
 ||ritzyrepresentative.com^
 ||ritzyveil.com^
 ||riueq.pomegranate.com^
@@ -184216,7 +184243,6 @@ wykop.pl$badfilter
 ||rivalry.com^
 ||rivasearchpage.com^
 ||rivcash.com^
-||river-prism-cdn-93.workers.dev^
 ||river-static.xyz^
 ||river-store.com^
 ||river.zhidao.baidu.com^
@@ -184673,7 +184699,6 @@ wykop.pl$badfilter
 ||roadwide.net^
 ||roagrofoogrobo.com^
 ||roakkdzxqdbxr.website^
-||roamersitemise.com^
 ||roamhousing.com^
 ||roamseffray.qpon^
 ||roanokeandsouthernrailway.org^
@@ -189130,6 +189155,7 @@ wykop.pl$badfilter
 ||sabtecsxmjmnj.website^
 ||sabulumerinnicenols.cfd^
 ||sabulumtarocco.com^
+||sabutanjirble.com^
 ||sabxt.teeoff.com^
 ||sac.ayads.co^
 ||sac.dermatitecontrolada.com.br^
@@ -189336,6 +189362,7 @@ wykop.pl$badfilter
 ||safalindustries.com^
 ||safaribooks.112.2o7.net^
 ||safaritrade.net^
+||safarsomaten.com^
 ||safdjknc2.adblock-for-y.com^
 ||safe-aisle.jointreport-switch.com^
 ||safe-click.net^
@@ -189653,6 +189680,7 @@ wykop.pl$badfilter
 ||samktxppegfqo.website^
 ||samling.beredskapsutstyr.net^
 ||sammax.adsame.com^
+||sammierkelima.com^
 ||sammix.adsame.com^
 ||sammledenkonsens.com^
 ||samograyka.link^
@@ -189764,6 +189792,7 @@ wykop.pl$badfilter
 ||sanalytics.cartoonitoafrica.com^
 ||sanalytics.cartoonitocheidea.it^
 ||sanalytics.cartoonitomena.com^
+||sanalytics.cartoonnetimes.com^
 ||sanalytics.cartoonnetwork.bg^
 ||sanalytics.cartoonnetwork.cl^
 ||sanalytics.cartoonnetwork.co.uk^
@@ -190017,6 +190046,7 @@ wykop.pl$badfilter
 ||sanghyun.nfile.net^
 ||sangkf.otto.sk^
 ||sanglah.com^
+||sangleygunsman.com^
 ||sangmoonlightstake.com^
 ||sangopportunity.com^
 ||sanguinecocky.com^
@@ -190072,6 +190102,7 @@ wykop.pl$badfilter
 ||sanpoiljejuna.cfd^
 ||sanpzoyjzrjmu.website^
 ||sanqua-lienminh2021.cf^
+||sansaradivulse.com^
 ||sansyettusk.com^
 ||santaclaratoday.com^
 ||santacruzsentinel.112.2o7.net^
@@ -190084,6 +190115,7 @@ wykop.pl$badfilter
 ||santarem.ondec.com.br^
 ||santo.neelchuri.com^
 ||santosepedra.anunciojuridico.com.br^
+||santosunflat.com^
 ||santuao.xyz^
 ||sanya1.com^
 ||sanynouncem.org^
@@ -190314,6 +190346,8 @@ wykop.pl$badfilter
 ||sawin.dublinmintoffice.ie^
 ||sawin.londonmintoffice.org^
 ||sawivnxxaegne.site^
+||sawneboenolic.com^
+||sawuirvqzqqwm.site^
 ||sax*.sina.
 ||sax.mobile.sina.cn^
 ||sax.sina.cn^
@@ -190412,6 +190446,7 @@ wykop.pl$badfilter
 ||sbbmzg.boks.app^
 ||sbboyqycysf.com^
 ||sbbtezmrgdafw.online^
+||sbbyzttwuwrvm.space^
 ||sbc-app-links.specialized.com^
 ||sbc31.com^
 ||sbcevpodyiqis.space^
@@ -190719,6 +190754,7 @@ wykop.pl$badfilter
 ||scarvesrepaid.com^
 ||scashwl.com^
 ||scasino.com^
+||scatteramarth.com^
 ||scatteredheat.com^
 ||scatteredstream.com^
 ||scatylems.com^
@@ -190812,6 +190848,7 @@ wykop.pl$badfilter
 ||schinnerer.actonservice.com^
 ||schioimbia.store^
 ||schipperkebiiriary.info^
+||schizypdq.com^
 ||schjmp.com^
 ||schlager.oewabox.at^
 ||schlaukopf.fr^
@@ -191206,6 +191243,7 @@ wykop.pl$badfilter
 ||scubaseverely.com^
 ||scucloshop.top^
 ||scucptxepxtre.site^
+||scudapogees.com^
 ||scuddlenudnik.com^
 ||scuhuh.cucannetshop.jp^
 ||scukeknekbomd.website^
@@ -191450,7 +191488,7 @@ wykop.pl$badfilter
 ||sdk-e.play.aiseet.atianqi.com^
 ||sdk-event.beizi.biz^
 ||sdk-events.inner-active.mobi^
-||sdk-globalconfig.aiclk.com^
+||sdk-gloesearch.ca^
 ||sdk-hb-cfg.smaato.net^
 ||sdk-info.gimbal.com^
 ||sdk-infra.inmobi.cn^
@@ -192920,6 +192958,7 @@ wykop.pl$badfilter
 ||seleliseyoririn.com^
 ||selenageiger.cfd^
 ||seleroanoke.com^
+||seletardure.com^
 ||self-study-service.com.cn^
 ||selfassured-celebration.com^
 ||selfcampaign.com^
@@ -193349,6 +193388,7 @@ wykop.pl$badfilter
 ||septbajri.com^
 ||september.cityads.com^
 ||septemberbrightest.com^
+||septierpranker.com^
 ||sepulincaz.store^
 ||seputartuban.com^
 ||sepvbm.fromyouflowers.com^
@@ -193380,6 +193420,7 @@ wykop.pl$badfilter
 ||sereinevalorif.com^
 ||sereinnegocerie.net^
 ||sereinrendvoireapp.com^
+||serenadislive.com^
 ||serendipityecho.com^
 ||serenecascade.com^
 ||serenedust.pro^
@@ -193398,6 +193439,7 @@ wykop.pl$badfilter
 ||seret.live^
 ||serff.fr^
 ||sergarius.popunder.ru^
+||sergehoolock.com^
 ||sergeizamang.qpon^
 ||sergeyscrap.com^
 ||serh.sandvikastrandhave.no^
@@ -201361,6 +201403,7 @@ wykop.pl$badfilter
 ||sharexy.com^
 ||shariathexarchdedans.qpon^
 ||sharing.kptncook.com^
+||sharirarichesmoghan.cfd^
 ||shark-tracer.netease.com^
 ||shark.rockyourlife.de^
 ||sharks.vn^
@@ -201412,6 +201455,7 @@ wykop.pl$badfilter
 ||shbihdhotyxzj.space^
 ||shbkhuyenmai.com^
 ||shbnnjesjisqi.site^
+||shboshbok.com^
 ||shbtjz.directours.com^
 ||shcaolauiimik.website^
 ||shchcyrbeuhgx.site^
@@ -201536,6 +201580,7 @@ wykop.pl$badfilter
 ||shinedns.net^
 ||shinglefrigate.com^
 ||shinglerid.com^
+||shingonannates.com^
 ||shinhan.chamsoccanhankhachhangthe-tructuyen.online^
 ||shinhan.ho-tro-tin-dung-ca-nhan.com^
 ||shinhan0.com^
@@ -203518,6 +203563,7 @@ wykop.pl$badfilter
 ||sketchpals.com^
 ||sketerterus.com^
 ||sketihel1umeth.net^
+||skewlycrepy.com^
 ||skf.actonservice.com^
 ||skfgxk.decorativeceilingtiles.net^
 ||skfmejmkgmiyp.space^
@@ -203826,6 +203872,7 @@ wykop.pl$badfilter
 ||sledgeryelping.qpon^
 ||sledxylan.com^
 ||sleekedmiggs.shop^
+||sleeklyyallaer.com^
 ||sleeknoteboxcontent.sleeknote.com^
 ||sleep-aids.1.p2l.info^
 ||sleep.ubm-events.com^
@@ -203993,6 +204040,7 @@ wykop.pl$badfilter
 ||slog.sina.com.cn^
 ||slog.trackingio.com^
 ||slogantrend.de^
+||sloggerdels.qpon^
 ||slojzlqjvitwt.website^
 ||slombrefin.store^
 ||slooshsnarer.com^
@@ -210717,6 +210765,7 @@ wykop.pl$badfilter
 ||soppe68.com^
 ||soppe68.shop^
 ||sopper68.com^
+||soppersklater.cyou^
 ||sopr-api.cian.ru^
 ||sopraacumi.store^
 ||sopranishamim.com^
@@ -211373,7 +211422,6 @@ wykop.pl$badfilter
 ||specialreview.net^
 ||specialscissors.com^
 ||specialsections.siteseer.ca^
-||specialsnake.com^
 ||specialstat.com^
 ||specialty75.com^
 ||specialtypin.com^
@@ -211513,6 +211561,7 @@ wykop.pl$badfilter
 ||sphereazimech.cyou^
 ||spherepsoai.com^
 ||spherical-brilliant.com^
+||spherysaftputz.qpon^
 ||sphidaphyps.com^
 ||sphinxillbred.com^
 ||sphostserver.com^
@@ -211655,7 +211704,6 @@ wykop.pl$badfilter
 ||splicky.com^
 ||splitbee.io^
 ||splitexpenses.oworld.fr^
-||splitolivile.qpon^
 ||splitsorlean.cfd^
 ||splittag.com^
 ||splitter.ndsplitter.com^
@@ -212024,7 +212072,6 @@ wykop.pl$badfilter
 ||sprwdza.lat^
 ||spry-glad.pro^
 ||spry-trick.com^
-||sprydelta.com^
 ||sprysummit.com^
 ||sps.springserve.com^
 ||spscah.hitachi-solutions.co.jp^
@@ -212060,7 +212107,6 @@ wykop.pl$badfilter
 ||spureleggi.store^
 ||spurgesanoiaerthly.qpon^
 ||spuriousair.com^
-||spuriousbase.com^
 ||spurioussquirrel.com^
 ||spuriousstranger.com^
 ||spurtshrubvending.com^
@@ -230094,6 +230140,7 @@ wykop.pl$badfilter
 ||stgm.powermyanalytics.com^
 ||stgm.stellionshop.com^
 ||stgm.ti-m.co.il^
+||stgnvt25.cfd^
 ||stgowan.com^
 ||stgstats.die-bibel.de^
 ||stgt.tallowmepretty.com^
@@ -230103,7 +230150,6 @@ wykop.pl$badfilter
 ||sth.taibahospital.com^
 ||sthhbqpjfdves.space^
 ||stiad.eclick.vn^
-||stibilpirra.com^
 ||stickeningnue.qpon^
 ||sticker.yadro.ru^
 ||sticketsmetrics.masters.com^
@@ -230271,6 +230317,7 @@ wykop.pl$badfilter
 ||stoen.solacebands.com^
 ||stogeysfaxes.cyou^
 ||stokson.azurewebsites.net^
+||stolascribe.com^
 ||stolecutting.com^
 ||stoledleeway.com^
 ||stoletellsgets.com^
@@ -230292,12 +230339,14 @@ wykop.pl$badfilter
 ||stonierteddy.com^
 ||stonkstime.com^
 ||stonysuingtartness.com^
+||stoodhiplike.com^
 ||stoofnetters.cfd^
 ||stoolmoated.shop^
 ||stoomawy.net^
 ||stoopeddigestaggregation.com^
 ||stoopeddiscourse.com^
 ||stoopsellers.com^
+||stoothchapon.com^
 ||stootsou.net^
 ||stop-sign.com^
 ||stop-smoking.1.p2l.info^
@@ -230407,6 +230456,7 @@ wykop.pl$badfilter
 ||stormgate.production.raptive.com^
 ||stormiq.com^
 ||stormwind.actonservice.com^
+||stormyachiever.com^
 ||stormyairbornefacility.com^
 ||stormyflower.com^
 ||storspelare.com^
@@ -231393,6 +231443,8 @@ wykop.pl$badfilter
 ||subseasecurity.com^
 ||subsequent.edelstahl-tuerklingel.de^
 ||subsequenthysterical.com^
+||subsequentstew.com^
+||subsequentswim.com^
 ||subsidedjudgement.com^
 ||subsidies.pnoconsultants.com^
 ||subsiinvir.store^
@@ -231664,6 +231716,7 @@ wykop.pl$badfilter
 ||summitbusinessmedia.112.2o7.net^
 ||summonsrecarry.com^
 ||summonteacherjunction.com^
+||summulaentame.cfd^
 ||summythdevious.com^
 ||sumo.ad^
 ||sumo.com^
@@ -231688,7 +231741,6 @@ wykop.pl$badfilter
 ||sun52.fun^
 ||sun52.live^
 ||sun52.tv^
-||sun88.sc^
 ||sunblock65.com^
 ||sunbold.digital^
 ||sunburgh.com^
@@ -232038,6 +232090,7 @@ wykop.pl$badfilter
 ||surmounttemperbooklet.com^
 ||surnamesubqueryaloft.com^
 ||surnounknappan.cyou^
+||surpassjaypiet.com^
 ||surpasswest.com^
 ||surpavdggpjar.site^
 ||surplus-suppliers.com^
@@ -232131,6 +232184,7 @@ wykop.pl$badfilter
 ||sustaindenim.com^
 ||sustarox-ai.com^
 ||sustentaootions.info^
+||susumufrits.com^
 ||susxjdzecysfv.online^
 ||suszhi.com^
 ||sut.dailyfx.com^
@@ -235001,6 +235055,7 @@ wykop.pl$badfilter
 ||tab.co.nz^
 ||tab.dellrescue.com^
 ||tab.volces.com^
+||tabaccabler.com^
 ||tabaxirethnize.cyou^
 ||tabcarts.com^
 ||tabcp.tryshavest.com^
@@ -235071,6 +235126,7 @@ wykop.pl$badfilter
 ||tafeyoguv.pettywell.com^
 ||taffiasmarxian.com^
 ||taffr.com^
+||taffykhirka.com^
 ||tafimedia.com^
 ||tafrebadus.com^
 ||tag-based.s3.*.amazonaws.com^
@@ -236054,6 +236110,8 @@ wykop.pl$badfilter
 ||talesapricot.com^
 ||taletela.us.intellitxt.com^
 ||tali.iad-03.braze.com^
+||talionunoiled.com^
+||talipesspirts.com^
 ||talk.bz.gepush.com^
 ||talk.igexin.com^
 ||talk.nz.gepush.com^
@@ -236094,6 +236152,7 @@ wykop.pl$badfilter
 ||tallyworthratings.com^
 ||talog-eu.rebxgame.com^
 ||talonwaardex.com^
+||taloseempest.com^
 ||talou.familyframe.co^
 ||talpa-analytics.
 ||talpa-analytics.com^
@@ -236116,12 +236175,14 @@ wykop.pl$badfilter
 ||tamgrt.com^
 ||tamilbirma.cfd^
 ||tammenaa.com^
+||tammycooly.com^
 ||tamparepublic.com^
 ||tampboddagh.shop^
 ||tampedennomic.shop^
 ||tampersmoyen.qpon^
 ||tampionsley.com^
 ||tamprc.com^
+||tampurunrig.com^
 ||tamus.net.anwalt.de^
 ||tamxlmwxtizil.website^
 ||tan.pridnestrovie.com^
@@ -236151,6 +236212,7 @@ wykop.pl$badfilter
 ||tangkaeccl.shop^
 ||tangl0c.8day66.com^
 ||tangleproceeding.com^
+||tangletrace.com^
 ||tanglike.biz^
 ||tanglikefree.online^
 ||tangnickmienphi.com^
@@ -236278,6 +236340,7 @@ wykop.pl$badfilter
 ||tapwater.news^
 ||taqrr.fromourplace.co.uk^
 ||tar.tradedoubler.com^
+||tarafsaluted.shop^
 ||tarafsizbolge.com^
 ||taramashka.link^
 ||tarandka.com^
@@ -236668,6 +236731,7 @@ wykop.pl$badfilter
 ||targettur.www.svenskaspel.se^
 ||targget.shop^
 ||tarhszehtlxis.website^
+||tarinraiding.com^
 ||tarioland.site^
 ||tarmaitali.store^
 ||tarmelicaia.com^
@@ -236756,6 +236820,7 @@ wykop.pl$badfilter
 ||tattle.api.osano.com^
 ||tattooshaha.info^
 ||tatts.com^
+||tattvaballute.com^
 ||tatu.advatx.com.br^
 ||tatu.aluguefoco.com.br^
 ||tatu.arrombatattoo.com.br^
@@ -236870,8 +236935,10 @@ wykop.pl$badfilter
 ||tatu.yelly.com.br^
 ||taudhwmbfd.com^
 ||taughtloudlydemise.com^
+||taujubarb.com^
 ||taujxhyhmgwbd.website^
 ||taulanogging.com^
+||tauliabridler.com^
 ||taunahi.st^
 ||taunphoik.com^
 ||taurendiheim-digital.pages.dev^
@@ -237361,6 +237428,7 @@ wykop.pl$badfilter
 ||tdyzwepdnaqvv.space^
 ||tdzjab.alo-organic.com^
 ||tdzosv.bett1.pl^
+||tdzvm.pw^
 ||tdzvvfdkcyhfv.online^
 ||tdzxxe.handyservice.de^
 ||te.about.com^
@@ -237510,6 +237578,7 @@ wykop.pl$badfilter
 ||tearingrustsally.com^
 ||tearingtastes.com^
 ||teartfifteen.com^
+||tearyfotive.com^
 ||teaser-goods.ru^
 ||teaser.cc^
 ||teaser.meta.ua^
@@ -237677,6 +237746,7 @@ wykop.pl$badfilter
 ||teen.streamate.com^
 ||teen.zubie.com^
 ||teenclubforum.pw^
+||teenerdormer.com^
 ||teenersqueueunbear.cyou^
 ||teenrevenue.com^
 ||teens24h.com^
@@ -237891,7 +237961,6 @@ wykop.pl$badfilter
 ||telemetry-cii.api.playstation.com^
 ||telemetry-eastus.trafficmanager.inmobi.com^
 ||telemetry-in.battle.net^
-||telemetry-sdk-metrics.inmobi.cn^
 ||telemetry.*.pvp.net^
 ||telemetry.acronis.com^
 ||telemetry.adobe.io^
@@ -238225,6 +238294,7 @@ wykop.pl$badfilter
 ||temporibus-quasi-dolorem.top^
 ||temptation.ad.nl^
 ||temptedpitta.cfd^
+||tempttalk.com^
 ||temptteam.com^
 ||temsys.temsys.fr^
 ||ten.sngapm.qq.com^
@@ -238313,12 +238383,15 @@ wykop.pl$badfilter
 ||tercabilis.info^
 ||tercelhoplite.shop^
 ||tercept.com^
+||tercetacker.com^
 ||tercetegzotyczny.pl^
 ||terciogouge.com^
+||terciozonula.qpon^
 ||terdeallyighabove.org^
 ||terdzl.ohmyglasses.jp^
 ||terefahglowfly.com^
 ||tereska.pl^
+||tergantbegnaw.com^
 ||terik.site^
 ||termagewaving.com^
 ||termavise.net^
@@ -238472,6 +238545,7 @@ wykop.pl$badfilter
 ||testeanisole.cyou^
 ||testeapi.stape.credaluga.com.br^
 ||testedcarp.pro^
+||testedtouch.com^
 ||testensie.de^
 ||testfilter.com^
 ||testforms.fidelity.ca^
@@ -238820,6 +238894,7 @@ wykop.pl$badfilter
 ||thairsqojopzz.online^
 ||thaivictory.co.th^
 ||thakdsafoqczb.space^
+||thalaolefin.com^
 ||thalasur.fr^
 ||thalerssnyes.cyou^
 ||thalesgroup-events.com^
@@ -239306,12 +239381,15 @@ wykop.pl$badfilter
 ||thialfi.net.anwalt.de^
 ||thiaminspumous.qpon^
 ||thiasoiquitter.cyou^
+||thiazinamus.com^
 ||thiccnigga.me^
 ||thichanhmoney.store^
 ||thicketsaidwhole.com^
 ||thickmaggot.com^
 ||thickporter.sa.com^
 ||thickteaching.com^
+||thickticket.com^
+||thicktrucks.com^
 ||thickyedicts.com^
 ||thieflamppost.com^
 ||thiendia2.com^
@@ -239357,6 +239435,7 @@ wykop.pl$badfilter
 ||thirstybiologytells.com^
 ||thirstybunch.pro^
 ||thirstyquiet.com^
+||thirstytwig.com^
 ||thirteenpun.com^
 ||thirty-good.lugg.com^
 ||thirtydaychange.com^
@@ -239736,7 +239815,6 @@ wykop.pl$badfilter
 ||tif.ionos.com^
 ||tiffieskeif.qpon^
 ||tifflebeach.com^
-||tiffysangei.com^
 ||tifptxvtraamu.store^
 ||tifsuc.com^
 ||tigaa.fromourplace.ca^
@@ -240741,7 +240819,6 @@ wykop.pl$badfilter
 ||tlbxptgzplybk.online^
 ||tlc8.touslescontes.com^
 ||tlcfhttbxdbhc.site^
-||tlcgher.com^
 ||tlcjaqrghthyv.space^
 ||tlcpkidysoqqf.space^
 ||tlcpvkkboxamm.website^
@@ -247943,7 +248020,6 @@ wykop.pl$badfilter
 ||trbpuxwbtvfnn.space^
 ||trbuod.megalos.co.jp^
 ||trc-events.taboola.com^
-||trc-sdk.inmobi.cn^
 ||trc.adsage.com^
 ||trc.bikesquare.eu^
 ||trc.demobaza.com^
@@ -250051,7 +250127,6 @@ wykop.pl$badfilter
 ||ttzrx.sonno.co.uk^
 ||tu.baixing.com^
 ||tu.biddingx.com^
-||tu.mt20230625tu.com^
 ||tu.szefe.com^
 ||tu1500919341.cc^
 ||tu2.taohuaimg.com^
@@ -250398,7 +250473,6 @@ wykop.pl$badfilter
 ||tusno.com^
 ||tussorstoluolsaphidid.qpon^
 ||tutbc1.www.tapmyback.com^
-||tutelaebunga.com^
 ||tutelanca.net^
 ||tuteldisqu.store^
 ||tutoads.tv^
@@ -250562,6 +250636,7 @@ wykop.pl$badfilter
 ||tvyaxsazuceik.site^
 ||tvynopubluqgi.online^
 ||tvzebra.popunder.ru^
+||tvzephiezqcmu.website^
 ||tvzyqtgcqhvtr.space^
 ||tw-726620180914.*.run.app^
 ||tw-api.vpadn.com^
@@ -251030,6 +251105,7 @@ wykop.pl$badfilter
 ||tzbtw.com^
 ||tzccrgiuxzclh.site^
 ||tzdgpmdrcoenq.space^
+||tzeaexcxa.com^
 ||tzegilo.com^
 ||tzehd.directmeds.com^
 ||tzendralvotrx.net^
@@ -251075,6 +251151,7 @@ wykop.pl$badfilter
 ||tzryswtdmcuiy.site^
 ||tzsmatvneyicj.space^
 ||tzsovmogeatxx.site^
+||tzsvwlszwfa.com^
 ||tzswoxsfjwsxl.space^
 ||tztbijfdycgdd.space^
 ||tzuklavoe.net^
@@ -251595,6 +251672,7 @@ wykop.pl$badfilter
 ||ucsec1.ucweb.com^
 ||ucslbd.org^
 ||ucsnddigmtwoe.space^
+||ucsoopwofnqby.website^
 ||ucstat.baidu.cn^
 ||ucstat.baidu.com^
 ||uct.service.usercentrics.eu^
@@ -251778,6 +251856,7 @@ wykop.pl$badfilter
 ||uehmzlqrusxlw.online^
 ||uehurc.orgenda.de^
 ||ueivh.greenllamaclean.com^
+||ueivmhehlkufw.website^
 ||uejnirgkyaltx.online^
 ||uekdrashfpnrf.online^
 ||uektb.com^
@@ -252130,6 +252209,7 @@ wykop.pl$badfilter
 ||uisxua.benettonmall.com^
 ||uitdz.biomel.life^
 ||uiuhawavotxsv.space^
+||uiuivrduagbet.site^
 ||uiusbrughzbbh.space^
 ||uiusqp.crowdcow.com^
 ||uiuzactqyjexn.online^
@@ -252897,7 +252977,6 @@ wykop.pl$badfilter
 ||unfumedvamoses.com^
 ||unfussyvivax.com^
 ||unfylmjytbkic.space^
-||ungagedhulloo.com^
 ||ungainljjiest.info^
 ||ungatedequipt.cfd^
 ||ungirtgnatter.qpon^
@@ -253128,6 +253207,7 @@ wykop.pl$badfilter
 ||unmiterbestand.qpon^
 ||unmixedioskehamental.cfd^
 ||unmnehicnyoiz.site^
+||unmossybitte.cyou^
 ||unmountunfree.cfd^
 ||unmovedknittingeliza.com^
 ||unnajd.com^
@@ -253194,6 +253274,7 @@ wykop.pl$badfilter
 ||uns.stageegift.giftcards.com^
 ||unsakedperform.qpon^
 ||unsalmajor.store^
+||unscarbgroper.com^
 ||unscrriacc.store^
 ||unsecrisfo.store^
 ||unseeeburine.shop^
@@ -253299,7 +253380,6 @@ wykop.pl$badfilter
 ||unwavedmalarky.cyou^
 ||unwdvbixtcrdk.space^
 ||unweavederiv.com^
-||unwedunnigh.com^
 ||unwelcometown.com^
 ||unwelthterai.cyou^
 ||unwieldyhealth.com^
@@ -253916,6 +253996,7 @@ wykop.pl$badfilter
 ||urtcspdmoqpjk.site^
 ||urticalreests.com^
 ||urtkugha.accessmedicalequipment.com^
+||urufoqisasvwt.website^
 ||urulwxikmmaer.space^
 ||urushichairen.cyou^
 ||urvfsvikbnesj.online^
@@ -254299,6 +254380,7 @@ wykop.pl$badfilter
 ||usurv.com^
 ||usuxodfefavbm.space^
 ||usv.kenfulk.com^
+||usviraal.com^
 ||usvrkrkqfnzbh.online^
 ||usvslqoguid.com^
 ||usw-ca2.adsrvr.org^
@@ -255086,6 +255168,7 @@ wykop.pl$badfilter
 ||uuzxaz.vidaxl.com^
 ||uv2rnirzt1u3yrptv9ngpb.cfd^
 ||uv7zri.yl029.com^
+||uvaf6ko09w.com^
 ||uvbiyrhzsqcoq.space^
 ||uvccpk.1800petmeds.com^
 ||uvcgh.xyonhealth.com^
@@ -255273,6 +255356,7 @@ wykop.pl$badfilter
 ||uyhxjy.jdsports.se^
 ||uyititi.weebly.com^
 ||uyivht.robertgraham.us^
+||uyjhzkltcwfnv.website^
 ||uyjngwpuciwgq.space^
 ||uyjonpum.skydda.com^
 ||uyjoxe.sportsfuel.co.nz^
@@ -255782,7 +255866,6 @@ wykop.pl$badfilter
 ||vain-cause.pro^
 ||vainanalyst.com^
 ||vainfulkmole.com^
-||vaisyabam.com^
 ||vaitu.club^
 ||vajwbkkwrverl.top^
 ||vak345.com^
@@ -256516,6 +256599,7 @@ wykop.pl$badfilter
 ||vctdyqcatdfqc.space^
 ||vctzdx.mundoalfombra.com^
 ||vcvbogndkwheb.space^
+||vcvdfcspinmjs.online^
 ||vcvncewkfhtmp.website^
 ||vcvnl.fashionnova.com^
 ||vcvyvahlcxjah.online^
@@ -261785,7 +261869,6 @@ wykop.pl$badfilter
 ||waitingtoload.com^
 ||waitlist.geekupworld.com^
 ||waiveryjambosbis.qpon^
-||waivinggilim.com^
 ||waixpa.supriagora.com.br^
 ||wakadau.com^
 ||wakamoment.tk^
@@ -261875,7 +261958,6 @@ wykop.pl$badfilter
 ||wangmeng.baidu.com^
 ||wangmeng.sogou.com^
 ||wangunsreplate.com^
-||wangunssealery.com^
 ||wangunszeguha.qpon^
 ||wangxiankang.top^
 ||wangyouxs.cn^
@@ -261961,7 +262043,6 @@ wykop.pl$badfilter
 ||warinesapful.cfd^
 ||warioland.com^
 ||warkedmalie.com^
-||warlessstarved.com^
 ||warlikecouple.com^
 ||warlikeexcitement.pro^
 ||warliketruck.com^
@@ -262017,7 +262098,6 @@ wykop.pl$badfilter
 ||warsle-cowp.shop^
 ||warsledspines.com^
 ||warszawa24.top^
-||warthcoes.com^
 ||wartomiec.pl^
 ||waruggeefiljt.space^
 ||warumbistdusoarm.space^
@@ -262055,7 +262135,6 @@ wykop.pl$badfilter
 ||washoffwaviercyanite.cfd^
 ||washokufinder.lol^
 ||washrepone.com^
-||washwayrefool.com^
 ||waskomreview.com^
 ||wasntlocutor.cyou^
 ||wasp-182b.com^
@@ -262155,7 +262234,6 @@ wykop.pl$badfilter
 ||wau.tynt.com^
 ||waudeesestew.com^
 ||waudit.cz^
-||waughyciliary.com^
 ||waukeetimes.com^
 ||waukeshatimes.com^
 ||waulspeter.com^
@@ -264041,7 +264119,6 @@ wykop.pl$badfilter
 ||wez-bon.24.eu^
 ||wezbvq.heine-shop.nl^
 ||wezfkkvkhjmha.space^
-||weznkotoko.com^
 ||wezq9ko88xqr.btv5658bz3h21e22tf4gpy76q.cyou^
 ||wezzoeqflrixf.online^
 ||wf.basebanner.com^
@@ -264490,7 +264567,6 @@ wykop.pl$badfilter
 ||widaxl.pl^
 ||widcxrmwusqhe.online^
 ||widdecedbpoks.space^
-||widdermixtec.com^
 ||widdlemonoid.com^
 ||wide.preppio.no^
 ||wideangle.co^
@@ -264770,8 +264846,6 @@ wykop.pl$badfilter
 ||wilsonbet.com^
 ||wiltaustaug.com^
 ||wilted-length.pro^
-||wilterloughs.com^
-||wiltinfume.com^
 ||wiltonreview.com^
 ||wimaxnetworks.cn^
 ||wimi.aviendo.dk^
@@ -265100,7 +265174,6 @@ wykop.pl$badfilter
 ||wizard-traffic.com^
 ||wizard.clickdrive.nl^
 ||wizardbuck.com^
-||wizardspunka.com^
 ||wizardsslushrefused.com^
 ||wizardstrategy.com^
 ||wizardunstablecommissioner.com^
@@ -265571,7 +265644,6 @@ wykop.pl$badfilter
 ||wobs.route.com^
 ||wobtuunyjybzw.online^
 ||woche.oewabox.at^
-||wochuadaribah.com^
 ||woclkmarket.shop^
 ||wocmaungiw.net^
 ||wocnb.org^
@@ -265614,7 +265686,6 @@ wykop.pl$badfilter
 ||wolf.samarasousa.com^
 ||wolfeighteen.com^
 ||wolfersnudate.com^
-||wolfmandiked.com^
 ||wolframpriapic.com^
 ||wolimarket.shop^
 ||wolist.ru^
@@ -265685,7 +265756,6 @@ wykop.pl$badfilter
 ||woodruffsweitzer.actonservice.com^
 ||woodsfalsie.com^
 ||woodsiacyanins.shop^
-||woodsytenline.com^
 ||woodtone.actonservice.com^
 ||woodvexa.com^
 ||woodycoluber.com^
@@ -265875,7 +265945,6 @@ wykop.pl$badfilter
 ||worm.communitytrustproject.org^
 ||wormdistressedunit.com^
 ||wormgush.com^
-||wormierfiver.com^
 ||wormishnimrod.com^
 ||wormlaboratoryspeeding.com^
 ||wormssatins.qpon^
@@ -266155,6 +266224,7 @@ wykop.pl$badfilter
 ||wraithsunegal.cfd^
 ||wral.cn^
 ||wrangleclaspinteract.com^
+||wrannyundrawn.com^
 ||wrap.tradedoubler.com^
 ||wrapn.net^
 ||wrapper-vast.adsafeprotected.com^
@@ -266607,7 +266677,6 @@ wykop.pl$badfilter
 ||wurldcergpkri.site^
 ||wurqaz.com^
 ||wurren.iad-03.braze.com^
-||wurreseek.com^
 ||wurst.hausschlachtebedarf.de^
 ||wurst.leffis.de^
 ||wuruzuu.com^
@@ -266666,6 +266735,7 @@ wykop.pl$badfilter
 ||wvtsnyncckesw.site^
 ||wvuiaqx.com^
 ||wvujwilqlvgvg.online^
+||wvvcwrtyfgdrw.com^
 ||wvvietcombank.com^
 ||wvvmqsasndeup.space^
 ||wvvoousaenpzv.space^
@@ -266841,6 +266911,7 @@ wykop.pl$badfilter
 ||wwin.com^
 ||wwiqkslmdcisz.site^
 ||wwjdxc.pixartprinting.it^
+||wwjiikhcngrhn.site^
 ||wwlaoryyzmlmr.top^
 ||wwlvaq.holidayme.com^
 ||wwm24.de^
@@ -292786,6 +292857,7 @@ wykop.pl$badfilter
 ||xbfrpgihdenhl.site^
 ||xbfyqpnfrissi.site^
 ||xbgbod.scandinavianoutdoor.se^
+||xbgttknhshris.website^
 ||xbhcyadhm.com^
 ||xbhoylaadarbq.website^
 ||xbicdq.form.bar^
@@ -296061,7 +296133,6 @@ wykop.pl$badfilter
 ||yakunitfall.com^
 ||yakxiaugxzbvr.site^
 ||yalipxglgamod.site^
-||yallowafridi.com^
 ||yalqxkqmcjsal.website^
 ||yaltgqwfwohby.online^
 ||yam.adsbro.com^
@@ -296158,7 +296229,6 @@ wykop.pl$badfilter
 ||yawncollaremotion.com^
 ||yawnersreplays.cyou^
 ||yawnexactplum.com^
-||yawnfulharpa.com^
 ||yawning-idea.pro^
 ||yawningparkas.com^
 ||yawsyi.freedomliftsystems.com^
@@ -296355,7 +296425,6 @@ wykop.pl$badfilter
 ||ydpushserver.youdao.com^
 ||ydrwwqazbmkru.online^
 ||ydsagcvrejuim.online^
-||ydstinkle.com^
 ||ydtfvwvmeojpx.site^
 ||ydthvtwluaaml.net^
 ||ydtokixknbrye.online^
@@ -296652,7 +296721,6 @@ wykop.pl$badfilter
 ||ygy.faanfruit.com^
 ||ygyxkhvuybkhu.site^
 ||yh.poramorart.ca^
-||yh.yanghetp.vip^
 ||yh21kk.com^
 ||yh300.vip^
 ||yh6u.dealeusedevoyages.com^
@@ -296814,6 +296882,7 @@ wykop.pl$badfilter
 ||yis.gridko.com^
 ||yisheng120.info^
 ||yiskwbbaftjvkld.com^
+||yitfwbngptvjt.online^
 ||yitongfang.com^
 ||yiunpfniv.com^
 ||yiuonzcmzxodc.site^
@@ -297132,6 +297201,7 @@ wykop.pl$badfilter
 ||yn68b5vn9.com^
 ||ynafusihflnzm.online^
 ||ynagqs.vidaxl.pl^
+||ynamkbxzunzpl.online^
 ||ynbgjroxqcyrr.site^
 ||ynbsakxipni.net^
 ||yncddpjquwij.net^
@@ -297236,7 +297306,6 @@ wykop.pl$badfilter
 ||yogi.snuffland.de^
 ||yogicnamers.cfd^
 ||yogisens.com^
-||yogisgeishas.com^
 ||yogjylemldvjb.online^
 ||yogolp.beststl.com^
 ||yogsreddlydzk.site^
@@ -297687,6 +297756,7 @@ wykop.pl$badfilter
 ||ysesials.net^
 ||ysfbmd.akitzpet.co.kr^
 ||ysfcnx.webwave.dev^
+||ysgkdovlkbaih.online^
 ||ysgvhmiwrvsvt.website^
 ||ysgyc.bosca.com^
 ||ysieoscwufeki.site^
@@ -298513,7 +298583,6 @@ wykop.pl$badfilter
 ||zajeeceimmgnl.site^
 ||zajio.ionlayer.com^
 ||zajonc.de^
-||zakahbldr.com^
 ||zakelijk.tele2.nl^
 ||zakelijke-betalingsoplossingen.americanexpress.nl^
 ||zakelijke-oplossingen-nld.americanexpress.nl^
@@ -298623,7 +298692,6 @@ wykop.pl$badfilter
 ||zapandmake.com^
 ||zaparena.com^
 ||zapasfundrelix.org^
-||zapasizzard.com^
 ||zapbox.ru^
 ||zapcdn.space^
 ||zapcwcnbcnmjo.space^
@@ -299035,7 +299103,6 @@ wykop.pl$badfilter
 ||zemwmv.tretti.se^
 ||zen.healthcentar.com^
 ||zen.nuvorel.xyz^
-||zenaidavealer.com^
 ||zenaps.com^
 ||zenback.jp^
 ||zencomputertechbd.online^
@@ -299148,7 +299215,6 @@ wykop.pl$badfilter
 ||zetreview.com^
 ||zettapetta.com^
 ||zetusripwrecl.website^
-||zeugmatacket.com^
 ||zeus.ad.intl.xiaomi.com^
 ||zeus.ad.xiaomi.com^
 ||zeus.developershed.com^
@@ -299243,6 +299309,7 @@ wykop.pl$badfilter
 ||zfyabxzwy.com^
 ||zg.mmyuer.com^
 ||zg40c.cn^
+||zg6ucmy6jp8tumlo6t4.cfd^
 ||zgannmebawpes.online^
 ||zgaoczburrxqk.site^
 ||zgarnijbon.com^
@@ -300080,7 +300147,6 @@ wykop.pl$badfilter
 ||zodflbjwjyzxjg.com^
 ||zodhqv.peterson.fr^
 ||zodiacneglect.com^
-||zoeacaring.com^
 ||zoeaegyral.com^
 ||zoeandjo.co.uk^
 ||zoerxk.belifmeetsvdl.com^
@@ -300205,7 +300271,6 @@ wykop.pl$badfilter
 ||zoqvjyoojmamb.top^
 ||zorango.com^
 ||zorbklqebjvqq.top^
-||zorbklqyoabvj.top^
 ||zorcxrkpxvbsj.site^
 ||zordoabsolsooph.net^
 ||zorexaglinu.com^
@@ -300220,7 +300285,6 @@ wykop.pl$badfilter
 ||zorynex-ai.com^
 ||zosdscrdnltbz.space^
 ||zosprp-wagrowiec.pl^
-||zosteralatency.com^
 ||zoterwynai.com^
 ||zotnkataxyscx.online^
 ||zotqhsyqbetkg.online^
@@ -301028,7 +301092,6 @@ wykop.pl$badfilter
 ||zyfsnsggeqdia.site^
 ||zygitquoti.store^
 ||zygoojpfbiqdi.online^
-||zygousgauby.com^
 ||zyguhojdymzqx.site^
 ||zyhniraq.shop^
 ||zyhzzhxnlnfdk.site^
